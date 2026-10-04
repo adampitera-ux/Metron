@@ -89,7 +89,7 @@ export const organizationSchema = (): Json => ({
   description: SITE.description,
   slogan: SITE.tagline,
   email: SITE.email,
-  ...(SITE.phone ? { telephone: SITE.phone } : {}),
+  ...(SITE.phone ? { telephone: SITE.phoneE164 } : {}),
   foundingDate: SITE.founded,
   areaServed: { "@type": "Country", name: SITE.areaServed },
   knowsAbout: [

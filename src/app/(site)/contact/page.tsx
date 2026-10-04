@@ -1,6 +1,6 @@
 import LeadForm from "@/components/LeadForm";
 import { PageHeader, Section } from "@/components/page/blocks";
-import { CheckCircle } from "@/components/icons";
+import { CheckCircle, Mail, Phone } from "@/components/icons";
 import { JsonLd, pageMetadata } from "@/lib/seo";
 import { SITE, absoluteUrl } from "@/lib/site";
 
@@ -60,14 +60,32 @@ export default function ContactPage() {
             </div>
             <div className="rounded-[22px] border border-line bg-white p-7">
               <p className="h-display text-[22px] text-fg">Prefer to talk?</p>
-              {SITE.phone && (
-                <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="mt-3 block text-[22px] font-medium text-orange hover:underline">
-                  {SITE.phone}
-                </a>
-              )}
-              <a href={`mailto:${SITE.email}`} className="mt-2 inline-block text-lg text-fg-2 hover:text-orange hover:underline">
-                {SITE.email}
-              </a>
+              <ul className="mt-5 space-y-3">
+                {SITE.phone && (
+                  <li>
+                    <a href={`tel:${SITE.phoneE164}`} className="group flex items-center gap-3.5">
+                      <span className="grid size-10 shrink-0 place-items-center rounded-full bg-orange/10 text-orange">
+                        <Phone className="size-[18px]" />
+                      </span>
+                      <span className="flex flex-col leading-tight">
+                        <span className="text-[13px] text-muted">Call us</span>
+                        <span className="text-[19px] font-medium tracking-[0.01em] text-fg group-hover:text-orange">{SITE.phone}</span>
+                      </span>
+                    </a>
+                  </li>
+                )}
+                <li>
+                  <a href={`mailto:${SITE.email}`} className="group flex items-center gap-3.5">
+                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-orange/10 text-orange">
+                      <Mail className="size-[18px]" />
+                    </span>
+                    <span className="flex flex-col leading-tight">
+                      <span className="text-[13px] text-muted">Email</span>
+                      <span className="text-[17px] text-fg group-hover:text-orange">{SITE.email}</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </aside>
         </div>

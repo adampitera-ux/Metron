@@ -74,7 +74,7 @@ export default function Footer() {
             <p>
               {SITE.phone && (
                 <>
-                  <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="hover:text-orange">
+                  <a href={`tel:${SITE.phoneE164}`} className="hover:text-orange">
                     {SITE.phone}
                   </a>
                   <span className="mx-2">·</span>

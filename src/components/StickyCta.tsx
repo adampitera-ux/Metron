@@ -41,7 +41,7 @@ export default function StickyCta() {
           >
             <div className="flex gap-2.5">
               {SITE.phone && (
-                <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="btn-dark flex h-12 flex-1 items-center justify-center rounded-[10px] text-[15px]">
+                <a href={`tel:${SITE.phoneE164}`} className="btn-dark flex h-12 flex-1 items-center justify-center rounded-[10px] text-[15px]">
                   Call Us
                 </a>
               )}

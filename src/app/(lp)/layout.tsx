@@ -11,7 +11,7 @@ export default function LandingLayout({ children }: { children: React.ReactNode 
           <img src="/images/logo.svg" alt={SITE.name} width={101} height={30} />
           <div className="flex items-center gap-3">
             {SITE.phone && (
-              <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="hidden text-[15px] font-medium text-fg-2 hover:text-orange sm:block">
+              <a href={`tel:${SITE.phoneE164}`} className="hidden text-[15px] font-medium text-fg-2 hover:text-orange sm:block">
                 {SITE.phone}
               </a>
             )}

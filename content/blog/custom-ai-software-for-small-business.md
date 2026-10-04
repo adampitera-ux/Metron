@@ -21,7 +21,7 @@ faqs:
   - q: "When does a small business need custom software?"
     a: "You need custom software when your team relies on a workaround that no off-the-shelf product handles well, such as a complex pricing spreadsheet or a manual process that only one person understands. If the workflow is standard, like invoicing or scheduling, buying a proven product is usually the better choice. Custom work makes sense when the process is tied to how you win jobs or deliver work."
   - q: "How much does custom AI software cost for a small business?"
-    a: "It depends on scope, so any honest answer is a range rather than a number. A focused internal tool, like a quoting calculator connected to your CRM, is a much smaller project than a full client portal with logins and payments. Automatix quotes custom software per project after a free audit, so you know the cost before anything is built."
+    a: "It depends on scope, so any honest answer is a range rather than a number. A focused internal tool, like a quoting calculator connected to your CRM, is a much smaller project than a full client portal with logins and payments. Metron quotes custom software per project after a free audit, so you know the cost before anything is built."
   - q: "Is custom software risky for a small business?"
     a: "It can be if nobody owns it, it is undocumented, or it depends on a single freelancer. You reduce the risk by keeping the scope small, building on top of systems you already use, and making sure you own the code, accounts and data. Ask for documentation and a plan for maintenance before work starts."
   - q: "Can an AI assistant really be trained on my company documents?"
@@ -136,7 +136,7 @@ Say your estimator spends about 45 minutes per quote, writes 40 quotes a month, 
 | Value at $40/hour loaded cost | 20 × $40 | $800/month |
 | Value per year | $800 × 12 | $9,600/year |
 
-That doesn't count faster quotes winning more jobs, or fewer pricing mistakes. You can model your own numbers with the [AI automation ROI calculator](/tools/ai-automation-roi-calculator). At Automatix, custom software is quoted per project, and ongoing automation plans start at $900 a month.
+That doesn't count faster quotes winning more jobs, or fewer pricing mistakes. You can model your own numbers with the [AI automation ROI calculator](/tools/ai-automation-roi-calculator). At Metron, custom software is quoted per project, and ongoing automation plans start at $900 a month.
 
 ## What are the risks of building custom software?
 
@@ -170,4 +170,4 @@ If you want a broader view of where AI fits before you commit to a build, start 
 
 ## What should you do next?
 
-If you have a spreadsheet nobody else dares to touch, a team copying data between apps, or customers calling for information you already have, there may be a small custom tool that could pay for itself. The hard part is picking the right one and building it so it lasts. That's what we do: Automatix designs and builds [custom AI software](/services/custom-ai-software) on top of the systems you already use, and helps you plan the order of operations through our [AI strategy](/services/ai-strategy) work. [Book a free AI audit](/contact) and we'll walk through your workflows, tell you what to buy, what to connect and what's worth building, and give you a clear quote before anything starts.
+If you have a spreadsheet nobody else dares to touch, a team copying data between apps, or customers calling for information you already have, there may be a small custom tool that could pay for itself. The hard part is picking the right one and building it so it lasts. That's what we do: Metron designs and builds [custom AI software](/services/custom-ai-software) on top of the systems you already use, and helps you plan the order of operations through our [AI strategy](/services/ai-strategy) work. [Book a free AI audit](/contact) and we'll walk through your workflows, tell you what to buy, what to connect and what's worth building, and give you a clear quote before anything starts.

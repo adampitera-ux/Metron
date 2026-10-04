@@ -5,15 +5,15 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
     category: "Getting Started",
     items: [
       {
-        q: "What does Automatix do?",
-        a: "Automatix is an AI automation agency that helps small businesses use AI to grow and reduce the time and cost of back-office work. We build AI receptionists, lead follow-up, review automation, and workflow automations, and we refresh websites so they perform well in both traditional and AI search.",
+        q: "What does Metron do?",
+        a: "Metron is an AI automation agency that helps small businesses use AI to grow and reduce the time and cost of back-office work. We build AI receptionists, lead follow-up, review automation, and workflow automations, and we refresh websites so they perform well in both traditional and AI search.",
       },
       {
         q: "What types of businesses do you work with?",
         a: "We focus on small, local service businesses, including HVAC, plumbing, electrical, roofing, landscaping, cleaning, pest control, dental practices, law firms, real estate, auto repair, and med spas. If your business handles a steady flow of calls, leads, appointments, or paperwork, there is a good chance automation can help.",
       },
       {
-        q: "How do I get started with Automatix?",
+        q: "How do I get started with Metron?",
         a: "Start by booking a free AI audit and consultation. We review how leads, calls, scheduling, and admin work move through your business, identify the best opportunities for automation, and recommend a plan before you commit to anything.",
       },
       {
@@ -34,8 +34,8 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
     category: "Pricing & Contracts",
     items: [
       {
-        q: "How much does Automatix cost?",
-        a: "Automatix offers two plans. The Standard plan is $900 per month and the Enterprise plan is $1,600 per month. A free AI audit and consultation is available to help you decide which plan fits your business.",
+        q: "How much does Metron cost?",
+        a: "Metron offers two plans. The Standard plan is $900 per month and the Enterprise plan is $1,600 per month. A free AI audit and consultation is available to help you decide which plan fits your business.",
       },
       {
         q: "What is included in the Standard plan?",

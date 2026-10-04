@@ -4,20 +4,20 @@
  * so update these values once and every page stays consistent.
  */
 export const SITE = {
-  name: "Automatix",
-  legalName: "Automatix",
+  name: "Metron",
+  legalName: "Metron",
   tagline: "The AI Integration Agency for Small & Medium Businesses",
   description:
-    "Automatix integrates AI into small and medium-sized businesses — from trades, construction and home services to offices and clinics. We automate the back office, build custom AI tools, answer every lead, and get you found online, so you grow faster, save money, and focus on the work you do best.",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.automatix.ai").replace(/\/$/, ""),
-  email: "hello@automatix.ai",
+    "Metron integrates AI into small and medium-sized businesses — from trades, construction and home services to offices and clinics. We automate the back office, build custom AI tools, answer every lead, and get you found online, so you grow faster, save money, and focus on the work you do best.",
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.metron.ai").replace(/\/$/, ""),
+  email: "hello@metron.ai",
   phone: "+1 (347) 674-1110" as string, // leave empty to omit from schema
   founded: "2024",
   areaServed: "United States",
   // Public profiles strengthen entity recognition in Google + AI answer engines.
   sameAs: [] as string[], // e.g. ["https://www.linkedin.com/company/…", "https://x.com/…"]
   author: {
-    name: "Automatix Team",
+    name: "Metron Team",
     role: "AI Automation Specialists",
   },
   bookingUrl: "/contact",

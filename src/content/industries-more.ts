@@ -8,7 +8,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "construction",
     name: "Construction",
     audience: "construction companies",
-    metaTitle: "AI Automation for Construction Companies | Automatix",
+    metaTitle: "AI Automation for Construction Companies | Metron",
     metaDescription:
       "AI automation for contractors: faster bid follow-up, automated daily logs, change-order and invoice paperwork, sub coordination and 24/7 lead intake.",
     headline: "AI Automation for Construction Companies: Less Paperwork, More Building",
@@ -110,7 +110,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "painting",
     name: "Painting",
     audience: "painting contractors",
-    metaTitle: "AI Automation for Painting Contractors | Automatix",
+    metaTitle: "AI Automation for Painting Contractors | Metron",
     metaDescription:
       "AI receptionists and estimate follow-up for painting contractors. Book more estimates, close more quotes, and fill slow seasons without adding office staff.",
     headline: "AI Automation for Painting Contractors: Book More Estimates, Close More Jobs",
@@ -211,7 +211,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "garage-door",
     name: "Garage Door",
     audience: "garage door companies",
-    metaTitle: "AI Automation for Garage Door Companies | Automatix",
+    metaTitle: "AI Automation for Garage Door Companies | Metron",
     metaDescription:
       "AI receptionists for garage door companies that answer urgent calls 24/7, book repairs into your software and follow up on new door quotes automatically.",
     headline: "AI Automation for Garage Door Companies: Answer Every Stuck-Door Call",
@@ -312,7 +312,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "pool-service",
     name: "Pool Service",
     audience: "pool service companies",
-    metaTitle: "AI Automation for Pool Service Companies | Automatix",
+    metaTitle: "AI Automation for Pool Service Companies | Metron",
     metaDescription:
       "AI automation for pool service companies: answer calls, book openings and repairs, send service reports and automate billing so routes run without office chaos.",
     headline: "AI Automation for Pool Service Companies: Smoother Routes, Faster Billing",
@@ -413,7 +413,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "moving",
     name: "Moving",
     audience: "moving companies",
-    metaTitle: "AI Automation for Moving Companies | Automatix",
+    metaTitle: "AI Automation for Moving Companies | Metron",
     metaDescription:
       "AI automation for movers: answer quote requests instantly, run virtual survey booking, follow up on estimates and confirm moves so fewer leads book elsewhere.",
     headline: "AI Automation for Moving Companies: Win the Quote Before Your Competitors Call Back",
@@ -514,7 +514,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "junk-removal",
     name: "Junk Removal",
     audience: "junk removal companies",
-    metaTitle: "AI Automation for Junk Removal Companies | Automatix",
+    metaTitle: "AI Automation for Junk Removal Companies | Metron",
     metaDescription:
       "AI automation for junk removal: answer calls 24/7, quote from customer photos, book pickups, route trucks and collect reviews, all without adding office staff.",
     headline: "AI Automation for Junk Removal Companies: Book More Pickups, Spend Less Time on the Phone",
@@ -615,7 +615,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "trucking-logistics",
     name: "Trucking & Logistics",
     audience: "trucking and logistics companies",
-    metaTitle: "AI Automation for Trucking & Logistics | Automatix",
+    metaTitle: "AI Automation for Trucking & Logistics | Metron",
     metaDescription:
       "AI automation for trucking companies: process rate cons and PODs, speed up invoicing, automate check calls and driver paperwork, and connect TMS and ELD data.",
     headline: "AI Automation for Trucking and Logistics: Cut the Paperwork, Get Paid Faster",
@@ -718,7 +718,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "manufacturing",
     name: "Manufacturing",
     audience: "small manufacturers",
-    metaTitle: "AI Automation for Small Manufacturers | Automatix",
+    metaTitle: "AI Automation for Small Manufacturers | Metron",
     metaDescription:
       "AI automation for small manufacturers: faster quoting, order entry from emails and POs, inventory alerts, production reporting and connected ERP and accounting.",
     headline: "AI Automation for Small Manufacturers: Quote Faster, Enter Less, See More",
@@ -819,7 +819,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "property-management",
     name: "Property Management",
     audience: "property management companies",
-    metaTitle: "AI Automation for Property Management | Automatix",
+    metaTitle: "AI Automation for Property Management | Metron",
     metaDescription:
       "AI for property managers: answer leasing and tenant calls 24/7, triage maintenance requests, and automate rent reminders and owner reports in your software.",
     headline: "AI Automation for Property Management: Fewer Calls, Faster Maintenance, Happier Owners",
@@ -920,7 +920,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "accounting-firms",
     name: "Accounting",
     audience: "accounting and bookkeeping firms",
-    metaTitle: "AI Automation for Accounting Firms | Automatix",
+    metaTitle: "AI Automation for Accounting Firms | Metron",
     metaDescription:
       "AI automation for accounting and bookkeeping firms: chase client documents, sort uploads, draft client emails and get through tax season with less overtime.",
     headline: "AI Automation for Accounting and Bookkeeping Firms: Less Chasing, More Advising",
@@ -1021,7 +1021,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "insurance-agencies",
     name: "Insurance",
     audience: "independent insurance agencies",
-    metaTitle: "AI Automation for Insurance Agencies | Automatix",
+    metaTitle: "AI Automation for Insurance Agencies | Metron",
     metaDescription:
       "AI automation for independent insurance agencies: respond to quote requests fast, collect renewal info, process service requests and cut data entry in your AMS.",
     headline: "AI Automation for Insurance Agencies: Faster Quotes, Smoother Renewals",
@@ -1122,7 +1122,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     slug: "restaurants",
     name: "Restaurants",
     audience: "restaurants",
-    metaTitle: "AI Automation for Restaurants | Automatix",
+    metaTitle: "AI Automation for Restaurants | Metron",
     metaDescription:
       "AI for restaurants: answer calls and take reservations, handle catering inquiries, automate supplier invoice entry and get more reviews without extra staff.",
     headline: "AI Automation for Restaurants: Answer Every Call, Simplify the Back Office",

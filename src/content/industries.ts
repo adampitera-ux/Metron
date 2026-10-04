@@ -9,7 +9,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "hvac",
     name: "HVAC",
     audience: "HVAC companies",
-    metaTitle: "AI Automation for HVAC Companies | Automatix",
+    metaTitle: "AI Automation for HVAC Companies | Metron",
     metaDescription:
       "AI receptionists, missed-call text-back and dispatch automation for HVAC companies. Book more jobs during heat waves and cold snaps without hiring more CSRs.",
     headline: "AI Automation for HVAC Companies: Book Every Call, Even in Peak Season",
@@ -115,7 +115,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "plumbing",
     name: "Plumbing",
     audience: "plumbing companies",
-    metaTitle: "AI Automation for Plumbing Companies | Automatix",
+    metaTitle: "AI Automation for Plumbing Companies | Metron",
     metaDescription:
       "AI receptionists for plumbers that answer emergency calls 24/7, book jobs into your software and follow up on quotes, so fewer leaks turn into lost revenue.",
     headline: "AI Receptionist and Automation for Plumbers Who Can't Stop to Answer the Phone",
@@ -216,7 +216,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "electrical",
     name: "Electrical",
     audience: "electrical contractors",
-    metaTitle: "AI Automation for Electrical Contractors | Automatix",
+    metaTitle: "AI Automation for Electrical Contractors | Metron",
     metaDescription:
       "AI automation for electricians: answer every call, qualify panel upgrade and EV charger leads, book estimates and follow up on bids without adding office staff.",
     headline: "AI Automation for Electricians: Qualify Leads and Book Estimates Automatically",
@@ -317,7 +317,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "roofing",
     name: "Roofing",
     audience: "roofing companies",
-    metaTitle: "AI Automation for Roofing Companies | Automatix",
+    metaTitle: "AI Automation for Roofing Companies | Metron",
     metaDescription:
       "AI automation for roofers: instant lead response, inspection booking after storms, estimate follow-up and insurance-claim updates that keep homeowners informed.",
     headline: "AI Automation for Roofing Companies: Respond First, Book More Inspections",
@@ -423,7 +423,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "landscaping",
     name: "Landscaping",
     audience: "landscaping companies",
-    metaTitle: "AI Automation for Landscaping Companies | Automatix",
+    metaTitle: "AI Automation for Landscaping Companies | Metron",
     metaDescription:
       "AI automation for landscapers: answer quote requests fast, book estimates, renew seasonal contracts and upsell services while your crews stay in the field.",
     headline: "AI Automation for Landscaping Companies: Fill the Route Without Living on the Phone",
@@ -524,7 +524,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "cleaning-services",
     name: "Cleaning Services",
     audience: "cleaning companies",
-    metaTitle: "AI Automation for Cleaning Companies | Automatix",
+    metaTitle: "AI Automation for Cleaning Companies | Metron",
     metaDescription:
       "AI automation for cleaning companies: instant quotes, online booking, recurring-client follow-up, visit reminders and review requests to keep schedules full.",
     headline: "AI Automation for Cleaning Companies: Quote, Book and Rebook on Autopilot",
@@ -625,7 +625,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "pest-control",
     name: "Pest Control",
     audience: "pest control companies",
-    metaTitle: "AI Automation for Pest Control Companies | Automatix",
+    metaTitle: "AI Automation for Pest Control Companies | Metron",
     metaDescription:
       "AI automation for pest control: answer calls 24/7, book inspections, turn one-time treatments into recurring plans and cut cancellations with smart follow-up.",
     headline: "AI Automation for Pest Control: Turn Urgent Calls Into Recurring Plans",
@@ -726,7 +726,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "dental",
     name: "Dental",
     audience: "dental practices",
-    metaTitle: "AI Automation for Dental Practices | Automatix",
+    metaTitle: "AI Automation for Dental Practices | Metron",
     metaDescription:
       "AI automation for dental offices: answer calls, book new patients, run recall and reactivation, gather insurance details and cut no-shows with smart reminders.",
     headline: "AI Automation for Dental Practices: Fuller Schedules, Lighter Front Desk",
@@ -840,7 +840,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "law-firms",
     name: "Law Firms",
     audience: "law firms",
-    metaTitle: "AI Automation for Law Firms | Automatix",
+    metaTitle: "AI Automation for Law Firms | Metron",
     metaDescription:
       "AI automation for small law firms: 24/7 intake, lead qualification, conflict-check data gathering, consultation scheduling and follow-up built for ethics rules.",
     headline: "AI Automation for Law Firms: Faster Intake, Fewer Lost Consultations",
@@ -938,7 +938,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "real-estate",
     name: "Real Estate",
     audience: "real estate agents and teams",
-    metaTitle: "AI Automation for Real Estate Agents | Automatix",
+    metaTitle: "AI Automation for Real Estate Agents | Metron",
     metaDescription:
       "AI automation for real estate agents and teams: instant lead response, showing scheduling, long-term nurture and CRM updates so no buyer or seller slips away.",
     headline: "AI Automation for Real Estate Agents: Respond Instantly, Nurture Forever",
@@ -1039,7 +1039,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "auto-repair",
     name: "Auto Repair",
     audience: "auto repair shops",
-    metaTitle: "AI Automation for Auto Repair Shops | Automatix",
+    metaTitle: "AI Automation for Auto Repair Shops | Metron",
     metaDescription:
       "AI automation for auto repair shops: answer calls while advisors are busy, book appointments, follow up on declined work and send service reminders for you.",
     headline: "AI Automation for Auto Repair Shops: Keep Bays Full Without Tying Up Advisors",
@@ -1133,7 +1133,7 @@ const BASE_INDUSTRIES: Industry[] = [
     slug: "med-spas",
     name: "Med Spas",
     audience: "med spas",
-    metaTitle: "AI Automation for Med Spas | Automatix",
+    metaTitle: "AI Automation for Med Spas | Metron",
     metaDescription:
       "AI automation for med spas: answer inquiries 24/7, book consultations, send treatment reminders, rebook Botox and filler clients and cut no-shows automatically.",
     headline: "AI Automation for Med Spas: Book More Consultations and Rebook Every Client",

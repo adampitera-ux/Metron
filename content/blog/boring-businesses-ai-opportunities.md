@@ -22,7 +22,7 @@ faqs:
   - q: "Which boring business benefits most from AI?"
     a: "It depends on where each one leaks money. Emergency businesses like towing, locksmiths and garage doors gain the most from instant call answering. Recurring businesses like pest control, pool service and self-storage gain the most from automated reminders, renewals and billing."
   - q: "Is AI expensive for a small service business?"
-    a: "It doesn't have to be. Many first automations, like missed-call text-back or review requests, use tools you may already pay for. Done-for-you plans from agencies like Automatix start at $900 a month, and a good first project is chosen so it can pay for itself in recovered jobs or saved hours."
+    a: "It doesn't have to be. Many first automations, like missed-call text-back or review requests, use tools you may already pay for. Done-for-you plans from agencies like Metron start at $900 a month, and a good first project is chosen so it can pay for itself in recovered jobs or saved hours."
   - q: "Will customers be put off by talking to AI?"
     a: "Many customers care more about getting a fast, accurate answer than about who gives it. A well-set-up AI receptionist sounds natural, answers common questions and hands off to a person when needed. Being upfront that it's an assistant usually goes over fine."
   - q: "Can I use AI if I'm buying one of these businesses?"

@@ -14,7 +14,7 @@ export const metadata = pageMetadata({
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 export default function FaqPage() {
-  const groups = [{ category: "About Automatix", items: HOME_FAQS }, ...GENERAL_FAQS];
+  const groups = [{ category: "About Metron", items: HOME_FAQS }, ...GENERAL_FAQS];
   return (
     <>
       {/* one FAQPage schema for the whole page */}

@@ -1,8 +1,8 @@
-# Automatix — SEO, AEO & GEO Growth Plan
+# Metron — SEO, AEO & GEO Growth Plan
 
 **Owner:** Founder / Marketing lead
 **Last updated:** 2026-10-04
-**Scope:** the Automatix website (Next.js 16 App Router), editorial program, off-site entity building, local presence, measurement, and how organic search works alongside Google Ads
+**Scope:** the Metron website (Next.js 16 App Router), editorial program, off-site entity building, local presence, measurement, and how organic search works alongside Google Ads
 **Planning horizon:** 12 months, with a detailed 90-day roadmap
 
 > **Ground rule for this document:** nobody — not us, not any agency, not any tool vendor — can guarantee a Google ranking or a citation inside ChatGPT, Perplexity, Gemini, Claude, Copilot or Google AI Overviews. Search engines and AI providers do not publish their source-selection logic in full. This plan separates **what is publicly documented** from **what is reasonable inference**, and it optimizes for what we control: being the clearest, most trustworthy, most consistently described answer to small-business owners' questions about using AI in their operations.
@@ -13,7 +13,7 @@
 
 ### 1.1 The goal
 
-Make Automatix the business that search engines and AI assistants surface when the owner or operator of a small or medium-sized business asks some version of:
+Make Metron the business that search engines and AI assistants surface when the owner or operator of a small or medium-sized business asks some version of:
 
 - "How do I use AI in my business?" / "Who can integrate AI into my company?"
 - "How do I automate invoicing, scheduling, data entry and paperwork?"
@@ -23,17 +23,17 @@ Make Automatix the business that search engines and AI assistants surface when t
 
 ### 1.2 The strategy in one paragraph
 
-We win by (1) publishing the most practical, operator-level content on the web about **using AI to run a small business** — back office, custom software, integrations, customer service, sales follow-up and industry playbooks — written for owners of "boring," essential businesses who are skeptical and short on time; (2) keeping a tightly structured site where every page answers one question and links to its neighbors (services ↔ industries ↔ blog categories ↔ glossary ↔ tools ↔ company facts); (3) making the Automatix *entity* unambiguous across the web; (4) earning third-party mentions in trade media, associations, podcasts, partner directories and review sites; (5) measuring Google, Bing and AI-assistant visibility directly; and (6) running Google Ads on separate, noindexed landing pages with shared conversion tracking so paid and organic reinforce each other (§13).
+We win by (1) publishing the most practical, operator-level content on the web about **using AI to run a small business** — back office, custom software, integrations, customer service, sales follow-up and industry playbooks — written for owners of "boring," essential businesses who are skeptical and short on time; (2) keeping a tightly structured site where every page answers one question and links to its neighbors (services ↔ industries ↔ blog categories ↔ glossary ↔ tools ↔ company facts); (3) making the Metron *entity* unambiguous across the web; (4) earning third-party mentions in trade media, associations, podcasts, partner directories and review sites; (5) measuring Google, Bing and AI-assistant visibility directly; and (6) running Google Ads on separate, noindexed landing pages with shared conversion tracking so paid and organic reinforce each other (§13).
 
 ### 1.3 What SEO, AEO and GEO mean *for this plan*
 
 AEO and GEO are **how our own site gets found and cited** — not what our blog is about. Roughly 1% of our editorial topics touch AEO/GEO or Google Ads; the rest is AI for business operations.
 
-| Discipline | What it targets for Automatix | Primary success signal |
+| Discipline | What it targets for Metron | Primary success signal |
 |---|---|---|
 | **SEO** | Ranking our service, industry, category and blog pages in Google/Bing organic results | Impressions, rankings, organic clicks, audit bookings |
 | **AEO** (answer engine optimization) | Our pages being the extracted answer: featured snippets, People Also Ask, AI Overviews | Snippet/AI Overview presence for target queries |
-| **GEO** (generative engine optimization) | Automatix being mentioned, cited or recommended inside ChatGPT, Perplexity, Gemini, Claude and Copilot answers | Mentions + citations across a fixed monthly prompt panel; AI-referral sessions |
+| **GEO** (generative engine optimization) | Metron being mentioned, cited or recommended inside ChatGPT, Perplexity, Gemini, Claude and Copilot answers | Mentions + citations across a fixed monthly prompt panel; AI-referral sessions |
 
 ### 1.4 How AI answer engines choose sources — known vs. inferred
 
@@ -76,7 +76,7 @@ AEO and GEO are **how our own site gets found and cited** — not what our blog 
 
 ### 2.1 Who we are
 
-Automatix is the **AI integration agency for small and medium-sized businesses** of every kind — mostly blue-collar, trades and "boring" essential businesses (home services, construction, trucking, manufacturing, cleaning, auto, property management), but casting a wide net to offices, clinics, firms, restaurants, retail, e-commerce and wholesale. We integrate AI anywhere it saves money or time:
+Metron is the **AI integration agency for small and medium-sized businesses** of every kind — mostly blue-collar, trades and "boring" essential businesses (home services, construction, trucking, manufacturing, cleaning, auto, property management), but casting a wide net to offices, clinics, firms, restaurants, retail, e-commerce and wholesale. We integrate AI anywhere it saves money or time:
 
 - **Back-office and admin automation** — invoicing, payment reminders, data entry, document processing, scheduling, bookkeeping prep
 - **Custom AI software and internal tools** — quoting calculators, dashboards, portals, internal assistants trained on SOPs
@@ -127,7 +127,7 @@ Measured by count of **new posts** over 12 months (the calendar in §6.3 follows
 
 ### 3.1 Why entity work matters
 
-Search engines and LLMs build an internal picture of "who is Automatix." The word "Automatix" is used by unrelated products and businesses, so systems may merge or confuse us. The defense is **disambiguation through consistency**: same name, same one-line description, same service area, same founder names, same logo and same links everywhere.
+Search engines and LLMs build an internal picture of "who is Metron." The word "Metron" is used by unrelated products and businesses, so systems may merge or confuse us. The defense is **disambiguation through consistency**: same name, same one-line description, same service area, same founder names, same logo and same links everywhere.
 
 ### 3.2 Canonical brand facts (use verbatim everywhere)
 
@@ -135,10 +135,10 @@ The on-site source of truth is **`/company`** (Company Facts page, `AboutPage` s
 
 | Field | Canonical value |
 |---|---|
-| Brand name | Automatix |
-| Disambiguator / tagline | "Automatix — The AI Integration Agency for Small & Medium Businesses" |
-| One-line description (≤160 chars) | "Automatix integrates AI into small and medium-sized businesses — back-office automation, custom AI software, integrations, AI receptionists and follow-up." |
-| Short description (~50 words) | "Automatix is a done-for-you AI integration agency for small and medium-sized businesses, especially trades, home services, construction, logistics and manufacturing. We automate back-office work, build custom AI tools, connect existing software, answer calls and follow up on leads. Plans from $900/month; every engagement starts with a free AI audit." |
+| Brand name | Metron |
+| Disambiguator / tagline | "Metron — The AI Integration Agency for Small & Medium Businesses" |
+| One-line description (≤160 chars) | "Metron integrates AI into small and medium-sized businesses — back-office automation, custom AI software, integrations, AI receptionists and follow-up." |
+| Short description (~50 words) | "Metron is a done-for-you AI integration agency for small and medium-sized businesses, especially trades, home services, construction, logistics and manufacturing. We automate back-office work, build custom AI tools, connect existing software, answer calls and follow up on leads. Plans from $900/month; every engagement starts with a free AI audit." |
 | Founded / founders | Fill in once, never vary; each founder has a LinkedIn profile and an on-site author page |
 | Service area | Per `SITE.areaServed` (remote delivery). Never use a virtual office or P.O. box as a Google Business Profile address. |
 | Phone / email | One primary number and `hello@[domain]`, identical in schema, footer, profiles |
@@ -149,7 +149,7 @@ The on-site source of truth is **`/company`** (Company Facts page, `AboutPage` s
 ### 3.3 On-site entity implementation
 
 - **Organization** JSON-LD on every page (root layout) with `@id: https://[domain]/#organization`, `name`, `alternateName`, `url`, `logo`, `description`, `founder`, `areaServed`, `contactPoint`, `sameAs`.
-- `/company` is written so an LLM answering "What is Automatix?" gets it right from that page alone. Link to it from the footer, `/about`, `llms.txt` and every off-site profile's "more info" field where possible.
+- `/company` is written so an LLM answering "What is Metron?" gets it right from that page alone. Link to it from the footer, `/about`, `llms.txt` and every off-site profile's "more info" field where possible.
 - **Author pages** with `Person` schema, bio, credentials and `sameAs` to LinkedIn (to build).
 
 ### 3.4 Profiles (sameAs targets)
@@ -164,7 +164,7 @@ The on-site source of truth is **`/company`** (Company Facts page, `AboutPage` s
 - [ ] Description identical (or a strict subset) on site, `/company`, LinkedIn, Clutch, G2, GBP, YouTube, Crunchbase
 - [ ] Phone, email, URL identical; no tracking numbers in citations
 - [ ] Every profile links to the homepage; homepage `sameAs` links to every profile
-- [ ] Search "Automatix" in Google, Bing, ChatGPT and Perplexity; correct anything that conflates us with another "Automatix" or describes the old positioning
+- [ ] Search "Metron" in Google, Bing, ChatGPT and Perplexity; correct anything that conflates us with another "Metron" or describes the old positioning
 
 ---
 
@@ -479,7 +479,7 @@ Only where we have clients, staff or partnerships in that market, with genuinely
 
 ### 6.1 Formats that earn citations and links
 
-| Format | Why it works | Examples for Automatix |
+| Format | Why it works | Examples for Metron |
 |---|---|---|
 | **Industry playbooks** | Specific to the reader's world; easy for assistants to match to "AI for X" prompts | "AI for Staffing Agencies: Screening, Shift Fill and Timesheets" |
 | **Cost guides** | "How much does X cost" is a top commercial question; owners want honest ranges and drivers | AI receptionist cost; custom software cost — ranges labeled approximate, with what drives the price |
@@ -610,7 +610,7 @@ Add ~3/month, prioritizing terms used in our posts: accounts payable automation,
 - **Honesty:** no invented statistics, studies, client names, case studies, testimonials or guaranteed outcomes. Numbers appear only as clearly labeled illustrative examples with assumptions shown, and the arithmetic must be right. "100x" in a headline is explained as leverage, not a promised result.
 - Name real software accurately; avoid specific third-party prices unless labeled approximate and dated.
 - Compliance notes where relevant, briefly, not legal advice: TCPA/A2P 10DLC for texting, HIPAA for healthcare, legal ethics for law firms, fair housing for real estate; AI drafts, a CPA or attorney reviews for finance and legal.
-- Say when Automatix is *not* the right fit ("If you send five invoices a month, your accounting software's built-in reminders are enough").
+- Say when Metron is *not* the right fit ("If you send five invoices a month, your accounting software's built-in reminders are enough").
 
 ### 7.3 AI-assisted writing policy
 
@@ -745,9 +745,9 @@ Use several platforms (Qwoted, Featured.com, Source of Sources, Help a B2B Write
 
 ### 10.6 Reddit & community participation rules
 
-- Participate as a named founder with affiliation disclosed in the profile and in any comment mentioning Automatix. Follow each subreddit's rules; many ban vendors.
+- Participate as a named founder with affiliation disclosed in the profile and in any comment mentioning Metron. Follow each subreddit's rules; many ban vendors.
 - **90/10 rule:** ≥ 90% of contributions are pure help with no link.
-- Never use multiple accounts, buy upvotes, astroturf "has anyone tried Automatix?" posts, or ask clients/staff for undisclosed praise (platform violation and an FTC endorsement-disclosure issue).
+- Never use multiple accounts, buy upvotes, astroturf "has anyone tried Metron?" posts, or ask clients/staff for undisclosed praise (platform violation and an FTC endorsement-disclosure issue).
 - Time box: 2–3 hours/week.
 
 ### 10.7 Reviews (Google if eligible, Clutch, G2)
@@ -770,7 +770,7 @@ Ask **every** client at a natural success moment — no gating by expected senti
 
 ## 11. Local SEO
 
-**Eligibility first.** A Google Business Profile requires in-person contact with customers (a staffed location or a service-area business). If Automatix serves clients entirely remotely, it may not be eligible — don't create a profile at a virtual office. Options: storefront GBP (real office clients visit), service-area GBP (we visit clients in a defined region), or no GBP and lean on LinkedIn, Clutch, G2 and Bing Places.
+**Eligibility first.** A Google Business Profile requires in-person contact with customers (a staffed location or a service-area business). If Metron serves clients entirely remotely, it may not be eligible — don't create a profile at a virtual office. Options: storefront GBP (real office clients visit), service-area GBP (we visit clients in a defined region), or no GBP and lean on LinkedIn, Clutch, G2 and Bing Places.
 
 If eligible: real business name only (no keywords), most accurate primary category, services listed to match our 8 services, canonical description, consistent phone, website link with UTM (`utm_source=google&utm_medium=organic&utm_campaign=gbp`), real photos, a post per week, reviews per §10.7, mirrored to Bing Places and Apple Business Connect. Keep NAP consistent on a small set of quality citations (BBB, chamber, Clutch, UpCity, LinkedIn, Crunchbase); avoid bulk citation services.
 
@@ -785,7 +785,7 @@ Local SEO also appears as client-facing *content* — the Google Business Profil
 | Layer | KPI | Source | 12-month direction |
 |---|---|---|---|
 | Visibility (search) | Impressions and positions for the §4.3 query set, by cluster | GSC, Bing WMT | Top-10 for ≥ 40% of target queries; industry matrix growing month over month |
-| Visibility (AI) | AI share of voice: % of panel prompts where Automatix is mentioned or cited, per engine | Prompt panel (§12.4) | Measurable presence on ≥ 20% of panel prompts by M12 (baseline ~0) — directional, not a promise |
+| Visibility (AI) | AI share of voice: % of panel prompts where Metron is mentioned or cited, per engine | Prompt panel (§12.4) | Measurable presence on ≥ 20% of panel prompts by M12 (baseline ~0) — directional, not a promise |
 | Traffic | Organic sessions by category hub; AI-referral sessions | GA4 | Growth trend; Industry Playbooks and Back Office the largest |
 | Engagement | Tool completions, scroll depth on pillar pages | GA4 events | — |
 | Conversion | Free AI audit requests (`generate_lead`) and calls (`click_to_call`) by channel: organic, AI referral, paid, direct, referral | GA4 + CRM | Primary business KPI |
@@ -810,7 +810,7 @@ Caveats: many AI-driven visits arrive as Direct; Google AI Overviews/AI Mode cli
 
 ### 12.4 AI visibility prompt panel (50 prompts, monthly)
 
-- **Mix:** 15 commercial ("who can automate the back office for a small HVAC company?"), 15 informational in our operations clusters ("how do I automate invoice reminders from QuickBooks?"), 12 industry prompt-style, 3 local/regional, 5 brand ("What is Automatix?", "Is Automatix legit?"). At most 3 prompts about AEO/GEO.
+- **Mix:** 15 commercial ("who can automate the back office for a small HVAC company?"), 15 informational in our operations clusters ("how do I automate invoice reminders from QuickBooks?"), 12 industry prompt-style, 3 local/regional, 5 brand ("What is Metron?", "Is Metron legit?"). At most 3 prompts about AEO/GEO.
 - **Engines:** ChatGPT (search on), Perplexity, Gemini, Claude (web search on), Copilot, Google AI Overviews/AI Mode — logged-out or fresh sessions, US location, no memory.
 - Run commercial prompts 3× each (answers vary) and record the share of runs where we appear.
 - **Record:** mentioned, cited with link, position, our URL cited, competitors named, sources the engine cited (these become outreach targets), and accuracy of our description — especially whether it reflects the *current* positioning, not the old receptionist/AEO framing.
@@ -836,7 +836,7 @@ Organic search, AI answers and Google Ads are three ways the same owner finds us
 | **SEO** | Win the much larger set of research questions ("how do I automate invoicing," "ai for staffing agencies") and build a durable, compounding lead source | Months | Services, industries, category hubs, blog, tools |
 | **AEO/GEO** | Make sure that when an owner asks Google AI or ChatGPT, our pages are among the sources and our brand is described correctly | Months, uneven | Same organic pages + `/company`, entity profiles |
 
-Organic content and AI-answer visibility build familiarity and trust; that tends to show up as **branded searches** ("Automatix AI agency") and direct visits, which are cheaper to convert — whether the click comes from organic or a brand ad. We treat rising brand-search impressions in GSC and Ads as a lagging indicator of organic and AI-answer work.
+Organic content and AI-answer visibility build familiarity and trust; that tends to show up as **branded searches** ("Metron AI agency") and direct visits, which are cheaper to convert — whether the click comes from organic or a brand ad. We treat rising brand-search impressions in GSC and Ads as a lagging indicator of organic and AI-answer work.
 
 ### 13.2 Separate pages, on purpose
 
@@ -946,7 +946,7 @@ Form fills aren't customers. Mark leads **Qualified** and **Won** in the CRM usi
 | Treating llms.txt as a ranking factor | Unconfirmed by providers | Low-cost hygiene only |
 | Accidentally blocking AI crawlers or AdsBot at the CDN | Invisible in AI answers; LP evaluation fails | Monthly log check |
 | Cloaking; link schemes; Reddit astroturfing | Spam policies, bans, FTC disclosure issues | Earn links via data, tools, PR; §10.6 rules |
-| Entity confusion with other "Automatix" brands or our old positioning | AI misdescribes us | Disambiguator, `/company`, quarterly brand prompts |
+| Entity confusion with other "Metron" brands or our old positioning | AI misdescribes us | Disambiguator, `/company`, quarterly brand prompts |
 | Compliance errors in content (TCPA, HIPAA, legal ethics) | Legal risk for readers and us | Brief, accurate notes; qualified review for sensitive posts |
 
 ---
@@ -1011,7 +1011,7 @@ Rules: disallow `/api/` and tool-result parameter URLs; do **not** disallow `/lp
 | P13 | How can AI help a boring business like a septic or towing company? | Informational | K6 |
 | P14 | I run a 6-truck HVAC company and my office is buried in paperwork. What should I automate? | Industry | K7 |
 | P15 | How can a small wholesale distributor automate order entry from emailed POs? | Industry | K7 |
-| P16 | What is Automatix and what does it cost? | Brand | — |
+| P16 | What is Metron and what does it cost? | Brand | — |
 
 **Monthly summary:** per engine — prompts run, mentioned %, cited-with-link %, change vs last month, top competitor, top 3 sources cited, accuracy issues (including any description of us that reflects the old positioning).
 

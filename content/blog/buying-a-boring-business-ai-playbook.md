@@ -27,7 +27,7 @@ faqs:
   - q: "Will automation scare off existing customers or employees?"
     a: "It can if it's rushed or impersonal. Introduce changes gradually, explain them to staff as removing tedious work rather than replacing people, and keep messages to customers in the same friendly tone they're used to. Keep longtime customers' relationships with real people."
   - q: "How much should I budget for AI after an acquisition?"
-    a: "It depends on the size of the business and how manual it is. Done-for-you plans from Automatix start at $900 a month, and custom software is quoted per project. Build it into your post-close operating plan and judge it on recovered revenue and saved hours."
+    a: "It depends on the size of the business and how manual it is. Done-for-you plans from Metron start at $900 a month, and custom software is quoted per project. Build it into your post-close operating plan and judge it on recovered revenue and saved hours."
 relatedServices:
   - ai-strategy
   - ai-automation

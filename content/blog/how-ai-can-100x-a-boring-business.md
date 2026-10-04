@@ -189,7 +189,7 @@ The pacing matters. A team that's handed ten new tools in a week will likely ign
 
 **If you enjoy tinkering and have spare evenings, you can set up simple pieces yourself; if your time is better spent running jobs, a done-for-you partner is often faster and, once you count your time, cheaper overall.** The real cost of DIY is your hours and the half-finished setups that never get maintained.
 
-A reasonable test: if you've already tried a tool, set it up halfway and abandoned it, you probably need help. That's exactly the gap we fill. Automatix plans start at $900 a month, with custom software quoted per project, and you can see what's included on our pricing page.
+A reasonable test: if you've already tried a tool, set it up halfway and abandoned it, you probably need help. That's exactly the gap we fill. Metron plans start at $900 a month, with custom software quoted per project, and you can see what's included on our pricing page.
 
 ## What should you do next?
 

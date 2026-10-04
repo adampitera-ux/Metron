@@ -22,7 +22,7 @@ export default function BlogIndex() {
     <>
       <JsonLd
         data={itemListSchema(
-          "Automatix blog",
+          "Metron blog",
           posts.map((p) => ({ name: p.title, path: `/blog/${p.slug}` })),
         )}
       />

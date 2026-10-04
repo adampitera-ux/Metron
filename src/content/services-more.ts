@@ -8,7 +8,7 @@ export const MORE_SERVICES: Service[] = [
     icon: "flow",
     summary:
       "We build custom internal tools, client portals, quoting calculators, dashboards, and AI assistants that fit how your business actually works.",
-    metaTitle: "Custom AI Software & Internal Tools | Automatix",
+    metaTitle: "Custom AI Software & Internal Tools | Metron",
     metaDescription:
       "Custom AI software for small businesses: internal tools, client portals, quoting calculators, dashboards, and AI assistants built around how your team works.",
     headline: "Custom AI Software Built Around How Your Business Works",
@@ -132,7 +132,7 @@ export const MORE_SERVICES: Service[] = [
     icon: "bolt",
     summary:
       "We audit your business, find where AI will save the most time and money, and integrate it into the software and routines your team already uses.",
-    metaTitle: "AI Strategy & Integration for Small Business | Automatix",
+    metaTitle: "AI Strategy & Integration for Small Business | Metron",
     metaDescription:
       "AI strategy and integration for small businesses: a practical AI audit, a prioritized roadmap, the right tools, team training, and AI built into your software.",
     headline: "A Practical AI Plan, Integrated Into the Tools You Already Use",

@@ -30,10 +30,10 @@ export function pageMetadata({
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
-  /** Use the title as-is instead of applying the "| Automatix" template. */
+  /** Use the title as-is instead of applying the "| Metron" template. */
   absoluteTitle?: boolean;
 }): Metadata {
-  const image = ogImageUrl(title.replace(/\s*\|\s*Automatix$/, ""), kicker);
+  const image = ogImageUrl(title.replace(/\s*\|\s*Metron$/, ""), kicker);
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,

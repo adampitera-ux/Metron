@@ -12,7 +12,7 @@ export type Check = { id: string; group: string; label: string; status: CheckSta
 const AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "PerplexityBot", "ClaudeBot", "Google-Extended", "Bingbot"];
 const TIMEOUT_MS = 8000;
 const MAX_BYTES = 2_000_000;
-const UA = "Mozilla/5.0 (compatible; AutomatixReadinessChecker/1.0; +https://www.automatix.ai/tools/ai-search-readiness-checker)";
+const UA = "Mozilla/5.0 (compatible; MetronReadinessChecker/1.0; +https://www.metron.ai/tools/ai-search-readiness-checker)";
 
 /* ---------------- SSRF protection ---------------- */
 

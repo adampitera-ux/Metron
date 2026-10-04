@@ -9,7 +9,7 @@ const BASE_SERVICES: Service[] = [
     icon: "flow",
     summary:
       "We automate the repetitive back-office work in your business, from scheduling and invoicing to data entry and reporting, so your team can focus on customers.",
-    metaTitle: "AI Workflow & Back-Office Automation | Automatix",
+    metaTitle: "AI Workflow & Back-Office Automation | Metron",
     metaDescription:
       "AI workflow automation for small businesses: scheduling, invoicing, data entry, and reporting handled automatically so your team can focus on paying work.",
     headline: "AI Back-Office Automation That Gives Owners Their Time Back",
@@ -129,7 +129,7 @@ const BASE_SERVICES: Service[] = [
     icon: "chat",
     summary:
       "An AI receptionist answers calls and texts around the clock, and missed-call text-back replies to callers you could not reach so leads do not go to a competitor.",
-    metaTitle: "AI Receptionist & Missed-Call Text-Back | Automatix",
+    metaTitle: "AI Receptionist & Missed-Call Text-Back | Metron",
     metaDescription:
       "An AI receptionist that answers calls, books appointments, and texts back missed callers 24/7, so local service businesses stop losing leads to voicemail.",
     headline: "Never Miss Another Call With an AI Receptionist",
@@ -248,7 +248,7 @@ const BASE_SERVICES: Service[] = [
     icon: "bolt",
     summary:
       "We respond to new leads in minutes, follow up automatically until they book, and keep your CRM organized without manual data entry.",
-    metaTitle: "AI Lead Follow-Up & CRM Automation | Automatix",
+    metaTitle: "AI Lead Follow-Up & CRM Automation | Metron",
     metaDescription:
       "AI lead follow-up and CRM automation that responds to new inquiries fast, nurtures quotes until they book, and keeps every contact organized for your team.",
     headline: "Respond to Every Lead Fast and Follow Up Until They Book",
@@ -364,7 +364,7 @@ const BASE_SERVICES: Service[] = [
     icon: "globe",
     summary:
       "We rebuild or refresh your website so it loads fast, works on every phone, ranks locally, and turns more visitors into calls and bookings.",
-    metaTitle: "Website Refresh & Conversion Optimization | Automatix",
+    metaTitle: "Website Refresh & Conversion Optimization | Metron",
     metaDescription:
       "A website refresh for small businesses: faster load times, mobile-first design, clear calls to action, and structured content built for search and AI answers.",
     headline: "A Faster Website That Turns Visitors Into Booked Jobs",
@@ -480,7 +480,7 @@ const BASE_SERVICES: Service[] = [
     icon: "search",
     summary:
       "We make your business easier for AI assistants and answer engines like ChatGPT, Perplexity, and Google AI Overviews to find, understand, and cite.",
-    metaTitle: "AEO & GEO: AI Search Optimization | Automatix",
+    metaTitle: "AEO & GEO: AI Search Optimization | Metron",
     metaDescription:
       "AEO and GEO services that help AI assistants and Google AI Overviews understand and cite your business through schema, answer-first content, and citations.",
     headline: "Get Your Business Understood and Cited by AI Search",
@@ -608,7 +608,7 @@ const BASE_SERVICES: Service[] = [
     icon: "star",
     summary:
       "We automatically ask happy customers for reviews at the right moment, help you respond to every review, and alert you to problems fast.",
-    metaTitle: "Review & Reputation Automation | Automatix",
+    metaTitle: "Review & Reputation Automation | Metron",
     metaDescription:
       "Review automation for local businesses: timely review requests after every job, AI-drafted responses, and instant alerts so you can protect your reputation.",
     headline: "Earn More Reviews Automatically and Respond to Every One",

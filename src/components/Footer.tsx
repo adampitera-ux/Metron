@@ -72,6 +72,14 @@ export default function Footer() {
               © {new Date().getFullYear()} {SITE.name}. All rights reserved.
             </p>
             <p>
+              {SITE.phone && (
+                <>
+                  <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="hover:text-orange">
+                    {SITE.phone}
+                  </a>
+                  <span className="mx-2">·</span>
+                </>
+              )}
               <a href={`mailto:${SITE.email}`} className="hover:text-orange">
                 {SITE.email}
               </a>

@@ -9,21 +9,21 @@ const REVIEWS = [
   {
     logo: { src: "/images/logos/creativedge.svg", w: 117, h: 24 },
     quote:
-      '"The creativity and AI expertise from Automatix set a new benchmark for our industry. Highly recommended!"',
+      '"The creativity and AI expertise from Metron set a new benchmark for our industry. Highly recommended!"',
     name: "Agus Blimbing",
     role: "Tech Manager",
   },
   {
     logo: { src: "/images/logos/brightnest.svg", w: 107, h: 25 },
     quote:
-      '"Automatix’s revolutionary AI approach and creative solutions elevated our project. Stellar performance!"',
+      '"Metron’s revolutionary AI approach and creative solutions elevated our project. Stellar performance!"',
     name: "Steve Kebalen",
     role: "AI Developer",
   },
   {
     logo: { src: "/images/logos/primecore.svg", w: 108, h: 23 },
     quote:
-      '"The blend of AI and creativity at Automatix transformed our vision into reality. Exceptional support!"',
+      '"The blend of AI and creativity at Metron transformed our vision into reality. Exceptional support!"',
     name: "John Kepanjen",
     role: "E-Commerce Stacks",
   },
@@ -56,7 +56,7 @@ export default function Testimonials() {
             </Reveal>
             <Reveal delay={0.18}>
               <blockquote className="h-display mt-6 text-[26px] leading-[1.45] text-fg-2 capitalize md:text-[32px]">
-                &quot;Automatix&apos;s fusion of AI and innovation set our project apart. Their solutions are second to none.&quot;
+                &quot;Metron&apos;s fusion of AI and innovation set our project apart. Their solutions are second to none.&quot;
               </blockquote>
             </Reveal>
             <Reveal delay={0.26} className="mt-[42px] flex flex-wrap items-baseline gap-x-5 gap-y-1">

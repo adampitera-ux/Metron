@@ -26,7 +26,7 @@ faqs:
     a: "Estimate monthly savings from hours saved plus revenue recovered, subtract the monthly cost of the automation, and divide any upfront setup cost by that net monthly gain to get payback in months. Use conservative assumptions and compare against a before-AI baseline. Our AI automation ROI calculator walks you through it."
   - q: "Is it cheaper to do AI automation myself?"
     a: "In software spend, usually yes. But DIY costs your time to learn tools, build workflows, fix them when they break, and keep them updated. If your time is worth more spent on sales or operations, or projects tend to stall, a done-for-you option can cost less overall."
-  - q: "What does Automatix charge?"
+  - q: "What does Metron charge?"
     a: "Our plans start at $900 a month for Standard and $1,600 a month for Enterprise, and custom software is quoted per project. We start with a free AI audit so you can see what we would build and whether it pays back before you commit to anything."
 relatedServices:
   - ai-automation
@@ -81,7 +81,7 @@ A freelancer is a good fit when you have one clearly defined job, like "when an 
 
 **Done-for-you AI agencies usually charge a monthly retainer, often from several hundred to a few thousand dollars, which covers building workflows, connecting systems, and ongoing support.** You're paying for outcomes and upkeep, not just a one-time build.
 
-To be transparent about our own pricing: Automatix plans start at **$900 a month (Standard)** and **$1,600 a month (Enterprise)**, and custom software is quoted per project. You can see what's included on our [pricing page](/pricing). We're not the cheapest option on this list, and we aren't the right choice for everyone. If you need one simple automation and enjoy setting things up, a DIY tool may be all you need.
+To be transparent about our own pricing: Metron plans start at **$900 a month (Standard)** and **$1,600 a month (Enterprise)**, and custom software is quoted per project. You can see what's included on our [pricing page](/pricing). We're not the cheapest option on this list, and we aren't the right choice for everyone. If you need one simple automation and enjoy setting things up, a DIY tool may be all you need.
 
 Where an agency earns its fee is when you need several workflows working together, like an [AI receptionist](/services/ai-receptionist) that books jobs into your scheduling software, follow-up that runs off your CRM, and invoicing that runs off your accounting system, with someone responsible for keeping it all running.
 

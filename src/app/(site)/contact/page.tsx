@@ -60,16 +60,16 @@ export default function ContactPage() {
             </div>
             <div className="rounded-[22px] border border-line bg-white p-7">
               <p className="h-display text-[22px] text-fg">Prefer to talk?</p>
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-5 space-y-4">
                 {SITE.phone && (
                   <li>
                     <a href={`tel:${SITE.phoneE164}`} className="group flex items-center gap-3.5">
                       <span className="grid size-10 shrink-0 place-items-center rounded-full bg-orange/10 text-orange">
                         <Phone className="size-[18px]" />
                       </span>
-                      <span className="flex flex-col leading-tight">
-                        <span className="text-[13px] text-muted">Call us</span>
-                        <span className="text-[19px] font-medium tracking-[0.01em] text-fg group-hover:text-orange">{SITE.phone}</span>
+                      <span className="flex min-w-0 flex-col gap-0.5 leading-tight">
+                        <span className="text-[12.5px] text-muted-2">Call us</span>
+                        <span className="text-[16.5px] font-medium text-fg transition-colors group-hover:text-orange">{SITE.phone}</span>
                       </span>
                     </a>
                   </li>
@@ -79,9 +79,9 @@ export default function ContactPage() {
                     <span className="grid size-10 shrink-0 place-items-center rounded-full bg-orange/10 text-orange">
                       <Mail className="size-[18px]" />
                     </span>
-                    <span className="flex flex-col leading-tight">
-                      <span className="text-[13px] text-muted">Email</span>
-                      <span className="text-[17px] text-fg group-hover:text-orange">{SITE.email}</span>
+                    <span className="flex min-w-0 flex-col gap-0.5 leading-tight">
+                      <span className="text-[12.5px] text-muted-2">Email</span>
+                      <span className="text-[16.5px] font-medium text-fg transition-colors group-hover:text-orange">{SITE.email}</span>
                     </span>
                   </a>
                 </li>

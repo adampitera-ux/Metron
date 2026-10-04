@@ -22,7 +22,7 @@ type Lead = {
 };
 
 /** Where lead notifications go when LEAD_NOTIFY_EMAIL isn't set. */
-const LEAD_NOTIFY_DEFAULT = "Eeharris2004@gmail.com";
+const LEAD_NOTIFY_DEFAULT = "eeharris2004@gmail.com";
 
 const hits = new Map<string, number[]>();
 function rateLimited(ip: string) {

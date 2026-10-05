@@ -9,7 +9,7 @@ export const SITE = {
   tagline: "The AI Integration Agency for Small & Medium Businesses",
   description:
     "Metron integrates AI into small and medium-sized businesses — from trades, construction and home services to offices and clinics. We automate the back office, build custom AI tools, answer every lead, and get you found online, so you grow faster, save money, and focus on the work you do best.",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.metron.ai").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.usemetron.com").replace(/\/$/, ""),
   email: "eeharris2004@gmail.com",
   phone: "(347) 674-1110" as string, // display format — leave empty to hide everywhere
   phoneE164: "+13476741110", // used for tel: links + schema

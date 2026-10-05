@@ -136,7 +136,7 @@ Say your estimator spends about 45 minutes per quote, writes 40 quotes a month, 
 | Value at $40/hour loaded cost | 20 × $40 | $800/month |
 | Value per year | $800 × 12 | $9,600/year |
 
-That doesn't count faster quotes winning more jobs, or fewer pricing mistakes. You can model your own numbers with the [AI automation ROI calculator](/tools/ai-automation-roi-calculator). At Metron, custom AI software is part of the Enterprise plan ($2,800 setup + $1,000 a month), and AI automation starts with Scale ($1,600 setup + $500 a month).
+That doesn't count faster quotes winning more jobs, or fewer pricing mistakes. You can model your own numbers with the [AI automation ROI calculator](/tools/ai-automation-roi-calculator). At Metron, custom AI software is part of the Enterprise plan ($2,800 setup + $1,000 a month), and AI automation starts with Scale ($1,700 setup + $500 a month).
 
 ## What are the risks of building custom software?
 

@@ -27,7 +27,7 @@ faqs:
   - q: "Is it cheaper to do AI automation myself?"
     a: "In software spend, usually yes. But DIY costs your time to learn tools, build workflows, fix them when they break, and keep them updated. If your time is worth more spent on sales or operations, or projects tend to stall, a done-for-you option can cost less overall."
   - q: "What does Metron charge?"
-    a: "We have four plans, each a one-time setup plus a monthly fee: Launch ($500 + $100/month), Growth ($999 + $150/month), Scale ($1,600 + $500/month) and Enterprise ($2,800 + $1,000/month). We start with a free AI audit so you can see what we would build and whether it pays back before you commit to anything."
+    a: "We have four plans, each a one-time setup plus a monthly fee: Launch ($500 + $100/month), Growth ($999 + $150/month), Scale ($1,700 + $500/month) and Enterprise ($2,800 + $1,000/month). We start with a free AI audit so you can see what we would build and whether it pays back before you commit to anything."
 relatedServices:
   - ai-automation
   - custom-ai-software
@@ -81,7 +81,7 @@ A freelancer is a good fit when you have one clearly defined job, like "when an 
 
 **Done-for-you AI agencies usually charge a monthly retainer, often from several hundred to a few thousand dollars, which covers building workflows, connecting systems, and ongoing support.** You're paying for outcomes and upkeep, not just a one-time build.
 
-To be transparent about our own pricing: Metron has four plans, each a one-time setup plus a flat monthly fee: **Launch** ($500 + $100/month) for a managed website, **Growth** ($999 + $150/month) adding full SEO, **Scale** ($1,600 + $500/month) adding AI lead capture and follow-up, and **Enterprise** ($2,800 + $1,000/month) adding custom AI software and back-office automation. You can see what's included on our [pricing page](/pricing). We're not the cheapest option on this list, and we aren't the right choice for everyone. If you need one simple automation and enjoy setting things up, a DIY tool may be all you need.
+To be transparent about our own pricing: Metron has four plans, each a one-time setup plus a flat monthly fee: **Launch** ($500 + $100/month) for a managed website, **Growth** ($999 + $150/month) adding full SEO, **Scale** ($1,700 + $500/month) adding AI lead capture and follow-up, and **Enterprise** ($2,800 + $1,000/month) adding custom AI software and back-office automation. You can see what's included on our [pricing page](/pricing). We're not the cheapest option on this list, and we aren't the right choice for everyone. If you need one simple automation and enjoy setting things up, a DIY tool may be all you need.
 
 Where an agency earns its fee is when you need several workflows working together, like an [AI receptionist](/services/ai-receptionist) that books jobs into your scheduling software, follow-up that runs off your CRM, and invoicing that runs off your accounting system, with someone responsible for keeping it all running.
 

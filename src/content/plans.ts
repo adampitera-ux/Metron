@@ -68,7 +68,7 @@ export const PLANS: Plan[] = [
     id: "scale",
     name: "Scale",
     tagline: "Turn more visitors and calls into booked jobs.",
-    setup: 1600,
+    setup: 1700,
     monthly: 500,
     monthlyLabel: "managed AI & growth",
     popular: true,

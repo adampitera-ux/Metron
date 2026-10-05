@@ -8,7 +8,7 @@ import { PLANS, usd } from "@/content/plans";
 export const metadata = pageMetadata({
   title: "Pricing — AI Automation Plans for Small Businesses",
   description:
-    "Four clear plans: Launch ($500 setup + $100/mo), Growth ($999 + $150/mo), Scale ($1,600 + $500/mo) and Enterprise ($2,800 + $1,000/mo). Websites, SEO and AI automation for small businesses.",
+    "Four clear plans: Launch ($500 setup + $100/mo), Growth ($999 + $150/mo), Scale ($1,700 + $500/mo) and Enterprise ($2,800 + $1,000/mo). Websites, SEO and AI automation for small businesses.",
   path: "/pricing",
   kicker: "Pricing",
 });

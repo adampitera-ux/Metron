@@ -21,7 +21,7 @@ faqs:
   - q: "Can an AI admin assistant replace an office manager?"
     a: "Usually not entirely. AI can take over a large share of the repetitive tasks an office manager does, such as data entry, reminders, scheduling updates, and routing emails. But office managers also handle judgment calls, vendor relationships, staff questions, and problems nobody planned for, and those still need a person."
   - q: "How much does an AI admin assistant cost compared to an employee?"
-    a: "It depends on scope, but done-for-you AI automation is typically priced as a monthly fee that is a fraction of a full-time employee's fully loaded cost. Metron's AI automation plan (Scale) is $1,600 to set up and $500 a month. An employee's true cost includes wages plus payroll taxes, benefits, training, equipment, and turnover, so compare those totals rather than the hourly wage alone."
+    a: "It depends on scope, but done-for-you AI automation is typically priced as a monthly fee that is a fraction of a full-time employee's fully loaded cost. Metron's AI automation plan (Scale) is $1,700 to set up and $500 a month. An employee's true cost includes wages plus payroll taxes, benefits, training, equipment, and turnover, so compare those totals rather than the hourly wage alone."
   - q: "What admin tasks should I automate instead of hiring for?"
     a: "Good candidates are tasks that are repetitive, high-volume, and follow clear rules: entering data from forms and invoices, sending appointment and payment reminders, answering routine questions, routing leads, and producing standard reports. If a task needs judgment every time, it is usually a better fit for a person."
   - q: "Will automating admin work mean laying off my staff?"
@@ -80,10 +80,10 @@ The table below uses **illustrative assumptions** to show the structure of the c
 |---|---|---|
 | Base pay | $20/hour × 2,080 hours = $41,600 | Not applicable |
 | Payroll taxes and benefits | Assumed 25% of pay = $10,400 | Not applicable |
-| Recruiting, training, equipment | Assumed $3,000 in year one | One-time setup: $1,600 (Metron Scale plan) |
+| Recruiting, training, equipment | Assumed $3,000 in year one | One-time setup: $1,700 (Metron Scale plan) |
 | Monthly service fee | Not applicable | $500/month × 12 = $6,000 (Metron Scale plan) |
 | Additional software subscriptions | Usually already in place | Assumed $100/month × 12 = $1,200 |
-| **Year-one total** | **$55,000** | **$8,800** |
+| **Year-one total** | **$55,000** | **$8,900** |
 | Hours available | About 40/week, minus PTO and sick days | Runs 24/7 on the tasks it's set up for |
 | Handles judgment calls | Yes | No, escalates to a person |
 

@@ -110,7 +110,7 @@ const BASE_SERVICES: Service[] = [
       },
       {
         q: "Which plan includes AI workflow automation?",
-        a: "Automations start with the Scale plan ($1,600 setup + $500/month), which covers AI lead follow-up, booking, reminders, reviews and CRM integration. The Enterprise plan ($2,800 setup + $1,000/month) adds back-office automation, custom workflows, advanced analytics and a dedicated account manager.",
+        a: "Automations start with the Scale plan ($1,700 setup + $500/month), which covers AI lead follow-up, booking, reminders, reviews and CRM integration. The Enterprise plan ($2,800 setup + $1,000/month) adds back-office automation, custom workflows, advanced analytics and a dedicated account manager.",
       },
     ],
     relatedIndustries: ["hvac", "plumbing", "law-firms", "dental", "real-estate", "auto-repair"],

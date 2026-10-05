@@ -1174,7 +1174,7 @@ export const MORE_INDUSTRIES: Industry[] = [
     ],
     exampleMath: {
       title: "Example: what catering inquiries can be worth",
-      body: "For example, if you receive 12 catering inquiries a month, book 3 today, and faster responses plus follow-up help you book 5, that is 2 extra orders a month. At an illustrative average catering order of $800, that is about $1,600 a month, or $19,200 a year. These numbers are assumptions for illustration only.",
+      body: "For example, if you receive 12 catering inquiries a month, book 3 today, and faster responses plus follow-up help you book 5, that is 2 extra orders a month. At an illustrative average catering order of $800, that is about $1,700 a month, or $19,200 a year. These numbers are assumptions for illustration only.",
     },
     tools: [
       "Toast",

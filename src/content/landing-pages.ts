@@ -233,7 +233,7 @@ export const LANDING_PAGES: LandingPage[] = [
       { q: "We use Procore / Buildertrend / JobTread. Does that work?", a: "Those platforms offer integrations and APIs we can often build around. We'll confirm what's possible with your exact setup during the free audit." },
       { q: "We're not tech people.", a: "You don't need to be. We do the setup, connect your tools and train your team on the few things that change for them." },
       { q: "Can AI really handle construction paperwork?", a: "AI is good at reading documents, pulling out key details and filing them. Anything with legal or financial consequences still gets a human review — we build that step in." },
-      { q: "What does it cost?", a: "AI automation plans start at $1,600 setup + $500/month (Scale), and custom tools are included in Enterprise ($2,800 setup + $1,000/month). The audit shows you the expected time savings before you spend anything." },
+      { q: "What does it cost?", a: "AI automation plans start at $1,700 setup + $500/month (Scale), and custom tools are included in Enterprise ($2,800 setup + $1,000/month). The audit shows you the expected time savings before you spend anything." },
     ],
   },
   {

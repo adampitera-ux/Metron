@@ -35,7 +35,7 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
     items: [
       {
         q: "How much does Metron cost?",
-        a: "Metron offers four plans, each with a one-time setup fee and a flat monthly fee: Launch ($500 setup + $100/month), Growth ($999 setup + $150/month), Scale ($1,600 setup + $500/month) and Enterprise ($2,800 setup + $1,000/month). A free AI audit and consultation is available to help you decide which plan fits your business.",
+        a: "Metron offers four plans, each with a one-time setup fee and a flat monthly fee: Launch ($500 setup + $100/month), Growth ($999 setup + $150/month), Scale ($1,700 setup + $500/month) and Enterprise ($2,800 setup + $1,000/month). A free AI audit and consultation is available to help you decide which plan fits your business.",
       },
       {
         q: "What is included in the Launch and Growth plans?",
@@ -43,7 +43,7 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
       },
       {
         q: "What is included in the Scale and Enterprise plans?",
-        a: "Scale ($1,600 setup + $500/month) adds AI lead capture and follow-up: an AI receptionist with missed-call text-back, instant lead follow-up, website chat, booking and reminders, review automation and CRM integration. Enterprise ($2,800 setup + $1,000/month) adds custom AI software, back-office automation, integrations across your tools, advanced analytics, a dedicated account manager and same-day priority support.",
+        a: "Scale ($1,700 setup + $500/month) adds AI lead capture and follow-up: an AI receptionist with missed-call text-back, instant lead follow-up, website chat, booking and reminders, review automation and CRM integration. Enterprise ($2,800 setup + $1,000/month) adds custom AI software, back-office automation, integrations across your tools, advanced analytics, a dedicated account manager and same-day priority support.",
       },
       {
         q: "Which plan is right for my business?",

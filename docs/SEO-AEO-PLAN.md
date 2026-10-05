@@ -141,14 +141,14 @@ The on-site source of truth is **`/company`** (Company Facts page, `AboutPage` s
 | Short description (~50 words) | "Metron is a done-for-you AI integration agency for small and medium-sized businesses, especially trades, home services, construction, logistics and manufacturing. We automate back-office work, build custom AI tools, connect existing software, answer calls and follow up on leads. Plans from $900/month; every engagement starts with a free AI audit." |
 | Founded / founders | Fill in once, never vary; each founder has a LinkedIn profile and an on-site author page |
 | Service area | Per `SITE.areaServed` (remote delivery). Never use a virtual office or P.O. box as a Google Business Profile address. |
-| Phone / email | One primary number and `hello@[domain]`, identical in schema, footer, profiles |
+| Phone / email | One primary number and `hello@usemetron.com`, identical in schema, footer, profiles |
 | Pricing | Standard $900/mo, Enterprise $1,600/mo, custom software quoted per project — identical on `/pricing`, `/company`, schema `Offer`, directories |
 
 **Retire** the old one-liner that described us as an AI receptionist + AEO/GEO shop on every profile where it was used.
 
 ### 3.3 On-site entity implementation
 
-- **Organization** JSON-LD on every page (root layout) with `@id: https://[domain]/#organization`, `name`, `alternateName`, `url`, `logo`, `description`, `founder`, `areaServed`, `contactPoint`, `sameAs`.
+- **Organization** JSON-LD on every page (root layout) with `@id: https://usemetron.com/#organization`, `name`, `alternateName`, `url`, `logo`, `description`, `founder`, `areaServed`, `contactPoint`, `sameAs`.
 - `/company` is written so an LLM answering "What is Metron?" gets it right from that page alone. Link to it from the footer, `/about`, `llms.txt` and every off-site profile's "more info" field where possible.
 - **Author pages** with `Person` schema, bio, credentials and `sameAs` to LinkedIn (to build).
 

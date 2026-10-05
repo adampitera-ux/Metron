@@ -83,31 +83,59 @@ export async function POST(req: Request) {
 
   const resendKey = process.env.RESEND_API_KEY;
   const notify = process.env.LEAD_NOTIFY_EMAIL || LEAD_NOTIFY_DEFAULT;
-  if (resendKey && notify) {
-    tasks.push(
-      fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({
-          from: process.env.LEAD_FROM_EMAIL || `${SITE.name} Leads <onboarding@resend.dev>`,
-          to: notify.split(",").map((s) => s.trim()),
-          reply_to: lead.email,
-          subject: `New lead: ${lead.business || lead.name}${lead.industry ? ` · ${lead.industry}` : ""}`,
-          html: leadEmailHtml(lead, payload.submitted_at),
-          text: leadEmailText(lead),
-        }),
-        signal: AbortSignal.timeout(8000),
-      })
-        .then(async (r) => {
-          if (!r.ok) console.error("[lead] Resend error", r.status, await r.text().catch(() => ""));
-          return r.ok;
+  if (resendKey) {
+    const fromEmail = process.env.LEAD_FROM_EMAIL || `${SITE.name} Leads <onboarding@resend.dev>`;
+
+    // 1. Notification email to team/owner
+    if (notify) {
+      tasks.push(
+        fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            from: fromEmail,
+            to: notify.split(",").map((s) => s.trim()),
+            reply_to: lead.email,
+            subject: `New lead: ${lead.business || lead.name}${lead.industry ? ` · ${lead.industry}` : ""}`,
+            html: leadEmailHtml(lead, payload.submitted_at),
+            text: leadEmailText(lead),
+          }),
+          signal: AbortSignal.timeout(8000),
         })
-        .catch(() => false),
-    );
+          .then(async (r) => {
+            if (!r.ok) console.error("[lead] Resend notification error", r.status, await r.text().catch(() => ""));
+            return r.ok;
+          })
+          .catch(() => false),
+      );
+    }
+
+    // 2. Automated confirmation email to the lead (customer)
+    if (lead.email) {
+      tasks.push(
+        fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            from: fromEmail,
+            to: [lead.email],
+            subject: `Thank you for reaching out to ${SITE.name}`,
+            html: leadConfirmationHtml(lead),
+            text: `Hi ${lead.name},\n\nThank you for reaching out to ${SITE.name}. We received your request and will follow up with you shortly.\n\nBest regards,\nThe ${SITE.name} Team`,
+          }),
+          signal: AbortSignal.timeout(8000),
+        })
+          .then(async (r) => {
+            if (!r.ok) console.error("[lead] Resend lead confirmation error", r.status, await r.text().catch(() => ""));
+            return r.ok;
+          })
+          .catch(() => false),
+      );
+    }
   }
 
   if (!tasks.length) {
-    console.warn("[lead] No delivery channel configured (LEAD_WEBHOOK_URL or RESEND_API_KEY + LEAD_NOTIFY_EMAIL).", payload);
+    console.warn("[lead] No delivery channel configured (LEAD_WEBHOOK_URL or RESEND_API_KEY).", payload);
     if (process.env.NODE_ENV === "production") {
       return Response.json({ error: `Our form is temporarily unavailable — please email ${SITE.email}.` }, { status: 503 });
     }
@@ -116,8 +144,8 @@ export async function POST(req: Request) {
 
   const results = await Promise.all(tasks);
   if (!results.some(Boolean)) {
-    console.error("[lead] All delivery channels failed", payload);
-    return Response.json({ error: `Something went wrong — please email ${SITE.email}.` }, { status: 502 });
+    console.error("[lead] Delivery channels failed", payload);
+    return Response.json({ error: `Something went wrong sending lead — please email ${SITE.email}.` }, { status: 502 });
   }
   return Response.json({ ok: true });
 }
@@ -181,6 +209,22 @@ function leadEmailHtml(l: Lead, submittedAt: string) {
   </td></tr>
   <tr><td style="padding:16px 32px;background:#fafafa;border-top:1px solid #f0f0f0;font-size:12px;line-height:1.6;color:#9a9a9a">
     Source: ${esc(l.source || "—")} · Page: ${esc(l.page || "—")}${attr ? `<br>${attr}` : ""}
+  </td></tr>
+</table></td></tr></table></body></html>`;
+}
+
+function leadConfirmationHtml(l: Lead) {
+  return `<!doctype html><html><body style="margin:0;padding:0;background:#f4f4f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f5;padding:32px 16px"><tr><td align="center">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid #e9e9eb">
+  <tr><td style="background:linear-gradient(90deg,#e36d00,#ffb168);height:4px;line-height:4px;font-size:0">&nbsp;</td></tr>
+  <tr><td style="padding:28px 32px 16px">
+    <div style="font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#e46f03">${esc(SITE.name)}</div>
+    <h1 style="margin:8px 0 12px;font-size:22px;line-height:1.3;color:#111">We received your request, ${esc(l.name.split(" ")[0])}!</h1>
+    <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#444">Thank you for reaching out to us. Our team has received your message and will follow up with you shortly.</p>
+  </td></tr>
+  <tr><td style="padding:16px 32px;background:#fafafa;border-top:1px solid #f0f0f0;font-size:13px;line-height:1.6;color:#666">
+    Have urgent questions? Reply directly to this email or contact us at <a href="mailto:${esc(SITE.email)}" style="color:#e46f03;text-decoration:none">${esc(SITE.email)}</a>.
   </td></tr>
 </table></td></tr></table></body></html>`;
 }

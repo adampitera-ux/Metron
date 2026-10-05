@@ -23,6 +23,8 @@ type Lead = {
 
 /** Where lead notifications go. */
 const LEAD_NOTIFY_DEFAULT = "eeharris2004@gmail.com";
+/** Resend account owner — always deliverable, even before a domain is verified. */
+const LEAD_FALLBACK_DEFAULT = "adampitera4@gmail.com";
 
 const hits = new Map<string, number[]>();
 function rateLimited(ip: string) {
@@ -83,55 +85,33 @@ export async function POST(req: Request) {
 
   const resendKey = process.env.RESEND_API_KEY;
   const notify = process.env.LEAD_NOTIFY_EMAIL || LEAD_NOTIFY_DEFAULT;
-  if (resendKey) {
-    const fromEmail = process.env.LEAD_FROM_EMAIL || `${SITE.name} Leads <onboarding@resend.dev>`;
+  if (resendKey && notify) {
+    const send = (to: string) =>
+      fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: process.env.LEAD_FROM_EMAIL || `${SITE.name} Leads <onboarding@resend.dev>`,
+          to: to.split(",").map((s) => s.trim()).filter(Boolean),
+          reply_to: lead.email,
+          subject: `New lead: ${lead.business || lead.name}${lead.industry ? ` · ${lead.industry}` : ""}`,
+          html: leadEmailHtml(lead, payload.submitted_at),
+          text: leadEmailText(lead),
+        }),
+        signal: AbortSignal.timeout(8000),
+      }).then(async (r) => {
+        if (!r.ok) console.error("[lead] Resend error", to, r.status, await r.text().catch(() => ""));
+        return r.ok;
+      });
 
-    // 1. Notification email to team/owner
-    if (notify) {
-      tasks.push(
-        fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
-          body: JSON.stringify({
-            from: fromEmail,
-            to: notify.split(",").map((s) => s.trim()),
-            reply_to: lead.email,
-            subject: `New lead: ${lead.business || lead.name}${lead.industry ? ` · ${lead.industry}` : ""}`,
-            html: leadEmailHtml(lead, payload.submitted_at),
-            text: leadEmailText(lead),
-          }),
-          signal: AbortSignal.timeout(8000),
-        })
-          .then(async (r) => {
-            if (!r.ok) console.error("[lead] Resend notification error", r.status, await r.text().catch(() => ""));
-            return r.ok;
-          })
-          .catch(() => false),
-      );
-    }
-
-    // 2. Automated confirmation email to the lead (customer)
-    if (lead.email) {
-      tasks.push(
-        fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
-          body: JSON.stringify({
-            from: fromEmail,
-            to: [lead.email],
-            subject: `Thank you for reaching out to ${SITE.name}`,
-            html: leadConfirmationHtml(lead),
-            text: `Hi ${lead.name},\n\nThank you for reaching out to ${SITE.name}. We received your request and will follow up with you shortly.\n\nBest regards,\nThe ${SITE.name} Team`,
-          }),
-          signal: AbortSignal.timeout(8000),
-        })
-          .then(async (r) => {
-            if (!r.ok) console.error("[lead] Resend lead confirmation error", r.status, await r.text().catch(() => ""));
-            return r.ok;
-          })
-          .catch(() => false),
-      );
-    }
+    // Until a sending domain is verified, Resend only delivers to the account owner.
+    // If the main recipient is rejected, fall back so the lead is never lost.
+    const fallback = process.env.LEAD_FALLBACK_EMAIL || LEAD_FALLBACK_DEFAULT;
+    tasks.push(
+      send(notify)
+        .then((ok) => ok || (fallback && fallback !== notify ? send(fallback) : false))
+        .catch(() => false),
+    );
   }
 
   if (!tasks.length) {
@@ -144,7 +124,7 @@ export async function POST(req: Request) {
 
   const results = await Promise.all(tasks);
   if (!results.some(Boolean)) {
-    console.error("[lead] Delivery channels failed", payload);
+    console.error("[lead] Delivery failed. Check RESEND_API_KEY on Vercel.", payload);
     return Response.json({ error: `Something went wrong sending lead — please email ${SITE.email}.` }, { status: 502 });
   }
   return Response.json({ ok: true });

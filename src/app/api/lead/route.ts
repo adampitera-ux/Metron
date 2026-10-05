@@ -26,11 +26,13 @@ const LEAD_NOTIFY_DEFAULT = "eeharris2004@gmail.com";
 
 const hits = new Map<string, number[]>();
 function rateLimited(ip: string) {
+  // Local testing shouldn't lock you out of your own form.
+  if (process.env.NODE_ENV !== "production") return false;
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < 10 * 60_000);
   recent.push(now);
   hits.set(ip, recent);
-  return recent.length > 5;
+  return recent.length > 10;
 }
 
 const clean = (v: unknown, max = 200) => (typeof v === "string" ? v.trim().slice(0, max) : "");
@@ -48,7 +50,7 @@ export async function POST(req: Request) {
   if (clean(body.website)) return Response.json({ ok: true });
 
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
-  if (rateLimited(ip)) return Response.json({ error: "Too many submissions. Please email us instead." }, { status: 429 });
+  if (rateLimited(ip)) return Response.json({ error: `Too many submissions — please try again in a few minutes or email ${SITE.email}.` }, { status: 429 });
 
   const lead: Lead = {
     name: clean(body.name, 120),

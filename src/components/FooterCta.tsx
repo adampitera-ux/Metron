@@ -1,13 +1,13 @@
 "use client";
 
 import { BlurWords, Reveal, TextLink, words } from "./ui";
+import Logo from "@/components/Logo";
 
 export default function FooterCta() {
   return (
     <div className="relative flex flex-col items-center px-4 pt-[52px] pb-[56px] text-center">
       <Reveal>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/logo.svg" alt="Metron" width={101} height={30} />
+        <Logo />
       </Reveal>
 
       <BlurWords

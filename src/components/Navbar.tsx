@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ArrowUpRight, Close, Menu } from "./icons";
 import { RollText } from "./ui";
+import Logo from "@/components/Logo";
 
 export const NAV_LINKS = [
   { label: "Services", href: "/services" },
@@ -30,8 +31,7 @@ export default function Navbar() {
       <nav className="relative w-full max-w-[852px] rounded-[40px] border border-line bg-white/80 px-6 py-[13px] shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] backdrop-blur-xl md:px-[46px]">
         <div className="flex items-center justify-between">
           <Link href="/" aria-label="Metron home" className="shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/logo.svg" alt="Metron" width={101} height={30} />
+            <Logo />
           </Link>
 
           <ul className="hidden items-center gap-[18px] md:flex">

@@ -1,10 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import Image from "next/image";
 import { useState } from "react";
 import { Container, Reveal, SectionHeader } from "./ui";
 import Stats from "./Stats";
+import WorkVisual from "./WorkVisual";
 
 const DESCRIPTION =
   "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.";
@@ -13,23 +13,17 @@ const WORKS = [
   {
     name: "Grapho AI",
     stat: "47% increase in new customers.",
-    image: "/images/work-grapho.png",
-    logo: { src: "/images/logos/grapho-light.svg", w: 120, h: 34 },
-    chart: { src: "/images/chart-grapho.svg", w: 179, h: 227 },
+    kind: "calls" as const,
   },
   {
     name: "VectraOps",
     stat: "34% increase in online sales.",
-    image: "/images/work-vectra.png",
-    logo: { src: "/images/logos/vectra-light.svg", w: 113, h: 35 },
-    chart: { src: "/images/chart-vectra.svg", w: 187, h: 266 },
+    kind: "pipeline" as const,
   },
   {
     name: "Signum",
     stat: "47% increase in new customers.",
-    image: "/images/work-signum.png",
-    logo: { src: "/images/logos/signum-light.svg", w: 134, h: 36 },
-    chart: { src: "/images/chart-signum.svg", w: 189, h: 186 },
+    kind: "backoffice" as const,
   },
 ];
 
@@ -121,66 +115,17 @@ export default function Works() {
           <Reveal y={30} delay={0.15}>
             <div className="card-shell rounded-[26px]">
               <div className="rounded-[25px] bg-[radial-gradient(60%_40%_at_50%_0%,#ffffff_0%,#f3f3f3_100%)] p-5 md:p-[33px]">
-                <div className="relative aspect-[517/303] overflow-hidden rounded-2xl bg-[#0b0b0b]">
-                  <AnimatePresence initial={false}>
+                <div className="relative aspect-[517/303] overflow-hidden rounded-2xl border border-line">
+                  <AnimatePresence initial={false} mode="popLayout">
                     <motion.div
-                      key={work.image}
+                      key={work.kind}
                       className="absolute inset-0"
-                      initial={{ opacity: 0, scale: 1.06 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.7, ease: EASE }}
+                      transition={{ duration: 0.5, ease: EASE }}
                     >
-                      <Image
-                        src={work.image}
-                        alt={`${work.name} team at work`}
-                        fill
-                        sizes="(min-width: 1024px) 520px, 100vw"
-                        className="object-cover"
-                        priority={active === 0}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                    </motion.div>
-                  </AnimatePresence>
-
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={work.name}
-                      className="pointer-events-none absolute inset-0"
-                      initial="hidden"
-                      animate="show"
-                      exit="hidden"
-                    >
-                      { }
-                      <motion.img
-                        src={work.logo.src}
-                        alt={work.name}
-                        width={work.logo.w}
-                        height={work.logo.h}
-                        className="absolute bottom-[7%] left-[6%] h-auto w-[26%]"
-                        variants={{
-                          hidden: { opacity: 0, x: -12 },
-                          show: { opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } },
-                        }}
-                      />
-                      { }
-                      <motion.img
-                        src={work.chart.src}
-                        alt=""
-                        width={work.chart.w}
-                        height={work.chart.h}
-                        className="absolute right-[3%] bottom-0 h-auto origin-bottom"
-                        style={{ width: `${(work.chart.w / 517) * 100}%` }}
-                        variants={{
-                          hidden: { opacity: 0, y: 40, scaleY: 0.6 },
-                          show: {
-                            opacity: 1,
-                            y: 0,
-                            scaleY: 1,
-                            transition: { type: "spring", stiffness: 140, damping: 16, delay: 0.25 },
-                          },
-                        }}
-                      />
+                      <WorkVisual kind={work.kind} />
                     </motion.div>
                   </AnimatePresence>
                 </div>

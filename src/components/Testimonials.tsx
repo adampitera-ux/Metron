@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import Image from "next/image";
 import { Star } from "./icons";
 import { Container, Reveal, SectionHeader } from "./ui";
 
@@ -38,14 +37,17 @@ export default function Testimonials() {
         {/* Featured testimonial */}
         <div className="mx-auto mt-[60px] grid max-w-[1024px] items-center gap-10 md:grid-cols-[402px_1fr] md:gap-[46px]">
           <Reveal y={30}>
-            <div className="group relative aspect-[402/427] overflow-hidden rounded-2xl border border-line shadow-[0_20px_50px_-24px_rgba(0,0,0,0.35)]">
-              <Image
-                src="/images/testimonial.jpg"
-                alt="Zidane Muharto"
-                fill
-                sizes="(min-width: 768px) 402px, 100vw"
-                className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
-              />
+            <div className="relative flex aspect-[402/427] flex-col justify-between overflow-hidden rounded-2xl border border-line bg-[radial-gradient(90%_70%_at_0%_0%,#fff3e8_0%,#f6f6f6_60%)] p-8 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.3)]">
+              <svg viewBox="0 0 48 36" aria-hidden className="w-14 text-orange/80">
+                <path fill="currentColor" d="M0 36V21.6C0 9.7 6.3 2.5 18.9 0l2 4.4C14.3 6.4 11 10.3 10.6 16H20v20H0Zm27 0V21.6C27 9.7 33.3 2.5 45.9 0l2 4.4C41.3 6.4 38 10.3 37.6 16H47v20H27Z" />
+              </svg>
+              <div className="flex items-center gap-4">
+                <span className="h-display grid size-16 place-items-center rounded-full bg-fg text-[22px] text-white">ZM</span>
+                <div>
+                  <p className="h-display text-[19px] text-fg">Zidane Muharto</p>
+                  <p className="text-[15px] text-muted">CTO, Zapfast</p>
+                </div>
+              </div>
             </div>
           </Reveal>
 

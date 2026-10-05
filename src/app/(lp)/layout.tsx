@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import Logo from "@/components/Logo";
 
 /** Distraction-free layout for paid-traffic landing pages: no site nav, one goal. */
 export default function LandingLayout({ children }: { children: React.ReactNode }) {
@@ -7,8 +8,7 @@ export default function LandingLayout({ children }: { children: React.ReactNode 
     <>
       <header className="absolute inset-x-0 top-0 z-40">
         <div className="mx-auto flex max-w-[1260px] items-center justify-between px-4 py-5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.svg" alt={SITE.name} width={101} height={30} />
+          <Logo />
           <div className="flex items-center gap-3">
             {SITE.phone && (
               <a href={`tel:${SITE.phoneE164}`} className="hidden text-[15px] font-medium text-fg-2 hover:text-orange sm:block">

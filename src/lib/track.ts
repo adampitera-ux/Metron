@@ -102,3 +102,8 @@ function normalizePhone(p: string) {
   if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
   return `+${digits}`;
 }
+
+/** Fired when someone clicks a plan's Buy button (before leaving for Stripe). */
+export function trackCheckout(plan: string, value: number) {
+  gtag("event", "begin_checkout", { currency: "USD", value, items: [{ item_id: plan, item_name: plan, price: value }] });
+}

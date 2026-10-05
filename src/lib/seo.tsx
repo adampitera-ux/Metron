@@ -111,7 +111,7 @@ export const organizationSchema = (): Json => ({
       itemOffered: { "@type": "Service", name: s.name, url: absoluteUrl(`/services/${s.slug}`) },
     })),
   },
-  priceRange: "$900–$1,600 per month",
+  priceRange: "$500–$2,800 setup; $100–$1,000 per month",
   ...(SITE.sameAs.length ? { sameAs: SITE.sameAs } : {}),
 });
 

@@ -1,7 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { PLANS } from "@/content/plans";
 import { getAttribution, trackLead } from "@/lib/track";
 
 export const BUSINESS_TYPES = [
@@ -71,6 +72,14 @@ export default function LeadForm({
   const [state, setState] = useState<"idle" | "sending" | "error">("idle");
   const [error, setError] = useState("");
   const compact = variant === "compact";
+  const [plan, setPlan] = useState("");
+
+  // /contact?plan=growth — remember which plan they clicked on the pricing page.
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get("plan");
+    const p = PLANS.find((x) => x.id === id);
+    if (p) setPlan(`${p.name} plan`);
+  }, []);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -85,7 +94,7 @@ export default function LeadForm({
       industry: f.get("industry"),
       message: f.get("message"),
       website: f.get("website"), // honeypot
-      interests,
+      interests: plan ? [plan, ...interests] : interests,
       source,
       page: window.location.pathname,
       attribution: getAttribution(),
@@ -168,7 +177,12 @@ export default function LeadForm({
       ) : (
         <>
           <div className="mb-8">
-            <p className="text-[12.5px] font-semibold uppercase tracking-[0.14em] text-orange">Free AI audit request</p>
+            {plan && (
+              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-orange/30 bg-[#fff4ea] px-3.5 py-1.5 text-[13.5px] font-medium text-orange-deep">
+                Selected: {plan}
+              </p>
+            )}
+            <p className="text-[12.5px] font-semibold uppercase tracking-[0.14em] text-orange">{plan ? "Plan inquiry" : "Free AI audit request"}</p>
             <h2 className="h-display mt-2 text-[26px] leading-tight text-fg md:text-[28px]">Tell us about your business</h2>
             <p className="mt-2 text-[15px] leading-relaxed text-muted">Takes about a minute. A real person reviews every request.</p>
           </div>

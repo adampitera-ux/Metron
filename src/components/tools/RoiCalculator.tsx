@@ -1,5 +1,6 @@
 "use client";
 
+import { PLANS as ALL_PLANS } from "@/content/plans";
 import { useState } from "react";
 import { Button } from "../ui";
 import { AnimatedNumber, Slider, Stat } from "./Field";
@@ -12,10 +13,7 @@ const TASKS = [
   { key: "reviews", label: "Requesting reviews & answering FAQs", default: 2 },
 ] as const;
 
-const PLANS = [
-  { name: "Standard", price: 900 },
-  { name: "Enterprise", price: 1600 },
-];
+const PLANS = ALL_PLANS.map((p) => ({ name: p.name, price: p.monthly }));
 
 export default function RoiCalculator() {
   const [hours, setHours] = useState<Record<string, number>>(
@@ -23,7 +21,7 @@ export default function RoiCalculator() {
   );
   const [rate, setRate] = useState(25);
   const [automatable, setAutomatable] = useState(60);
-  const [plan, setPlan] = useState(0);
+  const [plan, setPlan] = useState(2);
 
   const weeklyHours = Object.values(hours).reduce((a, b) => a + b, 0);
   const savedHoursMonth = weeklyHours * 4.33 * (automatable / 100);
@@ -51,7 +49,7 @@ export default function RoiCalculator() {
         <Slider label="% of that work AI could handle" hint="Assumption — most teams start conservatively at 40–60%." value={automatable} onChange={setAutomatable} min={0} max={100} format={(v) => `${v}%`} />
         <div>
           <p className="text-[15.5px] font-medium text-fg-2">Compare against plan</p>
-          <div className="mt-3 inline-flex rounded-full border border-line bg-[#fafafa] p-1">
+          <div className="mt-3 inline-flex flex-wrap gap-1 rounded-2xl border border-line bg-[#fafafa] p-1">
             {PLANS.map((p, i) => (
               <button
                 key={p.name}

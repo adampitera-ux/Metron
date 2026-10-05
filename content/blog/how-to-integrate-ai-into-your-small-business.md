@@ -194,7 +194,7 @@ A rough way to decide:
 - **DIY fits** when you need one or two simple automations, your software has good built-in integrations, and someone on staff enjoys this work.
 - **A partner fits** when you need several connected workflows, your systems don't talk to each other, or nobody has the bandwidth to own it.
 
-For a fuller breakdown of cost by approach, see [how much AI automation costs](/blog/how-much-does-ai-automation-cost). Our own [plans](/pricing) start at $900 a month, and custom software is quoted per project.
+For a fuller breakdown of cost by approach, see [how much AI automation costs](/blog/how-much-does-ai-automation-cost). Our own [plans](/pricing) start at $500 setup + $100 a month, and custom software is quoted per project.
 
 ## What should you do next?
 

@@ -35,19 +35,19 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
     items: [
       {
         q: "How much does Metron cost?",
-        a: "Metron offers two plans. The Standard plan is $900 per month and the Enterprise plan is $1,600 per month. A free AI audit and consultation is available to help you decide which plan fits your business.",
+        a: "Metron offers four plans, each with a one-time setup fee and a flat monthly fee: Launch ($500 setup + $100/month), Growth ($999 setup + $150/month), Scale ($1,600 setup + $500/month) and Enterprise ($2,800 setup + $1,000/month). A free AI audit and consultation is available to help you decide which plan fits your business.",
       },
       {
-        q: "What is included in the Standard plan?",
-        a: "The Standard plan, at $900 per month, is designed for small businesses. It includes a website refresh, answer engine optimization (AEO), generative engine optimization (GEO), and basic automations.",
+        q: "What is included in the Launch and Growth plans?",
+        a: "Launch ($500 setup + $100/month) is a custom-built website with premium hosting, security, maintenance and monthly edits. Growth ($999 setup + $150/month) adds full SEO, Google Business Profile optimization, local SEO, and AI search optimization (AEO and GEO) so you get found on Google and in AI assistants.",
       },
       {
-        q: "What is included in the Enterprise plan?",
-        a: "The Enterprise plan, at $1,600 per month, includes everything needed for businesses with more complex operations: expanded automation, analytics, priority support, custom workflows, and enhanced security.",
+        q: "What is included in the Scale and Enterprise plans?",
+        a: "Scale ($1,600 setup + $500/month) adds AI lead capture and follow-up: an AI receptionist with missed-call text-back, instant lead follow-up, website chat, booking and reminders, review automation and CRM integration. Enterprise ($2,800 setup + $1,000/month) adds custom AI software, back-office automation, integrations across your tools, advanced analytics, a dedicated account manager and same-day priority support.",
       },
       {
         q: "Which plan is right for my business?",
-        a: "The Standard plan suits most small businesses that want a stronger website, better visibility in AI search, and core automations. The Enterprise plan is a better fit if you need custom or multi-system workflows, deeper analytics, or priority support. The free AI audit will give you a clear recommendation.",
+        a: "Choose Launch if you mainly need a professional website, Growth if you want to rank on Google and in AI search, Scale if you want AI to answer, follow up with and book your leads, and Enterprise if you want custom AI software and back-office automation across your operations. The free AI audit will give you a clear recommendation.",
       },
       {
         q: "Is the AI audit really free?",
@@ -68,7 +68,7 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
       },
       {
         q: "Is my business and customer data secure?",
-        a: "We limit access to only the systems and data each automation needs, use the security features of the platforms involved, and avoid storing data unnecessarily. The Enterprise plan includes enhanced security measures for businesses with stricter requirements.",
+        a: "We limit access to only the systems and data each automation needs, use the security features of the platforms involved, and avoid storing data unnecessarily. The Enterprise plan adds enhanced security and access controls for businesses with stricter requirements.",
       },
       {
         q: "Can AI make mistakes?",

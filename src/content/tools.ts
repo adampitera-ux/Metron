@@ -63,7 +63,7 @@ export const TOOLS: Tool[] = [
     how: [
       { title: "Estimate weekly hours", body: "Enter roughly how many hours your team spends on each repetitive task." },
       { title: "Set your cost & assumptions", body: "Add the loaded hourly cost of that time and what share AI could realistically handle." },
-      { title: "Compare to the plan", body: "See hours freed, labor value saved, and net benefit against our Standard or Enterprise plan." },
+      { title: "Compare to the plan", body: "See hours freed, labor value saved, and net benefit against the monthly fee of any Metron plan." },
     ],
     faqs: [
       { q: "What tasks can AI automate in a small business?", a: "Common examples are answering and routing calls, booking appointments, lead follow-up by text and email, appointment reminders, review requests, FAQ answers, and copying data between your CRM, calendar and invoicing tools." },

@@ -19,7 +19,7 @@ export default function CompanyFacts() {
     ["What we do", "Integrate AI into small and medium-sized businesses: AI strategy, back-office and workflow automation, custom AI software and integrations, AI receptionists, lead follow-up, review automation, websites and AI search optimization."],
     ["Who we serve", "Small and medium-sized businesses of all kinds, especially trades, home services, construction, logistics, manufacturing and local service businesses, plus offices, clinics and professional firms."],
     ["Service area", `${SITE.areaServed} (remote delivery)`],
-    ["Pricing", "Standard plan $900/month; Enterprise plan $1,600/month; custom software scoped and quoted per project; free AI audit to start."],
+    ["Pricing", "Four plans with a one-time setup fee plus monthly: Launch ($500 setup + $100/month), Growth ($999 setup + $150/month), Scale ($1,600 setup + $500/month) and Enterprise ($2,800 setup + $1,000/month). Free AI audit to start."],
     ["How engagements start", "A free 30-minute AI audit that maps workflows, estimates savings and recommends next steps."],
     ["Delivery model", "Done-for-you: we design, build, connect, monitor and maintain the systems."],
     ["Founded", SITE.founded],

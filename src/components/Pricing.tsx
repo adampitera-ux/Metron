@@ -1,97 +1,86 @@
 "use client";
 
 import { motion } from "motion/react";
+import { PLANS, planHref, usd } from "@/content/plans";
+import { trackCheckout } from "@/lib/track";
 import { CheckCircle } from "./icons";
 import { Button, Container, Reveal, SectionHeader } from "./ui";
-
-const PLANS = [
-  {
-    name: "Standard",
-    blurb: "Ideal for small businesses.",
-    price: "$900",
-    features: ["Website refresh", "AI search optimization (AEO)", "Generative engine optimization (GEO)", "Basic automations"],
-    popular: false,
-  },
-  {
-    name: "Enterprise",
-    blurb: "Designed for expanding teams and advanced needs.",
-    price: "$1,600",
-    features: [
-      "Up to 50 users",
-      "Advanced analytics",
-      "Priority support",
-      "Custom workflows",
-      "Enhanced security",
-    ],
-    popular: true,
-  },
-];
 
 export default function Pricing() {
   return (
     <section id="pricing" className="scroll-mt-24 pt-[120px] pb-[60px]">
       <Container>
-        <SectionHeader badge="Simple Pricing" title="Transparent Pricing Plans" />
+        <SectionHeader
+          badge="Simple Pricing"
+          title="Plans That Grow With You"
+          subtitle="One-time setup, then a flat monthly fee. Every plan includes hosting, maintenance and real support."
+        />
 
-        <div className="mx-auto mt-[100px] flex max-w-[876px] flex-col items-stretch justify-center gap-8 md:flex-row">
-          {PLANS.map((p, i) => (
-            <Reveal
-              key={p.name}
-              delay={0.12 * i}
-              y={30}
-              className={p.popular ? "md:w-[508px]" : "md:w-[336px]"}
-            >
-              <motion.div
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 260, damping: 22 }}
-                className={`card-shell h-full rounded-[23px] ${p.popular ? "bg-[linear-gradient(180deg,rgba(232,120,17,0.45),#f2f2f2_45%)]" : ""}`}
-              >
-                <div className="relative h-full overflow-hidden rounded-[22px] bg-[radial-gradient(75%_33%_at_-6%_-5%,#ffffff_0%,#f5f5f5_100%)] p-8">
+        <div className="mx-auto mt-[80px] grid max-w-[1240px] items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          {PLANS.map((p, i) => {
+            const checkout = Boolean(p.stripeLink);
+            return (
+              <Reveal key={p.id} delay={0.08 * i} y={30} className="h-full">
+                <motion.div
+                  whileHover={{ y: -6 }}
+                  transition={{ type: "spring", stiffness: 260, damping: 22 }}
+                  className={`relative flex h-full flex-col rounded-[22px] border p-7 ${
+                    p.popular
+                      ? "border-orange/40 bg-[radial-gradient(90%_45%_at_50%_0%,#fff1e4_0%,#ffffff_70%)] shadow-[0_30px_60px_-30px_rgba(232,120,17,0.45)]"
+                      : "border-line bg-white shadow-[0_20px_50px_-36px_rgba(0,0,0,0.35)]"
+                  }`}
+                >
                   {p.popular && (
-                    <div className="pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-orange/10 blur-3xl" />
+                    <span className="absolute -top-3 left-7 rounded-full bg-orange px-3 py-1 text-[12px] font-semibold tracking-wide text-white uppercase">
+                      Most popular
+                    </span>
                   )}
-                  <div className="relative flex items-center gap-[10px]">
-                    <h3 className="h-display text-[30px] leading-[1.25] text-fg">{p.name}</h3>
-                    {p.popular && (
-                      <span className="rounded-full bg-fg px-[10px] pt-[5px] pb-[7px] text-sm leading-[14px] text-white">
-                        Popular
-                      </span>
-                    )}
-                  </div>
-                  <p className="relative mt-3 text-lg leading-[1.6] text-muted">{p.blurb}</p>
 
-                  <div className="relative mt-[22px] flex items-baseline gap-1.5">
-                    <span className="h-display text-[38px] leading-[1.25] font-bold text-fg">{p.price}</span>
-                    <span className="text-lg text-muted-3">/month</span>
+                  <h3 className="h-display text-[24px] leading-tight text-fg">{p.name}</h3>
+                  <p className="mt-2 text-[15px] leading-[1.55] text-muted xl:min-h-[48px]">{p.tagline}</p>
+
+                  <div className="mt-6 border-t border-line pt-6">
+                    <span className="h-display block text-[40px] leading-none font-bold text-fg">{usd(p.setup)}</span>
+                    <span className="mt-1.5 block text-[13px] text-muted-2">one-time setup</span>
+                    <p className="mt-3 text-[15px] leading-snug text-fg-2">
+                      <span className="font-semibold text-fg">+ {usd(p.monthly)}/mo</span>
+                      <span className="block text-[13px] text-muted-2">{p.monthlyLabel}</span>
+                    </p>
                   </div>
 
-                  <Button href="/contact" variant="orange" className="relative mt-[22px] w-full">
-                    Get Started
+                  <Button
+                    href={planHref(p)}
+                    variant={p.popular ? "orange" : "dark"}
+                    className="mt-6 w-full"
+                    onClick={checkout ? () => trackCheckout(p.id, p.setup) : undefined}
+                  >
+                    {checkout ? `Buy ${p.name}` : `Get ${p.name}`}
                   </Button>
 
-                  <p className="relative mt-6 text-[17px] leading-[1.4] text-muted-3">What&apos;s Included:</p>
-                  <ul
-                    className={`relative mt-[18px] grid gap-x-10 gap-y-3 ${p.popular ? "sm:grid-cols-[auto_auto] sm:justify-start" : ""}`}
-                  >
-                    {p.features.map((f, j) => (
-                      <motion.li
-                        key={f}
-                        initial={{ opacity: 0, x: -8 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.3 + j * 0.06 }}
-                        className="flex items-center gap-3 text-lg leading-[1.6] text-muted"
-                      >
-                        <CheckCircle className="size-5 shrink-0 text-muted-2" />
-                        {f}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            </Reveal>
-          ))}
+                  <div className="mt-7 flex-1">
+                    {p.includesPrevious && <p className="mb-3 text-[13.5px] font-semibold text-fg">{p.includesPrevious}</p>}
+                    <ul className="space-y-2.5">
+                      {p.features.map((f) => (
+                        <li key={f} className="flex gap-2.5 text-[14.5px] leading-[1.5] text-fg-2">
+                          <CheckCircle className={`mt-[3px] size-4 shrink-0 ${p.popular ? "text-orange" : "text-muted-2"}`} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              </Reveal>
+            );
+          })}
         </div>
+
+        <p className="mx-auto mt-10 max-w-[620px] text-center text-[14.5px] leading-[1.6] text-muted-2">
+          Secure checkout powered by Stripe. Not sure which plan fits?{" "}
+          <a href="/contact" className="text-orange underline-offset-2 hover:underline">
+            Book a free AI audit
+          </a>{" "}
+          and we&apos;ll recommend one.
+        </p>
       </Container>
     </section>
   );

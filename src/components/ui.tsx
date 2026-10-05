@@ -137,6 +137,7 @@ type BtnProps = {
   variant?: "orange" | "dark";
   arrow?: "up" | "down";
   className?: string;
+  onClick?: () => void;
 };
 
 export function Button({
@@ -145,11 +146,13 @@ export function Button({
   variant = "dark",
   arrow = "up",
   className = "",
+  onClick,
 }: BtnProps) {
   const Arrow = arrow === "up" ? ArrowUpRight : ArrowDownRight;
   return (
     <a
       href={href}
+      onClick={onClick}
       className={`group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-[7px] px-[27px] py-[15px] text-base transition-transform duration-300 active:scale-[0.98] ${
         variant === "orange" ? "btn-orange" : "btn-dark"
       } ${className}`}

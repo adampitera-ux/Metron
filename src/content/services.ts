@@ -110,7 +110,7 @@ const BASE_SERVICES: Service[] = [
       },
       {
         q: "Which plan includes AI workflow automation?",
-        a: "The Standard plan at $900 per month includes basic automations. The Enterprise plan at $1,600 per month adds expanded automation, custom workflows, analytics, and priority support.",
+        a: "Automations start with the Scale plan ($1,600 setup + $500/month), which covers AI lead follow-up, booking, reminders, reviews and CRM integration. The Enterprise plan ($2,800 setup + $1,000/month) adds back-office automation, custom workflows, advanced analytics and a dedicated account manager.",
       },
     ],
     relatedIndustries: ["hvac", "plumbing", "law-firms", "dental", "real-estate", "auto-repair"],
@@ -457,7 +457,7 @@ const BASE_SERVICES: Service[] = [
       },
       {
         q: "Is a website refresh included in your plans?",
-        a: "Yes. A website refresh is included in the Standard plan at $900 per month, along with AEO, GEO, and basic automations. The Enterprise plan at $1,600 per month includes it as well, with expanded automation and analytics.",
+        a: "Yes. Every plan includes a professionally built, hosted and maintained website, starting with Launch at $500 setup + $100/month. Growth ($999 + $150/month) adds full SEO and AI search optimization, and Scale and Enterprise add AI lead capture and automation on top.",
       },
       {
         q: "Can I keep my current domain and hosting?",

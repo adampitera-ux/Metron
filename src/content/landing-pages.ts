@@ -32,7 +32,7 @@ export const LP_STEPS = STEPS;
 export const LP_TRUST: string[] = [
   "Done-for-you setup and support",
   "Works with the software you already use",
-  "Plans from $900/month · custom builds quoted upfront",
+  "Plans from $500 setup + $100/month · secure checkout",
   "Free audit — no obligation",
 ];
 
@@ -66,7 +66,7 @@ export const LANDING_PAGES: LandingPage[] = [
     objections: [
       { q: "We're a small business. Is AI really for us?", a: "Yes — small teams usually benefit the most, because every hour of admin or every missed call matters more. We start with the two or three workflows that save the most time and grow from there." },
       { q: "Do we need to change our software?", a: "Usually not. We connect AI to the phone system, calendar, CRM, accounting and field-service software you already use, and only recommend changes if they clearly pay off." },
-      { q: "How much does it cost?", a: "Managed plans start at $900/month (Standard) and $1,600/month (Enterprise). Custom software is scoped and quoted upfront. The free audit tells you exactly what we'd build and what it would cost before you commit." },
+      { q: "How much does it cost?", a: "Plans start at $500 setup + $100/month for a managed website, up to $2,800 setup + $1,000/month for full AI automation with custom software. The free audit tells you exactly what we'd build and what it would cost before you commit." },
       { q: "How long does it take to get started?", a: "It depends on scope. Simple automations like missed-call text-back or review requests can go live quickly; larger integrations and custom tools take longer. We give you a timeline during the audit." },
       { q: "Will it sound robotic to our customers?", a: "We write the scripts and messages in your voice, test them with you before launch, and keep refining them. Customers can always reach a person when they need one." },
     ],
@@ -233,7 +233,7 @@ export const LANDING_PAGES: LandingPage[] = [
       { q: "We use Procore / Buildertrend / JobTread. Does that work?", a: "Those platforms offer integrations and APIs we can often build around. We'll confirm what's possible with your exact setup during the free audit." },
       { q: "We're not tech people.", a: "You don't need to be. We do the setup, connect your tools and train your team on the few things that change for them." },
       { q: "Can AI really handle construction paperwork?", a: "AI is good at reading documents, pulling out key details and filing them. Anything with legal or financial consequences still gets a human review — we build that step in." },
-      { q: "What does it cost?", a: "Managed plans start at $900/month, and custom tools are quoted upfront. The audit shows you the expected time savings before you spend anything." },
+      { q: "What does it cost?", a: "AI automation plans start at $1,600 setup + $500/month (Scale), and custom tools are included in Enterprise ($2,800 setup + $1,000/month). The audit shows you the expected time savings before you spend anything." },
     ],
   },
   {

@@ -20,7 +20,7 @@ export function buildLlmsTxt() {
 
 > ${SITE.description}
 
-${SITE.name} is an AI automation agency for small businesses in the ${SITE.areaServed}. Plans: Standard ($900/month — website refresh, AEO, GEO and basic automations) and Enterprise ($1,600/month — expanded custom workflows, advanced analytics, priority support, enhanced security). Contact: ${SITE.email}${SITE.phone ? `, ${SITE.phone}` : ""}. A free AI audit is available at ${absoluteUrl("/contact")}.
+${SITE.name} is an AI automation agency for small businesses in the ${SITE.areaServed}. Plans (one-time setup + monthly): Launch ($500 + $100/month — custom website, hosting and maintenance), Growth ($999 + $150/month — adds full SEO, Google Business Profile, AEO and GEO), Scale ($1,600 + $500/month — adds AI receptionist, lead follow-up, booking, reviews and CRM) and Enterprise ($2,800 + $1,000/month — adds custom AI software, back-office automation, advanced analytics and a dedicated account manager). Contact: ${SITE.email}${SITE.phone ? `, ${SITE.phone}` : ""}. A free AI audit is available at ${absoluteUrl("/contact")}.
 
 ## Services
 ${SERVICES.map((s) => link(s.name, `/services/${s.slug}`, s.summary)).join("\n")}

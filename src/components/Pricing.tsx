@@ -9,7 +9,7 @@ const PLANS = [
     name: "Standard",
     blurb: "Ideal for small businesses.",
     price: "$900",
-    features: ["Website refresh", "AEO", "GEO", "Basic automations"],
+    features: ["Website refresh", "AI search optimization (AEO)", "Generative engine optimization (GEO)", "Basic automations"],
     popular: false,
   },
   {
@@ -18,10 +18,10 @@ const PLANS = [
     price: "$1,600",
     features: [
       "Up to 50 users",
-      "Advanced Analytics",
+      "Advanced analytics",
       "Priority support",
       "Custom workflows",
-      "Enhanced Security",
+      "Enhanced security",
     ],
     popular: true,
   },

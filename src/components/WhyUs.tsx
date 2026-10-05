@@ -96,7 +96,7 @@ export default function WhyUs() {
               Of Our Expertise
             </>
           }
-          subtitle="That drives impactful gain powerful results"
+          subtitle="Practical AI that delivers measurable results."
         />
 
         <div className="mt-[90px] grid gap-8 md:grid-cols-3">

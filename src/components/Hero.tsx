@@ -50,7 +50,7 @@ export default function Hero() {
               <span className="relative size-2.5 rounded-full bg-[#16a34a] shadow-[0_0_0_3px_rgba(22,163,74,0.18)]" />
             </span>
             <span className="text-sm leading-[14px] text-muted">
-              Available now, only 3 spots left
+              Now booking free AI audits
             </span>
           </motion.div>
 

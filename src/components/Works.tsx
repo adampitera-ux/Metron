@@ -6,23 +6,23 @@ import { Container, Reveal, SectionHeader } from "./ui";
 import Stats from "./Stats";
 import WorkVisual from "./WorkVisual";
 
-const DESCRIPTION =
-  "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.";
-
 const WORKS = [
   {
     name: "Grapho AI",
     stat: "47% increase in new customers.",
+    desc: "An AI receptionist that answers every call, books jobs on the spot and texts back anyone who hangs up.",
     kind: "calls" as const,
   },
   {
     name: "VectraOps",
     stat: "34% increase in online sales.",
+    desc: "Instant lead follow-up that replies in under a minute and keeps every quote moving until it closes.",
     kind: "pipeline" as const,
   },
   {
     name: "Signum",
-    stat: "47% increase in new customers.",
+    stat: "61 admin hours saved every month.",
+    desc: "Back-office automation that sends invoices, chases payments and keeps the books up to date.",
     kind: "backoffice" as const,
   },
 ];
@@ -36,7 +36,7 @@ export default function Works() {
   return (
     <section id="works" className="scroll-mt-24 pt-10 pb-[60px]">
       <Container>
-        <SectionHeader badge="Work That Make Us Proud" title="Recent Works, Notable Impact" />
+        <SectionHeader badge="Work We're Proud Of" title="Recent Works, Notable Impact" />
 
         <div className="mt-[60px] grid items-center gap-10 lg:grid-cols-[583px_1fr] lg:gap-[60px]">
           {/* Project list */}
@@ -84,7 +84,7 @@ export default function Works() {
                               className="overflow-hidden"
                             >
                               <span className="block pt-4 text-lg leading-[1.6] text-muted">
-                                {DESCRIPTION}
+                                {w.desc}
                               </span>
                             </motion.p>
                           ) : (

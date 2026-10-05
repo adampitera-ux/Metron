@@ -1,10 +1,9 @@
 "use client";
 
-import { motion } from "motion/react";
 import { BlurWords, Container, Reveal, TextLink, words } from "./ui";
 
 const HEADING = words(`We Drive *Businesses*
-To The *Forefront* Of The Industries
+To The *Forefront* Of Their Industries
 Through Comprehensive
 AI *Automation.*`);
 
@@ -40,30 +39,6 @@ export default function Mission() {
           <TextLink href="/contact">Book A Call</TextLink>
         </Reveal>
 
-        <Reveal delay={0.3} className="mt-[110px]">
-          <motion.svg
-            width="80"
-            height="108"
-            viewBox="0 0 113 153"
-            fill="none"
-            aria-hidden
-            animate={{ y: [0, 14, 0] }}
-            transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <defs>
-              <linearGradient id="arrow-g" x1="56" y1="0" x2="56" y2="153" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#E46F03" />
-                <stop offset="1" stopColor="#FFB168" />
-              </linearGradient>
-            </defs>
-            <path
-              fill="url(#arrow-g)"
-              fillRule="evenodd"
-              d="M54 2.5a2.5 2.5 0 0 1 5 0v141.776l49.508-49.508a2.5 2.5 0 1 1 3.535 3.535l-53.74 53.74a2.5 2.5 0 0 1-1.743.733 2.5 2.5 0 0 1-1.803-.732l-53.74-53.74a2.5 2.5 0 1 1 3.536-3.536l49.446 49.446z"
-              clipRule="evenodd"
-            />
-          </motion.svg>
-        </Reveal>
       </Container>
     </section>
   );

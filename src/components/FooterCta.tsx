@@ -18,7 +18,7 @@ export default function FooterCta() {
 
       <Reveal delay={0.3}>
         <p className="mt-6 max-w-[300px] text-lg leading-[1.6] text-muted">
-          We bring your vision to life with AI Automation. Let’s make it happen.
+          We bring your vision to life with AI automation. Let’s make it happen.
         </p>
       </Reveal>
 

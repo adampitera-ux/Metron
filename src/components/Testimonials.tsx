@@ -32,7 +32,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="scroll-mt-24 pt-[120px] pb-[60px]">
       <Container>
-        <SectionHeader badge="What Our Users Say" title="Trusted by Businesses Like Yours" />
+        <SectionHeader badge="What Our Clients Say" title="Trusted by Businesses Like Yours" />
 
         {/* Featured testimonial */}
         <div className="mx-auto mt-[60px] grid max-w-[1024px] items-center gap-10 md:grid-cols-[402px_1fr] md:gap-[46px]">
@@ -41,11 +41,11 @@ export default function Testimonials() {
               <svg viewBox="0 0 48 36" aria-hidden className="w-14 text-orange/80">
                 <path fill="currentColor" d="M0 36V21.6C0 9.7 6.3 2.5 18.9 0l2 4.4C14.3 6.4 11 10.3 10.6 16H20v20H0Zm27 0V21.6C27 9.7 33.3 2.5 45.9 0l2 4.4C41.3 6.4 38 10.3 37.6 16H47v20H27Z" />
               </svg>
-              <div className="flex items-center gap-4">
-                <span className="h-display grid size-16 place-items-center rounded-full bg-fg text-[22px] text-white">ZM</span>
-                <div>
-                  <p className="h-display text-[19px] text-fg">Zidane Muharto</p>
-                  <p className="text-[15px] text-muted">CTO, Zapfast</p>
+              <div>
+                <div className="flex gap-1 text-[#f5862a]">
+                  {Array.from({ length: 5 }).map((_, k) => (
+                    <Star key={k} className="size-5" />
+                  ))}
                 </div>
               </div>
             </div>
@@ -57,13 +57,13 @@ export default function Testimonials() {
               <img src="/images/logos/zapfast-color.svg" alt="Zapfast" width={124} height={35} className="-ml-1 h-[35px] w-auto" />
             </Reveal>
             <Reveal delay={0.18}>
-              <blockquote className="h-display mt-6 text-[26px] leading-[1.45] text-fg-2 capitalize md:text-[32px]">
+              <blockquote className="h-display mt-6 text-[26px] leading-[1.45] text-fg-2 md:text-[32px]">
                 &quot;Metron&apos;s fusion of AI and innovation set our project apart. Their solutions are second to none.&quot;
               </blockquote>
             </Reveal>
             <Reveal delay={0.26} className="mt-[42px] flex flex-wrap items-baseline gap-x-5 gap-y-1">
-              <span className="h-display text-[26px] leading-[1.25] text-fg-2 capitalize">Zidane Muharto</span>
-              <span className="text-lg text-muted">Chief Techology Officer</span>
+              <span className="h-display text-[26px] leading-[1.25] text-fg-2">Zidane Muharto</span>
+              <span className="text-lg text-muted">Chief Technology Officer</span>
             </Reveal>
             <Reveal delay={0.32}>
               <div className="mt-8 h-px w-full bg-gradient-to-r from-line-strong to-transparent" />
@@ -113,7 +113,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="mt-4 max-w-[330px] text-lg leading-[1.6] text-muted">{r.quote}</p>
-              <span className="h-display mt-[60px] text-[21px] leading-[1.25] text-fg capitalize">{r.name}</span>
+              <span className="h-display mt-[60px] text-[21px] leading-[1.25] text-fg">{r.name}</span>
               <span className="mt-1.5 text-base text-muted-2">{r.role}</span>
             </Reveal>
           ))}

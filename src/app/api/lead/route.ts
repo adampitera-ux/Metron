@@ -103,7 +103,8 @@ export async function POST(req: Request) {
       });
 
     // Optional backup inbox if the main recipient is rejected.
-    const fallback = process.env.LEAD_FALLBACK_EMAIL;
+    // TEMPORARY: remove once usemetron.com is verified in Resend.
+    const fallback = process.env.LEAD_FALLBACK_EMAIL || "adampitera4@gmail.com";
     tasks.push(
       send(notify)
         .then((ok) => ok || (fallback && fallback !== notify ? send(fallback) : false))

@@ -23,8 +23,6 @@ type Lead = {
 
 /** Where lead notifications go. */
 const LEAD_NOTIFY_DEFAULT = "eeharris2004@gmail.com";
-/** Resend account owner — always deliverable, even before a domain is verified. */
-const LEAD_FALLBACK_DEFAULT = "adampitera4@gmail.com";
 
 const hits = new Map<string, number[]>();
 function rateLimited(ip: string) {
@@ -104,9 +102,8 @@ export async function POST(req: Request) {
         return r.ok;
       });
 
-    // Until a sending domain is verified, Resend only delivers to the account owner.
-    // If the main recipient is rejected, fall back so the lead is never lost.
-    const fallback = process.env.LEAD_FALLBACK_EMAIL || LEAD_FALLBACK_DEFAULT;
+    // Optional backup inbox if the main recipient is rejected.
+    const fallback = process.env.LEAD_FALLBACK_EMAIL;
     tasks.push(
       send(notify)
         .then((ok) => ok || (fallback && fallback !== notify ? send(fallback) : false))

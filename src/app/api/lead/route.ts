@@ -21,7 +21,7 @@ type Lead = {
   attribution?: Record<string, unknown>;
 };
 
-/** Where lead notifications go when LEAD_NOTIFY_EMAIL isn't set. */
+/** Where lead notifications go. */
 const LEAD_NOTIFY_DEFAULT = "eeharris2004@gmail.com";
 
 const hits = new Map<string, number[]>();

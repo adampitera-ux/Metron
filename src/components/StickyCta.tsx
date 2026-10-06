@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "./icons";
 
-const HIDDEN_ON = ["/contact", "/thank-you"];
+const HIDDEN_ON = ["/contact", "/thank-you", "/welcome"];
 
 /** Mobile bottom bar + desktop floating pill that appear after scrolling. */
 export default function StickyCta() {

@@ -42,7 +42,7 @@ export const PLANS: Plan[] = [
       "Ongoing updates, backups & uptime monitoring",
       "Monthly content edits included",
     ],
-    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_LAUNCH, "https://buy.stripe.com/28EdR28kR32v4V19CTeAg06"),
+    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_LAUNCH, "https://buy.stripe.com/cNicMY7gNdH94V14izeAg07"),
   },
   {
     id: "growth",

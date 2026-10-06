@@ -15,12 +15,12 @@ export default function BookWithEthan() {
 
   return (
     <section id="book" className="scroll-mt-28">
-      <div className="mx-auto max-w-[1100px] px-4">
+      <div className="mx-auto max-w-[1200px] px-4">
         <div className="text-center">
           <span className="inline-flex items-center rounded-full border border-line bg-white px-5 py-[6px] text-sm text-fg-2">
             Book a call
           </span>
-          <h2 className="h-display mt-5 text-[34px] leading-[1.2] text-fg md:text-[44px]">
+          <h2 className="h-display mt-5 text-[38px] leading-[1.15] text-fg md:text-[56px]">
             Talk to Our <span className="text-orange">Sales Agent</span>
           </h2>
           <p className="mx-auto mt-4 max-w-[560px] text-lg leading-[1.6] text-muted">
@@ -28,17 +28,17 @@ export default function BookWithEthan() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[400px_1fr]">
+        <div className="mt-12 grid gap-6 lg:grid-cols-[460px_1fr]">
           <div className="flex flex-col overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_30px_70px_-45px_rgba(0,0,0,0.35)]">
             <div className="relative aspect-[4/5] w-full bg-[radial-gradient(90%_70%_at_30%_20%,#fff1e4_0%,#f3f3f3_70%)]">
               {hasPhoto ? (
-                <Image src={PHOTO} alt="Ethan Harris" fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover" />
+                <Image src={PHOTO} alt="Ethan Harris" fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover" />
               ) : (
-                <span className="h-display absolute inset-0 grid place-items-center text-[96px] text-fg/80">EH</span>
+                <span className="h-display absolute inset-0 grid place-items-center text-[120px] text-fg/80">EH</span>
               )}
             </div>
             <div className="p-7">
-              <p className="h-display text-[24px] text-fg">Ethan Harris</p>
+              <p className="h-display text-[30px] text-fg">Ethan Harris</p>
               <p className="mt-1 text-[15px] text-muted">Sales, {SITE.name}</p>
               <p className="mt-4 text-[15.5px] leading-[1.6] text-fg-2">
                 I&apos;ll learn how your business runs, show you where AI and a better website can win you more
@@ -60,7 +60,7 @@ export default function BookWithEthan() {
               src={`${CAL_EVENT}?embed=true&theme=light&layout=month_view`}
               title="Book a call with Ethan Harris"
               loading="lazy"
-              className="block h-[720px] w-full border-0"
+              className="block h-[760px] w-full border-0"
             />
           </div>
         </div>

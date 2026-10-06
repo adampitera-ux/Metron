@@ -1,4 +1,3 @@
-import BookWithEthan from "@/components/BookWithEthan";
 import LeadForm from "@/components/LeadForm";
 import { PageHeader, Section } from "@/components/page/blocks";
 import { CheckCircle, Mail, Phone } from "@/components/icons";
@@ -61,9 +60,6 @@ export default function ContactPage() {
             </div>
             <div className="rounded-[22px] border border-line bg-white p-7">
               <p className="h-display text-[22px] text-fg">Prefer to talk?</p>
-              <a href="#book" className="btn-orange mt-4 flex h-11 w-full items-center justify-center rounded-[10px] text-[15px] font-medium">
-                Book a call with Ethan
-              </a>
               <ul className="mt-5 space-y-4">
                 {SITE.phone && (
                   <li>
@@ -93,10 +89,6 @@ export default function ContactPage() {
             </div>
           </aside>
         </div>
-      </Section>
-
-      <Section className="pt-0">
-        <BookWithEthan />
       </Section>
     </>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BookWithEthan from "@/components/BookWithEthan";
 import Faq from "@/components/Faq";
 import { HOME_FAQS } from "@/content/home-faqs";
 import Hero from "@/components/Hero";
@@ -23,6 +24,9 @@ export default function Home() {
     <>
       <JsonLd data={faqSchema(HOME_FAQS)} />
       <Hero />
+      <div className="pt-[100px]">
+        <BookWithEthan />
+      </div>
       <WhoWeHelp />
       <WhyUs />
       <Mission />

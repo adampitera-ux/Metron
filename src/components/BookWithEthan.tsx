@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
 import { SITE } from "@/lib/site";
+import CalEmbed from "./CalEmbed";
 
 export const CAL_URL = "https://cal.com/ethanharris";
 // Embed the 30-minute meeting directly so visitors land straight on the calendar.
@@ -32,7 +33,7 @@ export default function BookWithEthan() {
           <div className="flex flex-col overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_30px_70px_-45px_rgba(0,0,0,0.35)]">
             <div className="relative aspect-[4/5] w-full bg-[radial-gradient(90%_70%_at_30%_20%,#fff1e4_0%,#f3f3f3_70%)]">
               {hasPhoto ? (
-                <Image src={PHOTO} alt="Ethan Harris" fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover" />
+                <Image src={PHOTO} alt="Ethan Harris" fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover object-[50%_18%]" />
               ) : (
                 <span className="h-display absolute inset-0 grid place-items-center text-[120px] text-fg/80">EH</span>
               )}
@@ -55,13 +56,8 @@ export default function BookWithEthan() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_30px_70px_-45px_rgba(0,0,0,0.35)]">
-            <iframe
-              src={`${CAL_EVENT}?embed=true&theme=light&layout=month_view`}
-              title="Book a call with Ethan Harris"
-              loading="lazy"
-              className="block h-[760px] w-full border-0"
-            />
+          <div className="overflow-hidden rounded-[24px] border border-line bg-white p-2 shadow-[0_30px_70px_-45px_rgba(0,0,0,0.35)] md:p-4">
+            <CalEmbed calLink="ethanharris/30min" />
           </div>
         </div>
       </div>

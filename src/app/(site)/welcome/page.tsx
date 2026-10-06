@@ -31,7 +31,7 @@ export default function Welcome() {
             </h1>
             <p className="animate-rise mt-4 text-lg leading-[1.6] text-muted [animation-delay:180ms]">
               Thank you for choosing {SITE.name}. Questions in the meantime? Call{" "}
-              <a href={`tel:${SITE.phoneE164}`} className="text-orange underline">
+              <a href={`tel:${SITE.phoneE164}`} className="whitespace-nowrap text-orange underline">
                 {SITE.phone}
               </a>{" "}
               or email{" "}

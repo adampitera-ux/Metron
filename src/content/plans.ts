@@ -83,7 +83,7 @@ export const PLANS: Plan[] = [
       "Conversion optimization & landing pages",
       "Monthly performance dashboard & priority support",
     ],
-    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_SCALE),
+    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_SCALE, "https://buy.stripe.com/eVq7sE9oV32vfzF5mDeAg09"),
   },
   {
     id: "enterprise",

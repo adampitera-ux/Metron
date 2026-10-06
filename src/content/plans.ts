@@ -103,7 +103,7 @@ export const PLANS: Plan[] = [
       "Dedicated account manager",
       "Same-day priority support & enhanced security",
     ],
-    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_ENTERPRISE),
+    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_ENTERPRISE, "https://buy.stripe.com/cNidR2asZ6eHcntcP5eAg0a"),
   },
 ];
 

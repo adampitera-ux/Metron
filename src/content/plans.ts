@@ -62,7 +62,7 @@ export const PLANS: Plan[] = [
       "Ongoing SEO updates every month",
       "Monthly ranking & traffic report",
     ],
-    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_GROWTH),
+    stripeLink: link(process.env.NEXT_PUBLIC_STRIPE_LINK_GROWTH, "https://buy.stripe.com/eVq28k9oV5aDdrxcP5eAg08"),
   },
   {
     id: "scale",

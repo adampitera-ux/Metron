@@ -68,7 +68,7 @@ If your industry runs on paper, our playbooks for [construction companies](/blog
 
 **Documents arrive in one place, AI reads and extracts the fields, rules check the results, and clean data syncs into your software while uncertain items go to a review queue.** Here's each step.
 
-1. **Intake.** Documents arrive by email, photo upload, scanner, or shared folder. The first fix is getting them into one place, like a dedicated inbox (invoices@yourcompany.com) or a single upload link for field crews.
+1. **Intake.** Documents arrive by email, photo upload, scanner, or shared folder. The first fix is getting them into one place, like a dedicated inbox (`invoices@yourcompany.com`) or a single upload link for field crews.
 2. **Classification.** AI identifies what each document is: an invoice, a work order, a timesheet.
 3. **Extraction.** It pulls out the relevant fields, even when every vendor's invoice looks different.
 4. **Validation.** Rules check the results. Does the total match the line items? Does this customer exist in the CRM? Is this invoice number a duplicate? Is the job number real?

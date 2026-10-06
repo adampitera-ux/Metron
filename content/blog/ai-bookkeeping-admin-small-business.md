@@ -93,7 +93,7 @@ Rules that keep categorization safe:
 
 A safe AP workflow looks like this:
 
-1. Vendor emails a bill to a dedicated address (for example, bills@yourcompany.com).
+1. Vendor emails a bill to a dedicated address (for example, `bills@yourcompany.com`).
 2. AI extracts the vendor, invoice number, amount, due date, and line items.
 3. It checks for duplicates and compares the bill to the purchase order or job, if you use them.
 4. Mismatches, like a price higher than quoted, get flagged.

@@ -11,7 +11,10 @@ const COLUMNS = [
   },
   {
     title: "Industries",
-    links: INDUSTRIES.map((i) => ({ label: i.name, href: `/industries/${i.slug}` })),
+    links: [
+      ...INDUSTRIES.slice(0, 11).map((i) => ({ label: i.name, href: `/industries/${i.slug}` })),
+      { label: `All ${INDUSTRIES.length} industries →`, href: "/industries" },
+    ],
   },
   {
     title: "Free Tools",

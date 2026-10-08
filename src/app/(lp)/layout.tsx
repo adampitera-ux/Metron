@@ -31,6 +31,7 @@ export default function LandingLayout({ children }: { children: React.ReactNode 
             <Link href="/" className="hover:text-orange">Website</Link>
             <Link href="/privacy" className="hover:text-orange">Privacy</Link>
             <Link href="/terms" className="hover:text-orange">Terms</Link>
+            <Link href="/billing" className="hover:text-orange">Billing &amp; Refunds</Link>
             <a href={`mailto:${SITE.email}`} className="hover:text-orange">{SITE.email}</a>
           </nav>
         </div>

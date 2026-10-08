@@ -23,7 +23,7 @@ function Calls() {
     ["(718) 555-0142", "Missed call · 6:42pm", "Texted back", "#e87811"],
   ];
   return (
-    <Card title="AI Receptionist · Today" meta="0 missed">
+    <Card title="AI Receptionist · Example" meta="0 missed">
       <ul className="divide-y divide-black/[0.05]">
         {rows.map(([n, d, s, c]) => (
           <li key={n} className={`flex items-center gap-3 py-[2.2%] ${t}`}>
@@ -51,7 +51,7 @@ function Pipeline() {
     ["Won", ["Bath remodel", "Patio"]],
   ] as const;
   return (
-    <Card title="Lead Follow-Up" meta="Replies < 60s">
+    <Card title="Lead Follow-Up · Example" meta="Replies < 60s">
       <div className="grid h-full grid-cols-4 gap-2">
         {cols.map(([h, items], i) => (
           <div key={h} className="rounded-lg bg-[#f7f7f7] p-1.5">
@@ -74,7 +74,7 @@ function Pipeline() {
 function BackOffice() {
   const bars = [38, 52, 46, 64, 58, 76, 88];
   return (
-    <Card title="Back Office · This Month" meta="Automated">
+    <Card title="Back Office · Example" meta="Automated">
       <div className="grid h-full grid-cols-[1fr_1.3fr] gap-[5%]">
         <div className="flex flex-col justify-center gap-[10%]">
           {[

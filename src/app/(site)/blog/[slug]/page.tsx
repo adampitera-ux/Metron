@@ -15,12 +15,19 @@ export function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
 }
 
+/** Search results show ~60 characters: use the headline before a colon or bracket when the full title is too long. */
+function seoTitle(t: string) {
+  if (t.length <= 60) return t;
+  const short = t.split(/:\s|\s\(|\?\s/)[0].trim();
+  return short.length >= 25 ? short : t;
+}
+
 export async function generateMetadata({ params }: PageProps<"/blog/[slug]">) {
   const { slug } = await params;
   const p = getPost(slug);
   if (!p) return {};
   return pageMetadata({
-    title: p.title,
+    title: seoTitle(p.title),
     description: p.description,
     path: `/blog/${p.slug}`,
     kicker: p.category,

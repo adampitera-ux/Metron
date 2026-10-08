@@ -8,20 +8,20 @@ import WorkVisual from "./WorkVisual";
 
 const WORKS = [
   {
-    name: "Grapho AI",
-    stat: "47% increase in new customers.",
+    name: "AI Receptionist",
+    stat: "Every call answered, 24/7.",
     desc: "An AI receptionist that answers every call, books jobs on the spot and texts back anyone who hangs up.",
     kind: "calls" as const,
   },
   {
-    name: "VectraOps",
-    stat: "34% increase in online sales.",
+    name: "Lead Follow-Up",
+    stat: "Every lead answered in seconds.",
     desc: "Instant lead follow-up that replies in under a minute and keeps every quote moving until it closes.",
     kind: "pipeline" as const,
   },
   {
-    name: "Signum",
-    stat: "61 admin hours saved every month.",
+    name: "Back-Office Automation",
+    stat: "Invoices and admin on autopilot.",
     desc: "Back-office automation that sends invoices, chases payments and keeps the books up to date.",
     kind: "backoffice" as const,
   },
@@ -36,7 +36,7 @@ export default function Works() {
   return (
     <section id="works" className="scroll-mt-24 pt-10 pb-[60px]">
       <Container>
-        <SectionHeader badge="Work We're Proud Of" title="Recent Works, Notable Impact" />
+        <SectionHeader badge="What We Build" title="Systems That Work While You Work" />
 
         <div className="mt-[60px] grid items-center gap-10 lg:grid-cols-[583px_1fr] lg:gap-[60px]">
           {/* Project list */}

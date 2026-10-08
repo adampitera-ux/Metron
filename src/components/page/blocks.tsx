@@ -193,7 +193,7 @@ export function LinkCard({
         )}
         <ArrowUpRight className="size-5 text-muted-3 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-orange" />
       </div>
-      <h3 className="h-display mt-5 text-[21px] leading-[1.3] text-fg">{title}</h3>
+      <h2 className="h-display mt-5 text-[21px] leading-[1.3] text-fg">{title}</h2>
       {body && <p className="mt-2.5 text-[15.5px] leading-[1.6] text-muted">{body}</p>}
       {icon && meta && <p className="mt-auto pt-4 font-mono text-xs tracking-[0.1em] text-orange uppercase">{meta}</p>}
     </Link>

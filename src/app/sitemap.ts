@@ -42,5 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/company", 0.6),
     page("/privacy", 0.2),
     page("/terms", 0.2),
+    page("/billing", 0.3),
   ];
 }

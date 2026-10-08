@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Terms of Use",
-  description: `Terms governing use of the ${SITE.name} website, free tools and content.`,
+  description: `Terms governing use of the ${SITE.name} website, free tools and content, including intellectual property, third-party links, liability and how to contact us.`,
   path: "/terms",
 });
 
@@ -16,8 +16,9 @@ export default function Terms() {
       <Section>
         <div className="prose-article mx-auto max-w-[760px]">
           <p>
-            These terms govern your use of the {SITE.name} website, content and free tools. Services we provide to clients are
-            governed by a separate written agreement.
+            These terms govern your use of the {SITE.name} website, content and free tools. Plan purchases are also covered by
+            our <a href="/billing">Billing, Cancellation &amp; Refund Policy</a>, and any custom project may have its own written
+            agreement.
           </p>
           <h2>Informational content</h2>
           <p>

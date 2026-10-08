@@ -67,8 +67,11 @@ export default function Privacy() {
           </p>
           <h2>Who we share it with</h2>
           <p>
-            Service providers that help us run our business (for example hosting, email, CRM and analytics providers), only
-            as needed to provide their services; and authorities when required by law.
+            Service providers that help us run our business, only as needed to provide their services: for example Vercel
+            (website hosting), Stripe (payment processing — we never see your full card number), Cal.com (call scheduling),
+            Resend (email delivery), Google (analytics and advertising measurement) and the CRM and messaging tools we use to
+            respond to you. We also share information with authorities when required by law. We do not sell your personal
+            information.
           </p>
           <h2>Retention and security</h2>
           <p>

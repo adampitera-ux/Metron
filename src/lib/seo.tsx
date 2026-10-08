@@ -13,6 +13,13 @@ export function ogImageUrl(title: string, kicker?: string) {
   return `/og?${params.toString()}`;
 }
 
+/** Keep meta descriptions inside the ~160 characters search results display, cutting at a word. */
+export function clampDescription(d: string, max = 160) {
+  if (d.length <= max) return d;
+  const cut = d.slice(0, max - 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:—–-]\s*$/, "") + "…";
+}
+
 export function pageMetadata({
   title,
   description,
@@ -34,8 +41,11 @@ export function pageMetadata({
   absoluteTitle?: boolean;
 }): Metadata {
   const image = ogImageUrl(title.replace(/\s*\|\s*Metron$/, ""), kicker);
+  // Search results cut titles around 60 characters: skip the "| Metron" suffix when it wouldn't fit.
+  const fullTitle = absoluteTitle ? title : title.length + ` | ${SITE.name}`.length <= 60 ? title : null;
+  description = clampDescription(description);
   return {
-    title: absoluteTitle ? { absolute: title } : title,
+    title: fullTitle === null ? { absolute: title } : absoluteTitle ? { absolute: title } : title,
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -266,4 +276,17 @@ export const itemListSchema = (name: string, items: { name: string; path: string
     name: it.name,
     url: absoluteUrl(it.path),
   })),
+});
+
+/** Ethan Harris — the person customers talk to (Person schema, linked to the Organization). */
+export const ethanSchema = (): Json => ({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE.url}/#ethan-harris`,
+  name: "Ethan Harris",
+  jobTitle: "Sales",
+  image: absoluteUrl("/images/ethan.jpg"),
+  worksFor: { "@id": ORG_ID },
+  url: `${SITE.url}/#book`,
+  sameAs: ["https://cal.com/ethanharris"],
 });

@@ -55,7 +55,7 @@ export const GENERAL_FAQS: { category: string; items: QA[] }[] = [
       },
       {
         q: "Are there long-term contracts?",
-        a: "Contract terms depend on the scope of work, and month-to-month options may be available. Ask us about terms during your free consultation so you know exactly what you are agreeing to before you start.",
+        a: "No. Every plan is month to month: you pay a one-time setup fee and a flat monthly fee that renews automatically until you cancel. You can cancel anytime by email or phone, and it stops all future charges. See our Billing, Cancellation & Refund Policy for full details.",
       },
     ],
   },

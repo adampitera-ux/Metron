@@ -8,6 +8,7 @@ import PurchaseTracker from "@/components/PurchaseTracker";
 // Stripe Payment Links redirect here after a successful checkout.
 export const metadata: Metadata = {
   title: "Welcome to Metron — Payment Received",
+  description: "Payment received — welcome to Metron. Here's what happens next: your Stripe receipt, a kickoff call within one business day and your launch timeline.",
   robots: { index: false, follow: false },
 };
 

@@ -7,6 +7,7 @@ import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Thanks — We'll Be in Touch",
+  description: "Thanks for contacting Metron. We review every request and reply within one business day to schedule your free AI audit.",
   robots: { index: false, follow: false },
 };
 

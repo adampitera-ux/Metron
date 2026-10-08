@@ -4,9 +4,10 @@ import { animate, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
 import { Reveal } from "./ui";
 
+// Plain facts about how we work — no unverifiable performance claims.
 const STATS = [
-  { value: 100, decimals: 0, prefix: "$", suffix: "K+", label: "Generated & saved for businesses" },
-  { value: 4.9, decimals: 1, prefix: "", suffix: "", label: "Rating out of 5" },
+  { value: 24, decimals: 0, prefix: "", suffix: "/7", label: "Calls and leads answered" },
+  { value: 4, decimals: 0, prefix: "", suffix: "", label: "Simple plans, flat monthly pricing" },
 ];
 
 function Counter({

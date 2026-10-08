@@ -75,7 +75,12 @@ export default function Pricing() {
         </div>
 
         <p className="mx-auto mt-10 max-w-[620px] text-center text-[14.5px] leading-[1.6] text-muted-2">
-          Secure checkout powered by Stripe. Not sure which plan fits?{" "}
+          Secure checkout by Stripe. Setup fee + first month due today, then billed monthly until you cancel. No long-term
+          contract —{" "}
+          <a href="/billing" className="text-orange underline-offset-2 hover:underline">
+            billing &amp; refund policy
+          </a>
+          . Not sure which plan fits?{" "}
           <a href="/contact" className="text-orange underline-offset-2 hover:underline">
             Book a free AI audit
           </a>{" "}

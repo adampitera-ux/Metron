@@ -92,6 +92,10 @@ export default function Footer() {
                 Privacy
               </Link>
               <span className="mx-2">·</span>
+              <Link href="/billing" className="hover:text-orange">
+                Billing &amp; Refunds
+              </Link>
+              <span className="mx-2">·</span>
               <Link href="/terms" className="hover:text-orange">
                 Terms
               </Link>

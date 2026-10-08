@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Section } from "@/components/page/blocks";
 import { CheckCircle } from "@/components/icons";
 import { SITE } from "@/lib/site";
+import PurchaseTracker from "@/components/PurchaseTracker";
 
 // Stripe Payment Links redirect here after a successful checkout.
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ const NEXT = [
 export default function Welcome() {
   return (
     <>
+      <PurchaseTracker />
       <section className="px-0 md:px-5">
         <div className="relative overflow-hidden bg-bg-soft pt-[160px] pb-20 text-center">
           <div className="dot-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_60%_80%_at_50%_30%,#000_10%,transparent_80%)]" />

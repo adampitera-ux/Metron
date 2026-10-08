@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import BookWithEthan from "@/components/BookWithEthan";
 import LeadForm from "@/components/LeadForm";
+import LpCityEyebrow from "@/components/LpCityEyebrow";
+import LpStickyBar from "@/components/LpStickyBar";
+import Pricing from "@/components/Pricing";
 import { CheckCircle } from "@/components/icons";
 import { FaqBlock } from "@/components/page/blocks";
 import { LANDING_PAGES, LP_STEPS, LP_TRUST } from "@/content/landing-pages";
@@ -42,7 +46,7 @@ export default async function LandingPage({ params }: PageProps<"/lp/[slug]">) {
   const lp = LANDING_PAGES.find((p) => p.slug === slug);
   if (!lp) notFound();
 
-  const industries = INDUSTRIES.slice(0, 24).map((i) => i.name);
+  const industries = INDUSTRIES.map((i) => i.name);
 
   return (
     <>
@@ -54,7 +58,7 @@ export default async function LandingPage({ params }: PageProps<"/lp/[slug]">) {
           <div className="pt-4 lg:pt-12">
             <span className="animate-rise inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-[6px] text-sm text-fg-2">
               <span className="size-2 rounded-full bg-[#16a34a]" />
-              {lp.eyebrow}
+              <LpCityEyebrow text={lp.eyebrow} />
             </span>
             <h1 className="animate-rise h-display mt-6 text-[40px] leading-[1.12] text-fg [animation-delay:80ms] sm:text-[52px] lg:text-[62px]">
               {lp.headline} <span className="text-orange">{lp.accent}</span>
@@ -131,6 +135,16 @@ export default async function LandingPage({ params }: PageProps<"/lp/[slug]">) {
         </div>
       </section>
 
+      {/* BOOK A CALL */}
+      <section className="pt-16 md:pt-24">
+        <BookWithEthan />
+      </section>
+
+      {/* PRICING — transparent plans with direct Stripe checkout */}
+      <div className="-mt-10">
+        <Pricing />
+      </div>
+
       {/* WHO WE HELP */}
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-[1060px] px-4 text-center">
@@ -167,6 +181,8 @@ export default async function LandingPage({ params }: PageProps<"/lp/[slug]">) {
           <FormCard lp={lp} />
         </div>
       </section>
+      <div className="h-20 md:hidden" aria-hidden />
+      <LpStickyBar cta={lp.formCta} />
     </>
   );
 }

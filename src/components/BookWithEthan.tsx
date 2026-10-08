@@ -29,7 +29,7 @@ export default function BookWithEthan() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[460px_1fr]">
+        <div className="mt-12 grid items-start gap-6 lg:grid-cols-[460px_1fr]">
           <div className="flex flex-col overflow-hidden rounded-[24px] border border-line bg-white shadow-[0_30px_70px_-45px_rgba(0,0,0,0.35)]">
             <div className="relative aspect-[4/5] w-full bg-[radial-gradient(90%_70%_at_30%_20%,#fff1e4_0%,#f3f3f3_70%)]">
               {hasPhoto ? (

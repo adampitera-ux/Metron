@@ -27,6 +27,8 @@ export const SITE = {
   adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "", // e.g. AW-123456789
   adsLeadLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL ?? "", // conversion label for form leads
   adsCallLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL ?? "", // conversion label for phone clicks
+  adsPurchaseLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? "", // conversion label for Stripe purchases (/welcome)
+  adsBookingLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_BOOKING_LABEL ?? "", // conversion label for booked sales calls (Cal.com)
 } as const;
 
 export const absoluteUrl = (path = "/") =>

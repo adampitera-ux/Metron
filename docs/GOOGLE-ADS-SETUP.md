@@ -40,6 +40,8 @@ How the site is wired for paid traffic, and what to configure before you spend a
 | Custom software | custom ai software, custom business software, internal tools | `/lp/custom-ai-software` |
 | Home services | ai for hvac, ai for plumbers, ai for electricians | `/lp/home-services` |
 | Contractors | ai for contractors, construction automation | `/lp/contractors` |
+| Websites (Launch plan) | small business website design, web design for contractors | `/lp/website-design` |
+| Local SEO (Growth plan) | local seo services, seo for small business, google business profile help | `/lp/local-seo` |
 | AI consulting | ai consultant small business, ai integration services | `/lp/ai-consultant` |
 
 Add UTMs via a tracking template, e.g.
@@ -47,6 +49,32 @@ Add UTMs via a tracking template, e.g.
 (auto-tagging adds `gclid` automatically — keep it ON).
 
 To add a landing page: append an object to `LANDING_PAGES` — the page, metadata and form wiring are generated automatically.
+
+## 3b. City message match
+
+Add `?city=<slug>` to any landing page final URL for location-targeted campaigns, e.g.
+`/lp/home-services?city=houston` → eyebrow reads "AI for home service businesses in Houston".
+Valid slugs: new-york, los-angeles, chicago, houston, phoenix, dallas, miami, atlanta, denver, seattle.
+Unknown values are ignored, so a typo never breaks the page.
+
+## 3c. Conversion actions to create (Google Ads → Goals → Conversions)
+
+| Conversion | Env var for the label | Fires when | Suggested settings |
+|---|---|---|---|
+| Lead form submit | `NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL` | Form submitted successfully | Primary, count One, enhanced conversions ON |
+| Phone click | `NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL` | Any `tel:` link tapped | Secondary (clicks aren't calls) |
+| Booked sales call | `NEXT_PUBLIC_GOOGLE_ADS_BOOKING_LABEL` | Ethan's Cal.com booking completes | Primary, count One |
+| Purchase | `NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL` | `/welcome?plan=…&session_id=…` loads after Stripe checkout | Primary, count One, use transaction-specific value |
+
+**Stripe redirect URLs (required for purchase tracking).** In each Payment Link → After payment → redirect, use:
+
+- Launch: `https://www.usemetron.com/welcome?plan=launch&session_id={CHECKOUT_SESSION_ID}`
+- Growth: `https://www.usemetron.com/welcome?plan=growth&session_id={CHECKOUT_SESSION_ID}`
+- Scale: `https://www.usemetron.com/welcome?plan=scale&session_id={CHECKOUT_SESSION_ID}`
+- Enterprise: `https://www.usemetron.com/welcome?plan=enterprise&session_id={CHECKOUT_SESSION_ID}`
+
+Stripe fills in `{CHECKOUT_SESSION_ID}`; it's used as the transaction ID so refreshes never double count.
+The value sent is setup + first month (what the customer pays today).
 
 ## 4. Quality Score checklist per ad group
 

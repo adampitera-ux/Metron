@@ -107,3 +107,31 @@ function normalizePhone(p: string) {
 export function trackCheckout(plan: string, value: number) {
   gtag("event", "begin_checkout", { currency: "USD", value, items: [{ item_id: plan, item_name: plan, price: value }] });
 }
+
+/** Booked a sales call through the Cal.com calendar. */
+export function trackBooking(location: string) {
+  gtag("event", "book_call", { location });
+  if (SITE.adsId && SITE.adsBookingLabel) {
+    gtag("event", "conversion", { send_to: `${SITE.adsId}/${SITE.adsBookingLabel}` });
+  }
+}
+
+/**
+ * Completed a Stripe checkout (fired on /welcome). transactionId de-duplicates in
+ * Google Ads, and we also guard locally so a refresh doesn't count twice.
+ */
+export function trackPurchase({ plan, value, transactionId }: { plan: string; value: number; transactionId: string }) {
+  const key = `metron_purchase_${transactionId}`;
+  const seen = safe(() => localStorage.getItem(key), null);
+  if (seen) return;
+  safe(() => localStorage.setItem(key, "1"), undefined);
+  gtag("event", "purchase", {
+    transaction_id: transactionId,
+    currency: "USD",
+    value,
+    items: [{ item_id: plan, item_name: plan, price: value }],
+  });
+  if (SITE.adsId && SITE.adsPurchaseLabel) {
+    gtag("event", "conversion", { send_to: `${SITE.adsId}/${SITE.adsPurchaseLabel}`, value, currency: "USD", transaction_id: transactionId });
+  }
+}

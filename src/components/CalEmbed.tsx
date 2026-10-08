@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { trackBooking } from "@/lib/track";
 
 type CalFn = ((...args: unknown[]) => void) & { q?: unknown[][]; ns?: Record<string, CalFn>; loaded?: boolean };
 declare global {
@@ -55,6 +56,15 @@ export default function CalEmbed({ calLink }: { calLink: string }) {
     Cal("init", "metron", { origin: "https://cal.com" });
     const ns = window.Cal!.ns!.metron;
     ns("inline", { elementOrSelector: el, calLink, config: { layout: "month_view", theme: "light" } });
+    // Count a booked call as a conversion (guarded so v1 + v2 events don't double count).
+    let counted = false;
+    const onBooked = () => {
+      if (counted) return;
+      counted = true;
+      trackBooking(window.location.pathname);
+    };
+    ns("on", { action: "bookingSuccessfulV2", callback: onBooked });
+    ns("on", { action: "bookingSuccessful", callback: onBooked });
     ns("ui", {
       theme: "light",
       hideEventTypeDetails: false,
@@ -63,5 +73,5 @@ export default function CalEmbed({ calLink }: { calLink: string }) {
     });
   }, [calLink]);
 
-  return <div ref={ref} className="min-h-[640px] w-full overflow-auto" />;
+  return <div ref={ref} className="h-[680px] w-full overflow-y-auto overscroll-contain" />;
 }

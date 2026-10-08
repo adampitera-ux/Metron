@@ -55,16 +55,19 @@ export default function PricingPage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: `${SITE.name} AI Automation Plans`,
+          "@type": "Service",
+          name: `${SITE.name} Website, SEO & AI Automation Plans`,
+          serviceType: "Website design, SEO and AI automation for small businesses",
           description: "Websites, SEO, AI search optimization and managed AI automation for small businesses.",
-          brand: { "@type": "Brand", name: SITE.name },
+          provider: { "@id": `${SITE.url}/#organization` },
+          areaServed: { "@type": "Country", name: SITE.areaServed },
           offers: PLANS.map((p) => ({
             "@type": "Offer",
             name: p.name,
             description: p.tagline,
             price: String(p.setup),
             priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
             url: absoluteUrl("/pricing"),
             priceSpecification: [
               { "@type": "UnitPriceSpecification", name: "One-time setup", price: String(p.setup), priceCurrency: "USD" },

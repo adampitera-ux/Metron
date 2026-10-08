@@ -16,7 +16,9 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: `${SITE.name} — AI Automation Agency for Small Businesses` },
   description: SITE.description,
-  alternates: { canonical: "/" },
+  // Explicit absolute canonical + og:url so Google treats www as the one true home page.
+  alternates: { canonical: `${SITE.url}/` },
+  openGraph: { url: `${SITE.url}/`, title: `${SITE.name} — AI Automation Agency for Small Businesses`, description: SITE.description },
 };
 
 export default function Home() {

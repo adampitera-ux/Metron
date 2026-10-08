@@ -73,5 +73,5 @@ export default function CalEmbed({ calLink }: { calLink: string }) {
     });
   }, [calLink]);
 
-  return <div ref={ref} className="h-[680px] w-full overflow-y-auto overscroll-contain" />;
+  return <div ref={ref} className="min-h-[640px] w-full" />;
 }

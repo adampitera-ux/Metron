@@ -5,6 +5,7 @@ import { INDUSTRIES } from "@/content/industries";
 import { SERVICES } from "@/content/services";
 import { TOOLS } from "@/content/tools";
 import { CATEGORIES } from "@/content/categories";
+import { LOCATIONS } from "@/content/locations";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -25,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...SERVICES.map((s) => page(`/services/${s.slug}`, 0.9)),
     page("/industries", 0.9),
     ...INDUSTRIES.map((i) => page(`/industries/${i.slug}`, 0.85)),
+    page("/locations", 0.8),
+    ...LOCATIONS.map((l) => page(`/locations/${l.slug}`, 0.8)),
     page("/pricing", 0.8),
     page("/tools", 0.8),
     ...TOOLS.map((t) => page(`/tools/${t.slug}`, 0.8)),

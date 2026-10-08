@@ -1,3 +1,4 @@
+import { LOCATIONS } from "@/content/locations";
 import "server-only";
 import { getAllPosts } from "./blog";
 import { GENERAL_FAQS } from "@/content/faqs";
@@ -27,6 +28,9 @@ ${SERVICES.map((s) => link(s.name, `/services/${s.slug}`, s.summary)).join("\n")
 
 ## Industries
 ${INDUSTRIES.map((i) => link(`AI automation for ${i.audience}`, `/industries/${i.slug}`)).join("\n")}
+
+## Locations
+${LOCATIONS.map((l) => link(`AI automation in ${l.city}, ${l.region}`, `/locations/${l.slug}`)).join("\n")}
 
 ## Free tools
 ${TOOLS.map((t) => link(t.name, `/tools/${t.slug}`, t.tagline)).join("\n")}

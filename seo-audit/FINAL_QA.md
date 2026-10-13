@@ -23,7 +23,7 @@
 2. Verify Bing Webmaster Tools (import from Search Console).
 3. In Search Console, request indexing for /blog/how-much-does-ai-automation-cost, /industries/roofing, /industries/pest-control and /tools/missed-call-revenue-calculator.
 4. Create a LinkedIn company page and Clutch/G2/DesignRush profiles, then send the URLs for `sameAs`.
-5. Switch to a domain email; confirm "Founded 2024".
+5. Switch to a domain email. (Founding date removed site-wide on 2026-10-12.)
 6. Provide one real case study and real reviews (permission required).
 7. Set the GA4 ID and key events; add the "AI Assistants" channel group.
 8. Run the AI prompt set monthly and log real rows in AI_CITATION_TRACKING.csv.

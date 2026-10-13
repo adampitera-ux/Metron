@@ -7,7 +7,7 @@
 | Canonical URL | https://www.usemetron.com | Verified (all variants redirect here) |
 | Phone | (347) 674-1110 | Owner-provided |
 | Email | eeharris2004@gmail.com | Owner-provided. ⚠ Personal Gmail weakens trust; recommend a domain email |
-| Founded | 2024 | ⚠ **Owner must confirm** (flagged previously) |
+| Founded | Not published (removed 2026-10-12 at owner request) | — |
 | Area served | United States (remote) | Owner-stated |
 | Physical address | None published | Correct: don't invent one |
 | Team | Ethan Harris (sales; Person schema) | Owner-provided photo and Cal.com link |

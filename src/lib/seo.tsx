@@ -113,7 +113,6 @@ export const organizationSchema = (): Json => ({
     areaServed: "US",
     availableLanguage: "en",
   },
-  foundingDate: SITE.founded,
   areaServed: { "@type": "Country", name: SITE.areaServed },
   knowsAbout: [
     "AI integration for small businesses",

@@ -22,7 +22,6 @@ export default function CompanyFacts() {
     ["Pricing", "Four plans with a one-time setup fee plus monthly: Launch ($500 setup + $100/month), Growth ($999 setup + $150/month), Scale ($1,700 setup + $500/month) and Enterprise ($2,800 setup + $1,000/month). Free AI audit to start."],
     ["How engagements start", "A free 30-minute AI audit that maps workflows, estimates savings and recommends next steps."],
     ["Delivery model", "Done-for-you: we design, build, connect, monitor and maintain the systems."],
-    ["Founded", SITE.founded],
     ["Website", <a key="w" href={SITE.url}>{SITE.url.replace(/^https?:\/\//, "")}</a>],
     ["Email", <a key="e" href={`mailto:${SITE.email}`}>{SITE.email}</a>],
     ...(SITE.phone ? ([["Phone", SITE.phone]] as [string, React.ReactNode][]) : []),

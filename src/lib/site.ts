@@ -13,7 +13,6 @@ export const SITE = {
   email: "eeharris2004@gmail.com",
   phone: "(347) 674-1110" as string, // display format — leave empty to hide everywhere
   phoneE164: "+13476741110", // used for tel: links + schema
-  founded: "2024",
   areaServed: "United States",
   // Public profiles strengthen entity recognition in Google + AI answer engines.
   sameAs: [] as string[], // e.g. ["https://www.linkedin.com/company/…", "https://x.com/…"]

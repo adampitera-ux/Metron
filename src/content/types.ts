@@ -43,6 +43,15 @@ export type GlossaryTerm = {
   short: string; // single-sentence definition (<= 30 words)
   body: string[]; // 2–4 paragraphs
   related: string[]; // other glossary slugs
+  guide?: GlossaryGuide; // optional long-form guide for high-impression terms
+};
+
+export type GlossaryGuide = {
+  seoTitle?: string; // overrides "What Is X? Definition & Examples"
+  seoDescription?: string;
+  sections: { heading: string; paragraphs: string[]; bullets?: string[] }[];
+  table?: { caption: string; headers: string[]; rows: string[][] };
+  faqs?: QA[];
 };
 
 export const BLOG_CATEGORIES = [

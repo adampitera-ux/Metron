@@ -37,7 +37,7 @@ export const TOOLS: Tool[] = [
     name: "Missed-Call Revenue Calculator",
     tagline: "Estimate how much revenue unanswered calls cost your business every month.",
     metaDescription:
-      "Free missed-call revenue calculator for HVAC, plumbing, dental and other local businesses. Estimate monthly and yearly revenue lost to unanswered calls.",
+      "Free missed-call calculator: estimate the revenue unanswered calls cost you each month and how much missed-call text-back and an AI receptionist could recover.",
     answer:
       "To estimate revenue lost to missed calls, multiply missed calls per week by the share of callers who would have booked, then by your average job value. Multiply by 52 for a yearly figure, and add any repeat-customer value. This calculator does the math and shows how much an AI receptionist might recover.",
     how: [
@@ -46,6 +46,7 @@ export const TOOLS: Tool[] = [
       { title: "See the gap", body: "Compare lost revenue with what an AI receptionist and instant text-back could recover." },
     ],
     faqs: [
+      { q: "How much revenue can missed-call text-back recover?", a: "It depends on how many calls you miss and how many of those callers would have booked. Enter your numbers above to estimate it. Missed-call text-back recovers revenue by instantly texting callers who reach voicemail so they don't call a competitor, and an AI receptionist can answer the calls in the first place." },
       { q: "How do I find out how many calls I'm missing?", a: "Most business phone systems and VoIP providers show missed or unanswered calls in their call log or reporting dashboard. Review a typical week, and a busy-season week if your business is seasonal." },
       { q: "What booking rate should I use?", a: "Use your own historical rate of phone inquiries that turn into booked jobs or appointments. If you don't track it, start conservatively and adjust once you have data." },
       { q: "How does AI recover missed calls?", a: "An AI receptionist can answer calls 24/7, qualify the caller and book directly into your calendar. Missed-call text-back sends an instant text when a call isn't answered, so the customer can book by text instead of calling a competitor." },

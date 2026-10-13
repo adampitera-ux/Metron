@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GLOSSARY } from "@/content/glossary";
 import { getAllPosts } from "@/lib/blog";
-import { AnswerBox, CtaBand, LinkCard, PageHeader, Section, SectionTitle } from "@/components/page/blocks";
+import { AnswerBox, CtaBand, FaqBlock, LinkCard, PageHeader, Section, SectionTitle } from "@/components/page/blocks";
 import { JsonLd, definedTermSchema, pageMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
@@ -16,8 +16,10 @@ export async function generateMetadata({ params }: PageProps<"/glossary/[slug]">
   const t = GLOSSARY.find((x) => x.slug === slug);
   if (!t) return {};
   return pageMetadata({
-    title: `What Is ${t.term}? Definition & Examples`,
-    description: t.short.length > 150 ? t.short : `${t.short} Learn what it means and why it matters for small businesses.`.slice(0, 160),
+    title: t.guide?.seoTitle ?? `What Is ${t.term}? Definition & Examples`,
+    description:
+      t.guide?.seoDescription ??
+      (t.short.length > 150 ? t.short : `${t.short} Learn what it means and why it matters for small businesses.`.slice(0, 160)),
     path: `/glossary/${t.slug}`,
     kicker: "Glossary",
   });
@@ -53,7 +55,53 @@ export default async function TermPage({ params }: PageProps<"/glossary/[slug]">
             {t.body.map((para, i) => (
               <p key={i}>{para}</p>
             ))}
+            {t.guide?.sections.map((sec) => (
+              <div key={sec.heading}>
+                <h2>{sec.heading}</h2>
+                {sec.paragraphs.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+                {sec.bullets && (
+                  <ul>
+                    {sec.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+            {t.guide?.table && (
+              <>
+                <h2>{t.guide.table.caption}</h2>
+                <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      {t.guide.table.headers.map((h) => (
+                        <th key={h}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {t.guide.table.rows.map((r) => (
+                      <tr key={r[0]}>
+                        {r.map((c, i) => (
+                          <td key={i}>{c}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                </div>
+              </>
+            )}
           </div>
+
+          {t.guide?.faqs && t.guide.faqs.length > 0 && (
+            <div className="mt-12">
+              <FaqBlock faqs={t.guide.faqs} title={`${t.term}: FAQs`} />
+            </div>
+          )}
 
           {related.length > 0 && (
             <div className="mt-12">

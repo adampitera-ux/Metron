@@ -1,6 +1,8 @@
 import type { GlossaryTerm } from "./types";
 import { MORE_GLOSSARY } from "./glossary-more";
 import { EXTRA_GLOSSARY } from "./glossary-extra";
+import { AI_GLOSSARY } from "./glossary-ai";
+import { GLOSSARY_GUIDES } from "./glossary-guides";
 
 const BASE_GLOSSARY: GlossaryTerm[] = [
   {
@@ -197,6 +199,6 @@ const BASE_GLOSSARY: GlossaryTerm[] = [
   },
 ];
 
-export const GLOSSARY: GlossaryTerm[] = [...BASE_GLOSSARY, ...MORE_GLOSSARY, ...EXTRA_GLOSSARY].sort((a, b) =>
+export const GLOSSARY: GlossaryTerm[] = [...BASE_GLOSSARY, ...MORE_GLOSSARY, ...EXTRA_GLOSSARY, ...AI_GLOSSARY].map((t) => (GLOSSARY_GUIDES[t.slug] ? { ...t, guide: GLOSSARY_GUIDES[t.slug] } : t)).sort((a, b) =>
   a.term.localeCompare(b.term, "en", { sensitivity: "base" }),
 );

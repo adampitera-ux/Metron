@@ -477,6 +477,10 @@ export const MORE_INDUSTRIES: Industry[] = [
     ],
     faqs: [
       {
+        q: "Can I automate quote follow-ups for my moving company?",
+        a: "Yes. When a customer requests a moving estimate, AI can reply instantly, collect inventory details and photos, and send your quote. If they don't book, timed follow-ups by text and email remind them of their move date, answer common questions about pricing and insurance, and make it easy to reserve a date before your calendar fills up.",
+      },
+      {
         q: "How much does AI automation cost for a moving company?",
         a: "Pricing depends on lead volume, the workflows you choose and the software we connect. Most movers start with instant lead response and estimate follow-up. We give a fixed quote after a short discovery call.",
       },

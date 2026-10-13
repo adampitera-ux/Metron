@@ -383,6 +383,10 @@ const BASE_INDUSTRIES: Industry[] = [
     ],
     faqs: [
       {
+        q: "Can AI follow up with insurance claim leads automatically?",
+        a: "Yes. For storm and insurance work, AI can respond to new leads instantly, collect the address, photos, insurance carrier and claim status, book the inspection, and then send automatic updates at each step, such as inspection scheduled, adjuster meeting, approval and install date. Your team gets alerted when a homeowner needs a call, so claims don't stall from missed follow-up.",
+      },
+      {
         q: "How much does AI automation cost for a roofing company?",
         a: "It depends on lead volume, which workflows you want and which CRM we connect to. We scope your setup on a short call and give a fixed quote before any work begins.",
       },
@@ -689,6 +693,10 @@ const BASE_INDUSTRIES: Industry[] = [
       "Google Business Profile",
     ],
     faqs: [
+      {
+        q: "Can AI automate quote follow-up for pest control companies?",
+        a: "Yes. After you send a quote for a one-time treatment or a recurring plan, an automated sequence of texts and emails checks in, answers common questions about safety and scheduling, and makes it easy to approve and book. Engaged prospects are flagged so your team calls the right people first, and anyone who opts out is never messaged again.",
+      },
       {
         q: "How much does AI automation cost for a pest control company?",
         a: "Pricing depends on call volume, workflows and the software we connect to. We scope it on a short call and provide a fixed quote before starting.",

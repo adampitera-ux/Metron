@@ -7,6 +7,34 @@ import { JsonLd, definedTermSchema, pageMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
 
+// Next steps for terms that earn search impressions: the matching service, tool or guide.
+const TERM_NEXT_STEPS: Record<string, { href: string; label: string }[]> = {
+  "missed-call-text-back": [
+    { href: "/tools/missed-call-revenue-calculator", label: "Missed-call revenue calculator" },
+    { href: "/services/ai-receptionist", label: "AI receptionist & missed-call text-back service" },
+  ],
+  "speed-to-lead": [
+    { href: "/services/lead-follow-up", label: "AI lead follow-up service" },
+    { href: "/blog/speed-to-lead-response-time", label: "Speed-to-lead response time guide" },
+  ],
+  "ai-integration": [
+    { href: "/services/ai-strategy", label: "AI strategy & integration service" },
+    { href: "/blog/how-much-does-ai-automation-cost", label: "What AI automation costs" },
+  ],
+  "workflow-automation": [
+    { href: "/services/ai-automation", label: "Workflow & back-office automation service" },
+    { href: "/tools/ai-automation-roi-calculator", label: "AI automation ROI calculator" },
+  ],
+  rpa: [{ href: "/services/ai-automation", label: "Workflow & back-office automation service" }],
+  "api-integration": [{ href: "/services/custom-ai-software", label: "Custom AI software & integrations" }],
+  "field-service-management": [
+    { href: "/services/ai-receptionist", label: "AI receptionist that books into your schedule" },
+    { href: "/blog/best-ai-tools-for-home-service-businesses", label: "Best AI tools for home service businesses" },
+  ],
+  "google-business-profile": [{ href: "/blog/google-business-profile-checklist", label: "Google Business Profile checklist" }],
+  "entity-seo": [{ href: "/services/aeo-geo", label: "AI search optimization (AEO & GEO) service" }],
+};
+
 export function generateStaticParams() {
   return GLOSSARY.map((t) => ({ slug: t.slug }));
 }
@@ -100,6 +128,21 @@ export default async function TermPage({ params }: PageProps<"/glossary/[slug]">
           {t.guide?.faqs && t.guide.faqs.length > 0 && (
             <div className="mt-12">
               <FaqBlock faqs={t.guide.faqs} title={`${t.term}: FAQs`} />
+            </div>
+          )}
+
+          {TERM_NEXT_STEPS[t.slug] && (
+            <div className="mt-12">
+              <p className="h-display text-lg text-fg">Put it to work</p>
+              <ul className="mt-4 space-y-2">
+                {TERM_NEXT_STEPS[t.slug].map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="text-[15.5px] font-medium text-orange hover:underline">
+                      {l.label} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 

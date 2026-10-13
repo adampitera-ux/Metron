@@ -93,6 +93,11 @@ export const organizationSchema = (): Json => ({
   "@id": ORG_ID,
   name: SITE.name,
   legalName: SITE.legalName,
+  // Several unrelated companies are called "Metron"; the domain-based name and the
+  // disambiguating description help search and answer engines tell us apart.
+  alternateName: ["Metron AI Integration Agency", "usemetron.com"],
+  disambiguatingDescription:
+    "Metron (usemetron.com) is a US AI integration and automation agency for small and medium-sized businesses. It is not affiliated with other companies named Metron.",
   url: SITE.url,
   logo: absoluteUrl("/icon.png"),
   image: absoluteUrl("/og.png"),
@@ -100,6 +105,14 @@ export const organizationSchema = (): Json => ({
   slogan: SITE.tagline,
   email: SITE.email,
   ...(SITE.phone ? { telephone: SITE.phoneE164 } : {}),
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    email: SITE.email,
+    ...(SITE.phone ? { telephone: SITE.phoneE164 } : {}),
+    areaServed: "US",
+    availableLanguage: "en",
+  },
   foundingDate: SITE.founded,
   areaServed: { "@type": "Country", name: SITE.areaServed },
   knowsAbout: [
@@ -176,6 +189,7 @@ export const serviceSchema = ({
   description,
   url: absoluteUrl(path),
   serviceType,
+  brand: { "@id": ORG_ID },
   provider: { "@id": ORG_ID },
   areaServed: { "@type": "Country", name: SITE.areaServed },
   ...(audience ? { audience: { "@type": "BusinessAudience", name: audience } } : {}),
@@ -213,7 +227,8 @@ export const articleSchema = ({
   datePublished: date,
   dateModified: updated ?? date,
   image: absoluteUrl(image),
-  author: { "@type": "Organization", name: SITE.author.name, url: absoluteUrl("/about") },
+  // Posts are written by the Metron team, so the author is the Organization entity itself.
+  author: { "@id": ORG_ID },
   publisher: { "@id": ORG_ID },
   inLanguage: "en-US",
   ...(section ? { articleSection: section } : {}),

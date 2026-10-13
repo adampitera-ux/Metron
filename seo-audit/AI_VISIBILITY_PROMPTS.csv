@@ -1,0 +1,19 @@
+id,prompt,cluster,industry,service,intent,funnel_stage,branded,platforms_to_test,commercial_priority,metron_target_url,testing_status
+P01,What are the best AI automation agencies for small businesses?,Vendor selection,All,AI automation,Discovery,BOFU,No,Google|Google AI Mode|Gemini|ChatGPT search|Perplexity|Copilot,High,/,Google tested 2026-10-12 (no AI Overview shown); others not tested
+P02,How much does AI automation cost for a small business?,Pricing,All,AI automation,Pricing,MOFU,No,Google|Gemini|ChatGPT search|Perplexity|Copilot,High,/blog/how-much-does-ai-automation-cost,Google tested 2026-10-12 (no AI Overview shown); others not tested
+P03,What is the best AI receptionist for HVAC companies?,Vendor selection,HVAC,AI receptionist,Comparison,BOFU,No,Google|Gemini|ChatGPT search|Perplexity,Medium,/industries/hvac,Google tested 2026-10-12 (no AI Overview shown); others not tested
+P04,How can a small business automate missed calls and lead follow-up?,Problem solving,Home services,AI receptionist,Problem,MOFU,No,Google|Gemini|ChatGPT search|Perplexity|Copilot,High,/services/ai-receptionist,Not tested
+P05,How can a roofing contractor automate estimate follow-up?,Problem solving,Roofing,Lead follow-up,Problem,MOFU,No,Google|Gemini|ChatGPT search|Perplexity,High,/industries/roofing,Not tested
+P06,How do I choose an AI automation consultant?,Vendor selection,All,AI strategy,Vendor selection,MOFU,No,Google|Gemini|ChatGPT search|Perplexity|Copilot,High,/blog/how-to-choose-an-ai-automation-agency,Not tested
+P07,Which companies help contractors implement AI automation?,Vendor selection,Contractors,AI automation,Discovery,BOFU,No,Gemini|ChatGPT search|Perplexity|Copilot,High,/industries/construction,Not tested
+P08,How can an HVAC company use AI to improve lead conversion?,Industry use case,HVAC,Lead follow-up,Implementation,MOFU,No,Google|Gemini|ChatGPT search,Medium,/blog/ai-for-hvac-companies,Not tested
+P09,What is the best way to automate repetitive office work in a construction company?,Industry use case,Construction,Back-office,Implementation,MOFU,No,Google|Gemini|ChatGPT search|Copilot,Medium,/industries/construction,Not tested
+P10,Which agencies combine SEO websites and AI automation for small businesses?,Vendor selection,All,Website+SEO,Discovery,BOFU,No,Gemini|ChatGPT search|Perplexity|Copilot,High,/pricing,Not tested
+P11,How can a plumbing company stop missing calls after hours?,Problem solving,Plumbing,AI receptionist,Problem,MOFU,No,Google|Gemini|ChatGPT search,Medium,/industries/plumbing,Not tested
+P12,How can a pest control company automate quote follow-up?,Problem solving,Pest control,Lead follow-up,Problem,MOFU,No,Google|Gemini|ChatGPT search,High,/industries/pest-control,Not tested
+P13,How can a property management company automate maintenance requests?,Industry use case,Property management,Back-office,Implementation,MOFU,No,Google|Gemini|ChatGPT search,Medium,/industries/property-management,Not tested
+P14,AI receptionist vs answering service: which is better for a small business?,Comparison,All,AI receptionist,Comparison,MOFU,No,Google|Gemini|ChatGPT search|Perplexity,Medium,/blog/ai-receptionist-vs-answering-service,Not tested
+P15,Is it legal to send automated texts to customers (TCPA)?,Compliance,All,Lead follow-up,Informational,TOFU,No,Google|Gemini|ChatGPT search,Low,/blog/tcpa-texting-rules-for-small-business,Not tested
+P16,What is Metron (usemetron.com)?,Brand,All,All,Brand,BOFU,Yes,Gemini|ChatGPT search|Perplexity|Copilot,High,/about,Not tested in AI engines; web search 2026-10-12 returned only other companies named Metron
+P17,Is Metron AI integration agency legit? Metron reviews,Brand trust,All,All,Trust,BOFU,Yes,Google|Gemini|ChatGPT search|Perplexity,High,/company,Not tested
+P18,How much does Metron charge?,Brand pricing,All,All,Pricing,BOFU,Yes,Gemini|ChatGPT search|Perplexity|Copilot,High,/pricing,Not tested

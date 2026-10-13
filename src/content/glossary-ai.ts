@@ -16,7 +16,7 @@ export const AI_GLOSSARY: GlossaryTerm[] = [
       "In practice, your documents are split into small chunks and indexed so they can be searched by meaning. When a customer or employee asks something, the system finds the best-matching chunks and the AI writes an answer using them, often with a reference to where the information came from.",
       "For small businesses, RAG powers website chat assistants that answer from your actual FAQs and policies, and internal assistants that answer staff questions from SOPs. Keeping the source information accurate and up to date matters as much as the AI itself.",
     ],
-    related: ["knowledge-base", "large-language-model", "ai-hallucination", "ai-guardrails"],
+    related: ["knowledge-base", "large-language-model", "ai-hallucination", "ai-guardrails", "fine-tuning"],
   },
   {
     slug: "ai-evals",
@@ -52,7 +52,7 @@ export const AI_GLOSSARY: GlossaryTerm[] = [
       "For business systems, prompts are usually written once and reused thousands of times, for example the instructions behind an AI receptionist or a lead follow-up assistant. That's why they're tested with real examples and refined over time.",
       "Prompting works hand in hand with grounding (giving the AI the right data), guardrails and evals. A great prompt can't fix missing or outdated information.",
     ],
-    related: ["large-language-model", "rag", "ai-guardrails", "context-window"],
+    related: ["large-language-model", "rag", "ai-guardrails", "context-window", "fine-tuning"],
   },
   {
     slug: "ai-hallucination",

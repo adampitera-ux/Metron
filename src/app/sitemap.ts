@@ -9,13 +9,14 @@ import { LOCATIONS } from "@/content/locations";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const posts = getAllPosts();
   const latestPost = posts[0]?.updated ?? posts[0]?.date;
 
-  const page = (path: string, priority: number, changeFrequency: "weekly" | "monthly" = "monthly", lastModified: Date | string = now) => ({
+  // lastmod is only sent when we actually know it (blog dates). Stamping every URL with the
+  // build time told Google/Bing all 180+ pages changed on every deploy, which makes them ignore it.
+  const page = (path: string, priority: number, changeFrequency: "weekly" | "monthly" = "monthly", lastModified?: string) => ({
     url: absoluteUrl(path),
-    lastModified,
+    ...(lastModified ? { lastModified } : {}),
     changeFrequency,
     priority,
   });
@@ -31,8 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/pricing", 0.8),
     page("/tools", 0.8),
     ...TOOLS.map((t) => page(`/tools/${t.slug}`, 0.8)),
-    page("/blog", 0.8, "weekly", latestPost ?? now),
-    ...CATEGORIES.filter((c) => posts.some((p) => p.category === c.name)).map((c) => page(`/blog/category/${c.slug}`, 0.7, "weekly", latestPost ?? now)),
+    page("/blog", 0.8, "weekly", latestPost),
+    ...CATEGORIES.filter((c) => posts.some((p) => p.category === c.name)).map((c) => page(`/blog/category/${c.slug}`, 0.7, "weekly", latestPost)),
     ...posts.map((p) => page(`/blog/${p.slug}`, 0.7, "monthly", p.updated ?? p.date)),
     page("/glossary", 0.6),
     ...GLOSSARY.map((g) => page(`/glossary/${g.slug}`, 0.5)),

@@ -40,8 +40,9 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   applicationName: SITE.name,
+  // No site-wide canonical: every indexable page sets its own via pageMetadata, and a
+  // root default would point 404s and noindex utility pages at the homepage.
   alternates: {
-    canonical: "/",
     types: { "application/rss+xml": [{ url: "/blog/rss.xml", title: `${SITE.name} Blog` }] },
   },
   openGraph: {
@@ -51,11 +52,8 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   twitter: { card: "summary_large_image" },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" },
-  },
+  // index/follow is the default; stating it here conflicted with the 404 page's noindex.
+  robots: { "max-snippet": -1, "max-image-preview": "large" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

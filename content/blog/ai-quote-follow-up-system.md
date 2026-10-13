@@ -34,6 +34,8 @@ relatedServices:
 relatedIndustries:
   - hvac
   - roofing
+  - pest-control
+  - moving
   - painting
   - construction
 ---

@@ -348,7 +348,7 @@ const BASE_SERVICES: Service[] = [
         a: "Yes. We draft all templates in your voice and you approve them before launch. For sensitive situations, AI-drafted replies can wait for human approval before sending.",
       },
     ],
-    relatedIndustries: ["roofing", "hvac", "real-estate", "law-firms", "med-spas", "landscaping"],
+    relatedIndustries: ["roofing", "hvac", "pest-control", "moving", "real-estate", "law-firms", "med-spas", "landscaping"],
     keywords: [
       "ai lead follow up",
       "crm automation for small business",

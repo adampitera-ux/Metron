@@ -314,10 +314,10 @@ export const MORE_INDUSTRIES: Industry[] = [
     audience: "pool service companies",
     metaTitle: "AI Automation for Pool Service Companies | Metron",
     metaDescription:
-      "AI automation for pool service companies: answer calls, book openings and repairs, send service reports and automate billing so routes run without office chaos.",
+      "AI automation for pool service and pool cleaning companies: answer calls, book openings and repairs, send service reports and automate billing for every route.",
     headline: "AI Automation for Pool Service Companies: Smoother Routes, Faster Billing",
     answer:
-      "AI helps a pool service company by answering calls and texts, booking openings, closings and repairs, sending customers automatic service reports after each visit, following up on equipment quotes, and running recurring billing and payment reminders. Techs stay focused on their routes, and the office stops spending hours on calls, invoices and schedule changes.",
+      "AI helps a pool service or pool cleaning company by answering calls and texts, booking openings, closings and repairs, sending customers automatic service reports after each visit, following up on equipment quotes, and running recurring billing and payment reminders. Techs stay focused on their routes, and the office stops spending hours on calls, invoices and schedule changes.",
     painPoints: [
       {
         title: "Spring openings flood the phones",

@@ -198,10 +198,10 @@ export const EXTRA_INDUSTRIES: Industry[] = [
     audience: "salons and barbershops",
     metaTitle: "AI Automation for Salons & Barbershops | Metron",
     metaDescription:
-      "AI automation for salons and barbershops: book clients 24/7, cut no-shows with reminders, fill last-minute openings, rebook regulars and grow Google reviews.",
+      "AI automation for hair salons and barbershops: book haircuts 24/7, cut no-shows with reminders, fill last-minute openings, rebook regulars and grow reviews.",
     headline: "AI Automation for Salons & Barbershops: A Full Chair, Every Day",
     answer:
-      "AI helps a salon or barbershop by answering calls and messages while stylists are busy, booking clients online 24/7, sending reminders that cut no-shows, filling last-minute cancellations from a waitlist, reminding regulars when they're due for their next cut, and asking happy clients for reviews. Stylists stay focused on the client in the chair.",
+      "AI helps a hair salon, barbershop or beauty salon by answering calls and messages while stylists are busy, booking clients online 24/7, sending reminders that cut no-shows, filling last-minute cancellations from a waitlist, reminding regulars when they're due for their next cut, and asking happy clients for reviews. Stylists stay focused on the client in the chair.",
     painPoints: [
       {
         title: "Nobody can answer the phone mid-service",

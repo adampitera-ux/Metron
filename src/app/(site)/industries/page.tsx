@@ -4,7 +4,7 @@ import { Button } from "@/components/ui";
 import { JsonLd, itemListSchema, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "AI Automation by Industry — HVAC, Plumbing, Dental, Legal & More",
+  title: "AI Receptionist, Automation & Web Design by Industry",
   description:
     "See how AI automation works for HVAC, plumbing, electrical, roofing, landscaping, cleaning, pest control, dental, law firms, real estate, auto repair and med spas.",
   path: "/industries",

@@ -132,7 +132,7 @@ export const MORE_SERVICES: Service[] = [
     icon: "bolt",
     summary:
       "We audit your business, find where AI will save the most time and money, and integrate it into the software and routines your team already uses.",
-    metaTitle: "AI Strategy & Integration for Small Business | Metron",
+    metaTitle: "AI Integration Services for Small Business | Metron",
     metaDescription:
       "AI strategy and integration for small businesses: a practical AI audit, a prioritized roadmap, the right tools, team training, and AI built into your software.",
     headline: "A Practical AI Plan, Integrated Into the Tools You Already Use",

@@ -9,7 +9,7 @@ const BASE_SERVICES: Service[] = [
     icon: "flow",
     summary:
       "We automate the repetitive back-office work in your business, from scheduling and invoicing to data entry and reporting, so your team can focus on customers.",
-    metaTitle: "AI Workflow & Back-Office Automation | Metron",
+    metaTitle: "AI Automation Services: Workflow & Back-Office | Metron",
     metaDescription:
       "AI workflow automation for small businesses: scheduling, invoicing, data entry, and reporting handled automatically so your team can focus on paying work.",
     headline: "AI Back-Office Automation That Gives Owners Their Time Back",
@@ -129,7 +129,7 @@ const BASE_SERVICES: Service[] = [
     icon: "chat",
     summary:
       "An AI receptionist answers calls and texts around the clock, and missed-call text-back replies to callers you could not reach so leads do not go to a competitor.",
-    metaTitle: "AI Receptionist & Missed-Call Text-Back | Metron",
+    metaTitle: "AI Receptionist Service & Missed-Call Text-Back",
     metaDescription:
       "An AI receptionist that answers calls, books appointments, and texts back missed callers 24/7, so local service businesses stop losing leads to voicemail.",
     headline: "Never Miss Another Call With an AI Receptionist",
@@ -359,17 +359,17 @@ const BASE_SERVICES: Service[] = [
   },
   {
     slug: "website-refresh",
-    name: "Website Refresh & Conversion Optimization",
-    shortName: "Website Refresh",
+    name: "Web Design, Website Refresh & Conversion Optimization",
+    shortName: "Web Design",
     icon: "globe",
     summary:
       "We rebuild or refresh your website so it loads fast, works on every phone, ranks locally, and turns more visitors into calls and bookings.",
-    metaTitle: "Website Refresh & Conversion Optimization | Metron",
+    metaTitle: "Small Business Web Design & Website Redesign | Metron",
     metaDescription:
-      "A website refresh for small businesses: faster load times, mobile-first design, clear calls to action, and structured content built for search and AI answers.",
-    headline: "A Faster Website That Turns Visitors Into Booked Jobs",
+      "Web design for small businesses and contractors: a fast, mobile-first website, hosting and SEO from $500 setup + $100/month. New builds and redesigns.",
+    headline: "Small Business Web Design That Turns Visitors Into Booked Jobs",
     answer:
-      "A website refresh updates an existing small business site's design, speed, content, and structure without starting from scratch. Conversion optimization makes it easier for visitors to take action, using clear calls to action, click-to-call buttons, short forms, and online booking, so more of the traffic you already get becomes calls and appointments.",
+      "Metron designs and builds new websites for small businesses and contractors, or refreshes the one you have, starting at $500 setup plus $100 a month for hosting and care. A website refresh updates an existing site's design, speed, content, and structure without starting from scratch. Conversion optimization makes it easier for visitors to take action, using clear calls to action, click-to-call buttons, short forms, and online booking, so more of the traffic you already get becomes calls and appointments.",
     benefits: [
       {
         title: "Built for mobile visitors",
@@ -443,6 +443,14 @@ const BASE_SERVICES: Service[] = [
       "Form and booking integration with your CRM",
     ],
     faqs: [
+      {
+        q: "How much does web design cost with Metron?",
+        a: "Our Launch plan is $500 setup plus $100 a month and includes a custom-designed website of up to 5 pages, mobile-friendly build, hosting with SSL, domain and business email setup, a contact form that sends leads to your inbox, ongoing updates and backups, and basic on-page SEO. The Growth plan ($999 setup + $150 a month) adds up to 10 pages, full SEO, Google Business Profile optimization and local SEO.",
+      },
+      {
+        q: "Do you design websites for contractors and home service businesses?",
+        a: "Yes. We build websites for trades and local service businesses such as HVAC, plumbing, electrical, roofing, landscaping, cleaning, pool service, salons and auto repair. Each site is built around how your customers search and contact you: clear services, your service area, click-to-call and quote or booking forms.",
+      },
       {
         q: "What is the difference between a website refresh and a full redesign?",
         a: "A refresh improves an existing site's design, speed, content, and structure while keeping what already works, such as established URLs and content. A full redesign starts over. We recommend the option that fits your current site after an audit.",

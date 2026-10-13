@@ -18,3 +18,14 @@
 **Not changed (deliberately):** no URL deleted, renamed, redirected or noindexed. No bulk title rewrites (long-title warnings logged only). Design unchanged.
 
 **Pre-existing, not fixed:** 2 ESLint `react-hooks/set-state-in-effect` errors in LeadForm.tsx and LpCityEyebrow.tsx (they read URL params on mount; both work in production). Left alone to avoid touching the working lead form and Ads message-match without a specific bug.
+
+## 2026-10-12 (round 2): keyword coverage, founding date removal
+
+| # | Change | Files | Rationale | Risk / rollback |
+|---|---|---|---|---|
+| 10 | Founding date removed (Company page, Organization `foundingDate`, `SITE.founded`) | company/page.tsx, seo.tsx, site.ts | Owner request; the date was unconfirmed | None |
+| 11 | Website service retargeted at "web design" (title, H1, answer, description, shortName "Web Design", 2 FAQs from plans.ts facts). Slug `/services/website-refresh` unchanged. | services.ts | "web design" appeared on zero pages despite every plan including a website | Low; git revert |
+| 12 | Industry titles: "AI Receptionist & Automation for {audience}" (generated in the template; data `metaTitle` kept as fallback) | industries/[slug]/page.tsx | Owners search both "AI automation for X" and "AI receptionist for X"; pages had ~0 clicks, so title-change risk is low | Revert the template lines to use `i.metaTitle` |
+| 13 | "Web design and local SEO for {audience}" section on all 36 industry pages; prices read from PLANS | industries/[slug]/page.tsx | Real offer (every plan includes a website); links to the web design service and pricing | Low |
+| 14 | Fixed lowercase audience bug ("hvac companies" → "HVAC companies") in 7 template headings | industries/[slug]/page.tsx | Visible typo | None |
+| 15 | Pool cleaning and hair salon wording; service titles (AI Automation Services, AI Receptionist Service, AI Integration Services); home, pricing and industries-hub metadata include web design | services*.ts, industries-*.ts, page.tsx, pricing, industries hub | Match the real search phrasing | Low |

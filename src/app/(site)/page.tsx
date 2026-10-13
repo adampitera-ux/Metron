@@ -14,7 +14,7 @@ import { JsonLd, ethanSchema, faqSchema } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 const HOME_DESCRIPTION =
-  "Metron builds AI receptionists, lead follow-up, websites and SEO for small businesses. Answer every call, book more jobs and cut admin. Plans from $500.";
+  "Metron builds AI receptionists, lead follow-up, web design and SEO for small businesses and contractors. Answer every call, book more jobs. Plans from $500.";
 
 export const metadata: Metadata = {
   title: { absolute: `${SITE.name} — AI Automation Agency for Small Businesses` },

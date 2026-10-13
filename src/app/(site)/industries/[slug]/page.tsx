@@ -16,6 +16,8 @@ import {
 import { ServiceIcon } from "@/components/page/ServiceIcon";
 import { Button } from "@/components/ui";
 import { JsonLd, pageMetadata, serviceSchema } from "@/lib/seo";
+import { PLANS, usd } from "@/content/plans";
+import Link from "next/link";
 
 export const dynamicParams = false;
 
@@ -27,8 +29,12 @@ export async function generateMetadata({ params }: PageProps<"/industries/[slug]
   const { slug } = await params;
   const i = INDUSTRIES.find((x) => x.slug === slug);
   if (!i) return {};
+  // Owners search both "AI automation for X" and "AI receptionist for X", so the title covers both.
+  const audience = i.metaTitle.replace(/\s*\|\s*Metron$/, "").replace(/^AI Automation for /, "");
+  const base = `AI Receptionist & Automation for ${audience}`;
+  const title = audience === i.metaTitle ? i.metaTitle : base.length + 9 <= 60 ? `${base} | Metron` : base.length <= 60 ? base : i.metaTitle;
   return pageMetadata({
-    title: i.metaTitle,
+    title,
     absoluteTitle: true,
     description: i.metaDescription,
     path: `/industries/${i.slug}`,
@@ -42,6 +48,8 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
   if (!ind) notFound();
 
   const services = SERVICES.filter((s) => ind.relatedServices.includes(s.slug));
+  const launch = PLANS.find((p) => p.id === "launch")!;
+  const growth = PLANS.find((p) => p.id === "growth")!;
   const posts = getAllPosts()
     .filter((p) => p.relatedIndustries?.includes(ind.slug))
     .slice(0, 3);
@@ -81,11 +89,11 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
       </PageHeader>
 
       <Section>
-        <AnswerBox label={`How can AI help ${ind.audience.toLowerCase()}?`}>{ind.answer}</AnswerBox>
+        <AnswerBox label={`How can AI help ${ind.audience}?`}>{ind.answer}</AnswerBox>
       </Section>
 
       <Section className="pt-0">
-        <SectionTitle kicker="The problem" title={`What's holding ${ind.audience.toLowerCase()} back`} />
+        <SectionTitle kicker="The problem" title={`What's holding ${ind.audience} back`} />
         <div className="mt-8">
           <PointGrid items={ind.painPoints} />
         </div>
@@ -94,7 +102,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
       <Section className="pt-0">
         <SectionTitle
           kicker="What we automate"
-          title={`AI workflows for ${ind.audience.toLowerCase()}`}
+          title={`AI workflows for ${ind.audience}`}
           sub="Each workflow is built around your existing phone line, calendar and software — no rip-and-replace."
         />
         <div className="mt-8">
@@ -130,11 +138,29 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
       </Section>
 
       <Section className="pt-0">
-        <SectionTitle kicker="Services" title={`Recommended services for ${ind.audience.toLowerCase()}`} />
+        <SectionTitle kicker="Services" title={`Recommended services for ${ind.audience}`} />
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <LinkCard key={s.slug} href={`/services/${s.slug}`} title={s.shortName} body={s.summary} icon={<ServiceIcon name={s.icon} />} />
           ))}
+        </div>
+      </Section>
+
+      <Section className="pt-0">
+        <div className="mx-auto max-w-[900px] rounded-[24px] border border-line bg-white p-8 md:p-10">
+          <p className="font-mono text-xs tracking-[0.14em] text-orange uppercase">Websites & local SEO</p>
+          <h2 className="h-display mt-3 text-[28px] leading-[1.2] text-fg">Web design and local SEO for {ind.audience}</h2>
+          <p className="mt-4 text-[16.5px] leading-[1.7] text-fg-2">
+            Every Metron plan includes a custom-designed, mobile-friendly website with hosting, built so nearby customers
+            can find {ind.audience} on Google and call, request a quote or book in one tap. Plans start at{" "}
+            {usd(launch.setup)} setup + {usd(launch.monthly)}/month. The Growth plan ({usd(growth.setup)} + {usd(growth.monthly)}/month) adds
+            full SEO, Google Business Profile optimization and local SEO. The AI receptionist, missed-call text-back and lead
+            follow-up are included in the Scale plan.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[15.5px] font-medium">
+            <Link href="/services/website-refresh" className="text-orange hover:underline">Small business web design →</Link>
+            <Link href="/pricing" className="text-orange hover:underline">Compare plans →</Link>
+          </div>
         </div>
       </Section>
 
@@ -156,7 +182,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
       )}
 
       <Section className="pt-0">
-        <SectionTitle kicker="Locations" title={`Where we help ${ind.audience.toLowerCase()}`} />
+        <SectionTitle kicker="Locations" title={`Where we help ${ind.audience}`} />
         <div className="mt-8 flex flex-wrap gap-3">
           {cities.map((l) => (
             <a

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllPosts } from "@/lib/blog";
+import { GLOSSARY } from "@/content/glossary";
 import { INDUSTRIES } from "@/content/industries";
 import { SERVICES } from "@/content/services";
 import {
@@ -18,6 +19,18 @@ import { Button } from "@/components/ui";
 import { JsonLd, pageMetadata, serviceSchema } from "@/lib/seo";
 
 export const dynamicParams = false;
+
+// Glossary terms that explain each service (internal links for readers and crawlers).
+const SERVICE_TERMS: Record<string, string[]> = {
+  "ai-automation": ["back-office-automation", "workflow-automation", "job-costing", "document-processing", "rpa", "ai-agent"],
+  "ai-receptionist": ["ai-voice-agent", "missed-call-text-back", "conversational-ai", "tcpa", "a2p-10dlc", "no-show-rate"],
+  "lead-follow-up": ["speed-to-lead", "lead-scoring", "lead-nurturing", "crm", "tcpa", "customer-lifetime-value"],
+  "website-refresh": ["conversion-rate-optimization", "call-tracking", "schema-markup", "local-seo", "quality-score"],
+  "aeo-geo": ["aeo", "geo", "ai-overviews", "llms-txt", "entity-seo", "zero-click-search", "google-business-profile", "nap-consistency"],
+  "review-automation": ["review-generation", "google-business-profile", "local-seo", "service-area-business"],
+  "custom-ai-software": ["ai-agent", "knowledge-base", "large-language-model", "api-integration", "job-costing"],
+  "ai-strategy": ["ai-integration", "ai-agent", "api-integration", "sop", "large-language-model"],
+};
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -42,6 +55,9 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
   if (!s) notFound();
 
   const industries = INDUSTRIES.filter((i) => s.relatedIndustries.includes(i.slug));
+  const terms = (SERVICE_TERMS[s.slug] ?? [])
+    .map((t) => GLOSSARY.find((g) => g.slug === t))
+    .filter((g): g is NonNullable<typeof g> => Boolean(g));
   const posts = getAllPosts()
     .filter((p) => p.relatedServices?.includes(s.slug))
     .slice(0, 3);
@@ -128,6 +144,23 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((i) => (
               <LinkCard key={i.slug} href={`/industries/${i.slug}`} title={`${s.shortName} for ${i.audience}`} body={i.answer.split(". ")[0] + "."} meta={i.name} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {terms.length > 0 && (
+        <Section className="pt-0">
+          <SectionTitle kicker="Key terms" title={`${s.shortName} terms, explained`} />
+          <div className="mt-8 flex flex-wrap gap-3">
+            {terms.map((g) => (
+              <a
+                key={g.slug}
+                href={`/glossary/${g.slug}`}
+                className="rounded-full border border-line bg-white px-4 py-2 text-[15px] text-fg-2 transition-colors hover:border-orange/40 hover:text-orange"
+              >
+                {g.term}
+              </a>
             ))}
           </div>
         </Section>

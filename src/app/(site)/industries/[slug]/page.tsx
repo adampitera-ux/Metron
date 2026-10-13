@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getAllPosts } from "@/lib/blog";
 import { INDUSTRIES } from "@/content/industries";
+import { LOCATIONS } from "@/content/locations";
 import { SERVICES } from "@/content/services";
 import {
   AnswerBox,
@@ -45,6 +46,9 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
     .filter((p) => p.relatedIndustries?.includes(ind.slug))
     .slice(0, 3);
   const others = INDUSTRIES.filter((x) => x.slug !== ind.slug);
+  // City pages where this trade is a focus (falls back to every city).
+  const cityMatches = LOCATIONS.filter((l) => l.industries.includes(ind.slug));
+  const cities = cityMatches.length ? cityMatches : LOCATIONS;
   // Phone-driven trades get the missed-call calculator; everyone else the ROI calculator.
   const calc = ind.relatedServices.includes("ai-receptionist")
     ? { href: "/tools/missed-call-revenue-calculator", label: "Missed-Call Calculator" }
@@ -150,6 +154,21 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
           </div>
         </Section>
       )}
+
+      <Section className="pt-0">
+        <SectionTitle kicker="Locations" title={`Where we help ${ind.audience.toLowerCase()}`} />
+        <div className="mt-8 flex flex-wrap gap-3">
+          {cities.map((l) => (
+            <a
+              key={l.slug}
+              href={`/locations/${l.slug}`}
+              className="rounded-full border border-line bg-white px-4 py-2 text-[15px] text-fg-2 transition-colors hover:border-orange/40 hover:text-orange"
+            >
+              {l.city}
+            </a>
+          ))}
+        </div>
+      </Section>
 
       <Section className="pt-0">
         <SectionTitle kicker="Other industries" title="We also help" />

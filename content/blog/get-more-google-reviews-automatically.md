@@ -179,6 +179,8 @@ Here's an illustrative example with made-up numbers. If you complete 150 jobs a 
 
 ## What should you do next?
 
+For negative reviews specifically, use our step-by-step guide on [how to respond to negative reviews](/blog/how-to-respond-to-negative-reviews), with templates.
+
 **Count the jobs you completed last month and the reviews you received.** The gap between those numbers is how much your reputation is growing slower than your business.
 
 If you want a review system that asks every customer, follows Google's rules, and drafts your responses, [book a free AI audit](/contact). We'll look at your current reviews, your job software, and your Google Business Profile and show you what a done-for-you setup would look like. While you're at it, reviews are one input into AI search visibility; our [AI search readiness checker](/tools/ai-search-readiness-checker) shows where else you stand.

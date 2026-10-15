@@ -11,7 +11,7 @@ const BASE_SERVICES: Service[] = [
       "We automate the repetitive back-office work in your business, from scheduling and invoicing to data entry and reporting, so your team can focus on customers.",
     metaTitle: "AI Automation Services: Workflow & Back-Office | Metron",
     metaDescription:
-      "AI workflow automation for small businesses: scheduling, invoicing, data entry, and reporting handled automatically so your team can focus on paying work.",
+      "AI automation services for small businesses: scheduling, invoicing, data entry and reporting handled automatically. Free AI audit; flat monthly pricing.",
     headline: "AI Back-Office Automation That Gives Owners Their Time Back",
     answer:
       "AI workflow automation connects the software a small business already uses, such as its CRM, scheduling, invoicing, and email, and uses rules plus AI models to handle repetitive tasks automatically. Typical examples include entering job details, sending invoices and reminders, routing requests, and summarizing reports, reducing manual admin work and data-entry errors.",
@@ -131,7 +131,7 @@ const BASE_SERVICES: Service[] = [
       "An AI receptionist answers calls and texts around the clock, and missed-call text-back replies to callers you could not reach so leads do not go to a competitor.",
     metaTitle: "AI Receptionist Service & Missed-Call Text-Back",
     metaDescription:
-      "An AI receptionist that answers calls, books appointments, and texts back missed callers 24/7, so local service businesses stop losing leads to voicemail.",
+      "An AI receptionist that answers calls, books appointments and texts back missed callers 24/7. Done for you, from $1,700 setup + $500/month. Free audit.",
     headline: "Never Miss Another Call With an AI Receptionist",
     answer:
       "An AI receptionist is software that answers phone calls and messages using conversational AI. It can greet callers, answer common questions, collect job details, and book appointments at any hour. Missed-call text-back automatically sends a text to anyone whose call went unanswered, giving them a fast way to continue the conversation instead of calling a competitor.",
@@ -250,7 +250,7 @@ const BASE_SERVICES: Service[] = [
       "We respond to new leads in minutes, follow up automatically until they book, and keep your CRM organized without manual data entry.",
     metaTitle: "AI Lead Follow-Up & CRM Automation | Metron",
     metaDescription:
-      "AI lead follow-up and CRM automation that responds to new inquiries fast, nurtures quotes until they book, and keeps every contact organized for your team.",
+      "AI lead follow-up and CRM automation: reply to new leads in seconds and follow up on quotes until they book. Done for you, from $1,700 setup + $500/month.",
     headline: "Respond to Every Lead Fast and Follow Up Until They Book",
     answer:
       "AI lead follow-up automatically responds to new inquiries from web forms, calls, texts, and ad platforms within minutes, then sends personalized follow-up messages until the lead books or opts out. CRM automation logs every contact, updates deal stages, and assigns tasks, so no lead or open estimate is forgotten.",
@@ -490,7 +490,7 @@ const BASE_SERVICES: Service[] = [
       "We make your business easier for AI assistants and answer engines like ChatGPT, Perplexity, and Google AI Overviews to find, understand, and cite.",
     metaTitle: "AEO & GEO: AI Search Optimization | Metron",
     metaDescription:
-      "AEO and GEO services that help AI assistants and Google AI Overviews understand and cite your business through schema, answer-first content, and citations.",
+      "AEO and GEO services that help Google AI Overviews and AI assistants understand your business. Included with SEO from $999 setup + $150/month.",
     headline: "Get Your Business Understood and Cited by AI Search",
     answer:
       "Answer engine optimization (AEO) and generative engine optimization (GEO) improve how AI-powered search tools such as Google AI Overviews, ChatGPT, and Perplexity understand and cite a business. The work combines structured data, consistent business information, answer-first content, AI crawler access, and third-party reviews and citations. No provider can guarantee placement in AI answers.",
@@ -616,9 +616,9 @@ const BASE_SERVICES: Service[] = [
     icon: "star",
     summary:
       "We automatically ask happy customers for reviews at the right moment, help you respond to every review, and alert you to problems fast.",
-    metaTitle: "Review & Reputation Automation | Metron",
+    metaTitle: "Reputation & Review Automation for Local Businesses",
     metaDescription:
-      "Review automation for local businesses: timely review requests after every job, AI-drafted responses, and instant alerts so you can protect your reputation.",
+      "Reputation and review automation: Google review requests after every job, AI-drafted replies and instant alerts. From $1,700 setup + $500/month.",
     headline: "Earn More Reviews Automatically and Respond to Every One",
     answer:
       "Review and reputation automation sends review requests by text or email after a completed job or appointment, makes leaving a review a one-tap process, and monitors new reviews across platforms. AI can draft personalized responses for approval, and negative feedback triggers an alert so the owner can address problems quickly.",

@@ -160,6 +160,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[15.5px] font-medium">
             <Link href="/services/website-refresh" className="text-orange hover:underline">Small business web design →</Link>
             <Link href="/pricing" className="text-orange hover:underline">Compare plans →</Link>
+            <Link href="/blog/small-business-website-cost" className="text-orange hover:underline">What a small business website costs →</Link>
           </div>
         </div>
       </Section>

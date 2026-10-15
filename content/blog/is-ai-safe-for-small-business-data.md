@@ -164,6 +164,10 @@ A sample policy outline:
 
 Share it, go over it in a team meeting, and update it once or twice a year. For the bigger picture on rolling out AI, see our guide on [how to integrate AI into your small business](/blog/how-to-integrate-ai-into-your-small-business).
 
+## What about wrong answers, not just data safety?
+
+Data safety is one half of trustworthy AI; accuracy is the other. AI can state wrong prices or policies, called an [AI hallucination](/glossary/ai-hallucination). See [how to make AI reliable in your business](/blog/how-to-make-ai-reliable-in-your-business) for the practices that prevent it.
+
 ## What should you do next?
 
 AI isn't inherently risky, but careless AI use can be. The safest path is a deliberate one: business-grade tools, tight permissions, a short policy, and vendors who answer your questions clearly. If you want help figuring out where AI fits in your business and how to set it up safely, [book a free AI audit](/contact). We'll look at your workflows, your current tools, and where your data lives, and recommend a setup that protects it. You can also see how we approach planning through our [AI strategy service](/services/ai-strategy).

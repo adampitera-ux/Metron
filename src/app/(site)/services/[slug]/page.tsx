@@ -28,8 +28,8 @@ const SERVICE_TERMS: Record<string, string[]> = {
   "website-refresh": ["conversion-rate-optimization", "call-tracking", "schema-markup", "local-seo", "quality-score"],
   "aeo-geo": ["aeo", "geo", "ai-overviews", "llms-txt", "entity-seo", "zero-click-search", "google-business-profile", "nap-consistency"],
   "review-automation": ["review-generation", "google-business-profile", "local-seo", "service-area-business"],
-  "custom-ai-software": ["ai-agent", "knowledge-base", "large-language-model", "api-integration", "job-costing"],
-  "ai-strategy": ["ai-integration", "ai-agent", "api-integration", "sop", "large-language-model"],
+  "custom-ai-software": ["ai-agent", "knowledge-base", "large-language-model", "api-integration", "rag", "fine-tuning", "job-costing"],
+  "ai-strategy": ["ai-integration", "ai-agent", "api-integration", "ai-evals", "ai-hallucination", "prompt-engineering", "sop"],
 };
 
 export function generateStaticParams() {

@@ -39,6 +39,8 @@ relatedIndustries:
 
 ChatGPT can save a small business owner hours a week, but only if you know what to ask. Vague prompts get vague answers. This guide gives you 40 copy-and-paste prompts organized by task, plus the simple formula that makes any prompt work better. Replace anything in [brackets] with your details.
 
+Want better results from any prompt? See [prompt engineering](/glossary/prompt-engineering) for what makes a prompt work, and [fine-tuning](/glossary/fine-tuning) for when a custom-trained model is (rarely) worth it.
+
 ## How do you write a good ChatGPT prompt for a small business?
 
 **A good prompt gives ChatGPT a role, context about your business, a specific task and the format you want back.** The more real detail you include, the less editing you'll do.

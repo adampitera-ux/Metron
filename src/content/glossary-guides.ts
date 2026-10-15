@@ -462,4 +462,208 @@ export const GLOSSARY_GUIDES: Record<string, GlossaryGuide> = {
       },
     ],
   },
+  "ai-evals": {
+    seoTitle: "What Are AI Evals? How to Test AI Before It Talks to Customers",
+    seoDescription:
+      "AI evals explained for business owners: what they are, how to build a simple test set, what to measure, and how evals keep an AI receptionist or chatbot accurate.",
+    sections: [
+      {
+        heading: "Why test AI with evals instead of just trying it?",
+        paragraphs: [
+          "An AI system can answer the same question differently from one day to the next, and it usually handles the easy questions well. The expensive mistakes hide in the unusual ones: the caller with an emergency, the customer asking for a discount, the question about a service you don't offer. Trying an AI a handful of times won't surface those. A repeatable test set will.",
+          "Evals also tell you whether a change made things better or worse. When you update the instructions, add a new price list or switch AI models, you re-run the same tests and compare the scores instead of guessing.",
+        ],
+      },
+      {
+        heading: "How to build a simple eval set for a small business",
+        paragraphs: ["You don't need special software to start. A spreadsheet works:"],
+        bullets: [
+          "Collect 30–100 real examples: common calls, texts, emails or chat questions, with personal details removed.",
+          "Include the hard cases on purpose: emergencies, angry customers, pricing outside your list, out-of-area requests.",
+          "For each example, write what a good response must do (for example: books the right appointment type, gives no price, hands off to a person).",
+          "Run the AI on every example and mark each result pass or fail against those rules.",
+          "Fix the cause of the most common failure first, then re-run the whole set.",
+        ],
+      },
+      {
+        heading: "What should an eval check?",
+        paragraphs: [
+          "Good evals check outcomes that matter to the business, not just whether the answer sounds good. Typical checks are accuracy against your approved information, whether the AI took the right action, whether it handed off when it should, tone, and whether it stayed inside its guardrails.",
+        ],
+      },
+    ],
+    table: {
+      caption: "Ways to grade an AI eval",
+      headers: ["Method", "How it works", "Best for"],
+      rows: [
+        ["Code checks", "Automatic rules, such as 'the reply contains a booking link' or 'no dollar amounts'", "Format, required fields, forbidden content"],
+        ["AI as a judge", "A second AI model scores each answer against written criteria", "Large test sets, tone and helpfulness"],
+        ["Human review", "A person reads and grades each result", "Sensitive topics and final sign-off before launch"],
+      ],
+    },
+    faqs: [
+      {
+        q: "How many test cases does a small business need?",
+        a: "Start with 30 to 100 realistic examples that cover your most common requests and your riskiest ones. Add a new case every time the AI makes a mistake in real use, so the same problem can't come back unnoticed.",
+      },
+      {
+        q: "How often should AI evals be run?",
+        a: "Before launch, after every change to instructions, data or the AI model, and on a regular schedule such as monthly, because customer questions and business information change over time.",
+      },
+      {
+        q: "Are evals the same as guardrails?",
+        a: "No. Guardrails are the rules that limit what an AI can say and do. Evals are the tests that check whether the AI, including its guardrails, actually behaves correctly.",
+      },
+    ],
+  },
+  "ai-hallucination": {
+    seoTitle: "What Is an AI Hallucination? Examples & How to Prevent It",
+    seoDescription:
+      "AI hallucinations explained: why AI makes up prices, policies and facts, real business examples, and the practical ways to prevent wrong answers reaching customers.",
+    sections: [
+      {
+        heading: "Why do AI models hallucinate?",
+        paragraphs: [
+          "Language models are trained to produce the most likely next words, not to check facts. When the information they need is missing, out of date or ambiguous, they still produce a fluent answer, and fluent can look confident even when it's wrong.",
+          "In business systems, the most common causes are simple: the AI was never given your current prices or policies, it was given conflicting documents, or its instructions didn't tell it what to do when it doesn't know.",
+        ],
+      },
+      {
+        heading: "Examples of AI hallucinations in a small business",
+        paragraphs: ["These are the kinds of mistakes that cause real problems:"],
+        bullets: [
+          "Quoting a price that isn't on your price list.",
+          "Promising same-day service you can't deliver.",
+          "Inventing a return, refund or warranty policy.",
+          "Saying you serve a town that's outside your service area.",
+          "Citing a law, rule or product detail that doesn't exist.",
+        ],
+      },
+      {
+        heading: "How to prevent AI hallucinations",
+        paragraphs: [
+          "No method eliminates hallucinations completely, so the goal is to make wrong answers unlikely and low-impact. In practice that means combining several layers rather than relying on one.",
+        ],
+        bullets: [
+          "Ground the AI in your approved information using retrieval (RAG), and remove outdated documents.",
+          "Tell it to say it doesn't know and offer a callback when information is missing.",
+          "Restrict sensitive answers, such as prices, to an approved list.",
+          "Test with evals that include tricky questions before launch.",
+          "Route high-stakes topics like refunds, legal or medical questions to a person.",
+          "Review real conversations regularly and fix the causes of mistakes.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can AI hallucinations be completely eliminated?",
+        a: "Not entirely with today's language models. They can be made rare and low-impact by grounding the AI in your own information, limiting what it can say, testing it, and keeping a person involved for sensitive decisions.",
+      },
+      {
+        q: "Does a bigger or newer AI model stop hallucinations?",
+        a: "Newer models tend to make fewer mistakes, but no model knows your current prices, schedule or policies unless you give it that information. Grounding and guardrails matter more than the model choice for most business uses.",
+      },
+      {
+        q: "Who is responsible if a business AI gives a customer wrong information?",
+        a: "The business that deploys the AI should assume it is responsible for what the AI tells customers. That's why customer-facing AI should be limited to approved information and should hand off anything it isn't sure about.",
+      },
+    ],
+  },
+  "prompt-engineering": {
+    seoTitle: "What Is Prompt Engineering? Examples & Tips for Business",
+    seoDescription:
+      "Prompt engineering explained in plain English: what makes a good prompt, a reusable template, before-and-after examples and tips for business AI systems.",
+    sections: [
+      {
+        heading: "What makes a good prompt?",
+        paragraphs: [
+          "A good prompt removes guesswork. It tells the AI who it is acting as, what the goal is, what information to use, what the output should look like and what to do when something is missing. Vague prompts get generic answers; specific prompts get usable ones.",
+        ],
+        bullets: [
+          "Role: who the AI is acting as (for example, the front desk of a plumbing company).",
+          "Goal: the outcome you want (book an appointment, draft a reply, summarize a call).",
+          "Context: the facts to use, such as services, hours, service area and policies.",
+          "Format: length, tone and structure of the answer.",
+          "Limits: what it must never do, and when to hand off to a person.",
+          "Examples: one or two samples of a great answer.",
+        ],
+      },
+      {
+        heading: "A before-and-after prompt example",
+        paragraphs: [
+          "Before: \"Write a reply to this customer.\" The AI has to guess the tone, the facts and the next step.",
+          "After: \"You are the office manager at a residential HVAC company. Reply to this customer in under 80 words, friendly and plain. Use only the services and prices below. Offer the next two open appointment slots. If they mention gas smell or no heat with young children or elderly people at home, tell them to call our emergency line now.\" The result is consistent, accurate and safe.",
+        ],
+      },
+      {
+        heading: "Prompt engineering for business systems vs. everyday chat",
+        paragraphs: [
+          "When you chat with ChatGPT, you can fix a weak prompt by asking a follow-up. In a business system, like an AI receptionist or lead follow-up assistant, the same prompt runs thousands of times with no one watching each answer. That's why business prompts are written carefully, tested with real examples (evals) and updated over time.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is prompt engineering still important with newer AI models?",
+        a: "Yes. Newer models follow instructions better, but they still can't know your business rules, tone or limits unless you state them. Clear instructions and good context remain the cheapest way to improve results.",
+      },
+      {
+        q: "Do I need to learn prompt engineering to use AI in my business?",
+        a: "For everyday tasks, a few habits go a long way: give context, say what you want, and show an example. For customer-facing systems, it's worth having the prompts written and tested by someone experienced.",
+      },
+      {
+        q: "What's the difference between prompt engineering and fine-tuning?",
+        a: "Prompt engineering changes the instructions and context you give a model. Fine-tuning changes the model itself by training it on examples. Most small businesses get what they need from good prompts plus their own data, without fine-tuning.",
+      },
+    ],
+  },
+  "fine-tuning": {
+    seoTitle: "What Is Fine-Tuning an AI Model? When It's Worth It",
+    seoDescription:
+      "Fine-tuning explained: what it means to fine-tune an AI model, how it compares to prompting and RAG, what it costs in effort, and when a small business actually needs it.",
+    sections: [
+      {
+        heading: "How does fine-tuning work?",
+        paragraphs: [
+          "Fine-tuning starts with an existing AI model and trains it further on a set of example inputs and the exact outputs you want. After training, the model produces that style or format more consistently without needing as many instructions in every request.",
+          "It does not reliably teach a model new facts that change often, such as prices, schedules or inventory. Information like that belongs in your data, retrieved at the moment of the question.",
+        ],
+      },
+      {
+        heading: "When is fine-tuning worth it for a small business?",
+        paragraphs: ["Fine-tuning can make sense when all of these are true:"],
+        bullets: [
+          "You have hundreds or thousands of high-quality examples of the exact output you want.",
+          "Good prompts and examples still don't produce consistent enough results.",
+          "The task is narrow and repeated at high volume, such as classifying documents into fixed categories.",
+          "You can maintain it: re-training when the task or your standards change.",
+        ],
+      },
+      {
+        heading: "Better first steps than fine-tuning",
+        paragraphs: [
+          "For most small-business uses, such as answering customer questions, drafting replies, summarizing calls or extracting data from documents, clear prompts, your own data through retrieval (RAG) and solid guardrails get better results faster, cost less and are easier to update when your business changes.",
+        ],
+      },
+    ],
+    table: {
+      caption: "Prompting vs. RAG vs. fine-tuning",
+      headers: ["Approach", "What it changes", "Best for", "Effort to update"],
+      rows: [
+        ["Prompt engineering", "The instructions and examples sent with each request", "Tone, format, rules, most business tasks", "Low: edit the prompt"],
+        ["RAG (retrieval)", "The information the AI looks up before answering", "Current facts: prices, policies, FAQs, documents", "Low: update the documents"],
+        ["Fine-tuning", "The model itself, through extra training", "Very consistent output on a narrow, high-volume task", "High: rebuild the training set and re-train"],
+      ],
+    },
+    faqs: [
+      {
+        q: "Does fine-tuning make an AI know my business?",
+        a: "Only partly, and not for facts that change. Fine-tuning shapes how a model responds. For current information like prices and policies, retrieval (RAG) is the better tool because you can update it instantly.",
+      },
+      {
+        q: "Is fine-tuning expensive?",
+        a: "The biggest cost is usually the work of collecting and cleaning enough high-quality examples, then keeping them current. That's why fine-tuning is typically a later step, after prompting and retrieval have been tried.",
+      },
+    ],
+  },
 };

@@ -185,6 +185,8 @@ Watch out for these:
 - **Ignoring data safety.** Decide what information AI tools can see before you connect them. Our guide on [whether AI is safe for your business data](/blog/is-ai-safe-for-small-business-data) covers the basics.
 - **No owner.** Every workflow needs one person accountable for it.
 
+Before any AI talks to customers, read [how to make AI reliable in your business](/blog/how-to-make-ai-reliable-in-your-business): grounding, guardrails, [AI evals](/glossary/ai-evals) and human review.
+
 ## Should you integrate AI yourself or hire someone?
 
 **If you have time, a tech-comfortable team member, and simple needs, DIY can work; if your time is better spent running the business, a done-for-you partner is often faster and, once you count your time, cheaper overall.** The real cost of DIY is the owner's hours and the projects that stall halfway.

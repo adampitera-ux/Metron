@@ -29,3 +29,12 @@
 | 13 | "Web design and local SEO for {audience}" section on all 36 industry pages; prices read from PLANS | industries/[slug]/page.tsx | Real offer (every plan includes a website); links to the web design service and pricing | Low |
 | 14 | Fixed lowercase audience bug ("hvac companies" → "HVAC companies") in 7 template headings | industries/[slug]/page.tsx | Visible typo | None |
 | 15 | Pool cleaning and hair salon wording; service titles (AI Automation Services, AI Receptionist Service, AI Integration Services); home, pricing and industries-hub metadata include web design | services*.ts, industries-*.ts, page.tsx, pricing, industries hub | Match the real search phrasing | Low |
+
+## 2026-10-15 (round 3): "Crawled – currently not indexed" (7 URLs) + CTR
+
+| # | Change | Rationale |
+|---|---|---|
+| 16 | Long-form guides (sections, tables, FAQs) for /glossary/ai-evals, ai-hallucination, prompt-engineering, fine-tuning (139–281 → 598–802 words) | Thin pages Google crawled but didn't index |
+| 17 | Contextual links to all 7 affected URLs from related posts, service glossary blocks, glossary "Put it to work" blocks and industry web-design sections (website-cost post: +36 links) | Two posts had zero in-content links |
+| 18 | Service meta descriptions now show real plan prices; review service retitled "Reputation & Review Automation for Local Businesses" (GSC query "reputation automation") | CTR: price and exact-match wording in the snippet |
+| — | Finding: no GA4 or Google Ads ID is set in production, so conversion events don't fire | Owner must supply IDs (see final message) |

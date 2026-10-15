@@ -61,6 +61,8 @@ This guide draws on the framework in DeepLearning.AI's AI Engineering Skills Map
 
 **Grounding means the AI answers from your approved, current information instead of general knowledge.** The most common technique is [retrieval-augmented generation (RAG)](/glossary/rag): your documents, FAQs, price lists and policies are indexed, and the AI looks up the relevant pieces before answering.
 
+Clear instructions matter too; see [prompt engineering](/glossary/prompt-engineering). Training a custom model through [fine-tuning](/glossary/fine-tuning) is rarely the first fix: most errors come from missing information, not the model.
+
 What to do:
 
 - Write down the facts customers ask about most: services, pricing ranges, service area, hours, policies.

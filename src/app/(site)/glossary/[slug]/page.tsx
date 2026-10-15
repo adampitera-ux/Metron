@@ -32,6 +32,11 @@ const TERM_NEXT_STEPS: Record<string, { href: string; label: string }[]> = {
     { href: "/blog/best-ai-tools-for-home-service-businesses", label: "Best AI tools for home service businesses" },
   ],
   "google-business-profile": [{ href: "/blog/google-business-profile-checklist", label: "Google Business Profile checklist" }],
+  "ai-evals": [{ href: "/blog/how-to-make-ai-reliable-in-your-business", label: "How to make AI reliable in your business" }, { href: "/services/ai-strategy", label: "AI strategy & integration service" }],
+  "ai-hallucination": [{ href: "/blog/how-to-make-ai-reliable-in-your-business", label: "How to make AI reliable in your business" }, { href: "/services/ai-receptionist", label: "AI receptionist with guardrails and human handoff" }],
+  "prompt-engineering": [{ href: "/blog/chatgpt-prompts-for-small-business", label: "ChatGPT prompts for small business" }, { href: "/services/custom-ai-software", label: "Custom AI software & internal tools" }],
+  "fine-tuning": [{ href: "/services/custom-ai-software", label: "Custom AI software & internal tools" }, { href: "/blog/how-to-make-ai-reliable-in-your-business", label: "How to make AI reliable in your business" }],
+  "review-generation": [{ href: "/services/review-automation", label: "Review & reputation automation service" }, { href: "/blog/how-to-respond-to-negative-reviews", label: "How to respond to negative reviews" }],
   "entity-seo": [{ href: "/services/aeo-geo", label: "AI search optimization (AEO & GEO) service" }],
 };
 

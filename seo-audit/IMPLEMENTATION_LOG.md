@@ -38,3 +38,10 @@
 | 17 | Contextual links to all 7 affected URLs from related posts, service glossary blocks, glossary "Put it to work" blocks and industry web-design sections (website-cost post: +36 links) | Two posts had zero in-content links |
 | 18 | Service meta descriptions now show real plan prices; review service retitled "Reputation & Review Automation for Local Businesses" (GSC query "reputation automation") | CTR: price and exact-match wording in the snippet |
 | — | Finding: no GA4 or Google Ads ID is set in production, so conversion events don't fire | Owner must supply IDs (see final message) |
+
+## 2026-10-16 (round 4): GSC query alignment
+
+| # | Change | Rationale |
+|---|---|---|
+| 19 | New /industries/home-services overview page (shared home-service workflows, FAQs, real plan prices) linked from the hub, every industry page, the receptionist and follow-up services, and the AI tools post | GSC query "home service business automation" had no matching page; the existing /lp/home-services is noindex (ads only), so no conflict |
+| 20 | Website cost post title shortened to 58 chars ("How Much Does a Small Business Website Cost? (2026 Prices)") | Was 74 chars and truncated; GSC queries "how much does a business website cost" and "small business website cost" |

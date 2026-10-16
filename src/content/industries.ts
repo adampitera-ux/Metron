@@ -1,6 +1,7 @@
 import type { Industry } from "./types";
 import { MORE_INDUSTRIES } from "./industries-more";
 import { EXTRA_INDUSTRIES } from "./industries-extra";
+import { HOME_SERVICE_INDUSTRIES } from "./industries-home";
 
 const BASE_INDUSTRIES: Industry[] = [
   // ---------------------------------------------------------------------------
@@ -1234,4 +1235,4 @@ const BASE_INDUSTRIES: Industry[] = [
   },
 ];
 
-export const INDUSTRIES: Industry[] = [...BASE_INDUSTRIES, ...MORE_INDUSTRIES, ...EXTRA_INDUSTRIES];
+export const INDUSTRIES: Industry[] = [...HOME_SERVICE_INDUSTRIES, ...BASE_INDUSTRIES, ...MORE_INDUSTRIES, ...EXTRA_INDUSTRIES];

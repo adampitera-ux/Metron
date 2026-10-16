@@ -232,7 +232,7 @@ const BASE_SERVICES: Service[] = [
         a: "Business texting is subject to carrier registration rules and consent requirements that vary by region. We set up messaging with registration and opt-out handling in mind, but you should confirm requirements for your business with a legal advisor.",
       },
     ],
-    relatedIndustries: ["hvac", "plumbing", "electrical", "dental", "med-spas", "law-firms"],
+    relatedIndustries: ["home-services", "hvac", "plumbing", "electrical", "dental", "med-spas", "law-firms"],
     keywords: [
       "ai receptionist for small business",
       "missed call text back",
@@ -348,7 +348,7 @@ const BASE_SERVICES: Service[] = [
         a: "Yes. We draft all templates in your voice and you approve them before launch. For sensitive situations, AI-drafted replies can wait for human approval before sending.",
       },
     ],
-    relatedIndustries: ["roofing", "hvac", "pest-control", "moving", "real-estate", "law-firms", "med-spas", "landscaping"],
+    relatedIndustries: ["home-services", "roofing", "hvac", "pest-control", "moving", "real-estate", "law-firms", "med-spas", "landscaping"],
     keywords: [
       "ai lead follow up",
       "crm automation for small business",

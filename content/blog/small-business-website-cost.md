@@ -1,5 +1,5 @@
 ---
-title: "How Much Does a Small Business Website Cost in 2026? (Real Price Ranges)"
+title: "How Much Does a Small Business Website Cost? (2026 Prices)"
 description: "Small business website costs explained: DIY builders, freelancers, agencies and managed plans, plus hosting, maintenance and the hidden costs to budget for."
 date: "2026-10-12"
 category: "Websites & Search"

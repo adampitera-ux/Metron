@@ -33,6 +33,7 @@ relatedServices:
   - lead-follow-up
   - review-automation
 relatedIndustries:
+  - home-services
   - hvac
   - plumbing
   - electrical

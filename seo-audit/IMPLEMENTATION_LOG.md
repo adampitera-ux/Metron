@@ -45,3 +45,7 @@
 |---|---|---|
 | 19 | New /industries/home-services overview page (shared home-service workflows, FAQs, real plan prices) linked from the hub, every industry page, the receptionist and follow-up services, and the AI tools post | GSC query "home service business automation" had no matching page; the existing /lp/home-services is noindex (ads only), so no conflict |
 | 20 | Website cost post title shortened to 58 chars ("How Much Does a Small Business Website Cost? (2026 Prices)") | Was 74 chars and truncated; GSC queries "how much does a business website cost" and "small business website cost" |
+
+## 2026-10-23 (round 5): missing buyer terms on service pages
+
+The site-wide keyword map found commercial phrases competitors target that appeared on zero pages: "AI answering service", "virtual receptionist", "AI consulting", "business process automation", "website design", "reputation management", "review management". Each was added once, naturally, to the matching service's answer paragraph and meta description, plus honest comparison FAQs (AI receptionist vs. virtual receptionist vs. answering service; review automation vs. reputation management; AI consulting). The AI strategy service was retitled "AI Consulting & Integration for Small Business". The LA location description now mentions Orange County (GSC: "ai automation los angeles" 45 impressions, "orange county top ai call solutions"). No URL changes.

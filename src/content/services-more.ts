@@ -132,12 +132,12 @@ export const MORE_SERVICES: Service[] = [
     icon: "bolt",
     summary:
       "We audit your business, find where AI will save the most time and money, and integrate it into the software and routines your team already uses.",
-    metaTitle: "AI Integration Services for Small Business | Metron",
+    metaTitle: "AI Consulting & Integration for Small Business | Metron",
     metaDescription:
-      "AI strategy and integration for small businesses: a practical AI audit, a prioritized roadmap, the right tools, team training, and AI built into your software.",
+      "AI consulting and integration services for small businesses: a free AI audit, a prioritized roadmap, the right tools, training and AI built into your software.",
     headline: "A Practical AI Plan, Integrated Into the Tools You Already Use",
     answer:
-      "AI strategy and integration is the process of identifying where AI can save a business time or money, choosing the right tools, and connecting them to existing software such as QuickBooks, a CRM, field service, or point-of-sale systems. It includes a prioritized roadmap, team training, data and security policies, and ongoing optimization.",
+      "AI strategy and integration, sometimes called AI consulting, is the process of identifying where AI can save a business time or money, choosing the right tools, and connecting them to existing software such as QuickBooks, a CRM, field service, or point-of-sale systems. It includes a prioritized roadmap, team training, data and security policies, and ongoing optimization.",
     benefits: [
       {
         title: "Clarity instead of hype",
@@ -214,6 +214,10 @@ export const MORE_SERVICES: Service[] = [
       "Regular optimization reviews and roadmap updates",
     ],
     faqs: [
+      {
+        q: "Do you offer AI consulting for small businesses?",
+        a: "Yes. Our AI strategy and integration service is hands-on AI consulting: a free AI audit, a prioritized plan, and then we build and connect the tools for you rather than just handing over a report. Pricing is published on our pricing page, so you know the cost upfront.",
+      },
       {
         q: "What is an AI audit?",
         a: "An AI audit is a review of how work gets done in your business to find tasks where AI or automation can save time, reduce errors, or improve customer response. The result is a prioritized list of opportunities rather than a sales pitch for one tool. Our first audit is free.",

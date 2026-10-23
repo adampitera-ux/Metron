@@ -11,10 +11,10 @@ const BASE_SERVICES: Service[] = [
       "We automate the repetitive back-office work in your business, from scheduling and invoicing to data entry and reporting, so your team can focus on customers.",
     metaTitle: "AI Automation Services: Workflow & Back-Office | Metron",
     metaDescription:
-      "AI automation services for small businesses: scheduling, invoicing, data entry and reporting handled automatically. Free AI audit; flat monthly pricing.",
+      "AI automation and business process automation for small businesses: scheduling, invoicing, data entry and reporting done automatically. Free AI audit.",
     headline: "AI Back-Office Automation That Gives Owners Their Time Back",
     answer:
-      "AI workflow automation connects the software a small business already uses, such as its CRM, scheduling, invoicing, and email, and uses rules plus AI models to handle repetitive tasks automatically. Typical examples include entering job details, sending invoices and reminders, routing requests, and summarizing reports, reducing manual admin work and data-entry errors.",
+      "AI workflow automation, a modern form of business process automation, connects the software a small business already uses, such as its CRM, scheduling, invoicing, and email, and uses rules plus AI models to handle repetitive tasks automatically. Typical examples include entering job details, sending invoices and reminders, routing requests, and summarizing reports, reducing manual admin work and data-entry errors.",
     benefits: [
       {
         title: "Less time on admin",
@@ -131,10 +131,10 @@ const BASE_SERVICES: Service[] = [
       "An AI receptionist answers calls and texts around the clock, and missed-call text-back replies to callers you could not reach so leads do not go to a competitor.",
     metaTitle: "AI Receptionist Service & Missed-Call Text-Back",
     metaDescription:
-      "An AI receptionist that answers calls, books appointments and texts back missed callers 24/7. Done for you, from $1,700 setup + $500/month. Free audit.",
+      "AI receptionist and AI answering service: answers calls, books appointments and texts back missed callers 24/7. Done for you from $1,700 + $500/mo.",
     headline: "Never Miss Another Call With an AI Receptionist",
     answer:
-      "An AI receptionist is software that answers phone calls and messages using conversational AI. It can greet callers, answer common questions, collect job details, and book appointments at any hour. Missed-call text-back automatically sends a text to anyone whose call went unanswered, giving them a fast way to continue the conversation instead of calling a competitor.",
+      "An AI receptionist, also called an AI answering service or AI virtual receptionist, is software that answers phone calls and messages using conversational AI. It can greet callers, answer common questions, collect job details, and book appointments at any hour. Missed-call text-back automatically sends a text to anyone whose call went unanswered, giving them a fast way to continue the conversation instead of calling a competitor.",
     benefits: [
       {
         title: "Answer every call, 24/7",
@@ -207,6 +207,14 @@ const BASE_SERVICES: Service[] = [
       "Ongoing transcript review and tuning",
     ],
     faqs: [
+      {
+        q: "What's the difference between an AI receptionist, a virtual receptionist and an answering service?",
+        a: "A traditional answering service or virtual receptionist uses people, often shared across many businesses, who take messages during set hours and usually charge per minute or per call. An AI receptionist answers every call instantly, 24/7, can book appointments directly into your calendar and texts back missed callers. Many businesses use AI for routine calls and route urgent or complex calls to their own team.",
+      },
+      {
+        q: "Is an AI answering service right for a small contractor or home service business?",
+        a: "Usually, yes, if you regularly miss calls while on jobs or after hours. It answers, collects job details and books appointments while you work, and sends urgent calls to your phone. If you rarely miss calls, missed-call text-back alone may be enough.",
+      },
       {
         q: "What is an AI receptionist?",
         a: "An AI receptionist is software that uses conversational AI to answer phone calls and messages for a business. It can answer common questions, collect caller details, book appointments, and route urgent calls to a person.",
@@ -369,7 +377,7 @@ const BASE_SERVICES: Service[] = [
       "Web design for small businesses and contractors: a fast, mobile-first website, hosting and SEO from $500 setup + $100/month. New builds and redesigns.",
     headline: "Small Business Web Design That Turns Visitors Into Booked Jobs",
     answer:
-      "Metron designs and builds new websites for small businesses and contractors, or refreshes the one you have, starting at $500 setup plus $100 a month for hosting and care. A website refresh updates an existing site's design, speed, content, and structure without starting from scratch. Conversion optimization makes it easier for visitors to take action, using clear calls to action, click-to-call buttons, short forms, and online booking, so more of the traffic you already get becomes calls and appointments.",
+      "Metron provides website design for small businesses and contractors, building a new site or refreshing the one you have, starting at $500 setup plus $100 a month for hosting and care. A website refresh updates an existing site's design, speed, content, and structure without starting from scratch. Conversion optimization makes it easier for visitors to take action, using clear calls to action, click-to-call buttons, short forms, and online booking, so more of the traffic you already get becomes calls and appointments.",
     benefits: [
       {
         title: "Built for mobile visitors",
@@ -618,10 +626,10 @@ const BASE_SERVICES: Service[] = [
       "We automatically ask happy customers for reviews at the right moment, help you respond to every review, and alert you to problems fast.",
     metaTitle: "Reputation & Review Automation for Local Businesses",
     metaDescription:
-      "Reputation and review automation: Google review requests after every job, AI-drafted replies and instant alerts. From $1,700 setup + $500/month.",
+      "Reputation management and review automation: Google review requests after every job, AI-drafted replies and alerts. From $1,700 setup + $500/month.",
     headline: "Earn More Reviews Automatically and Respond to Every One",
     answer:
-      "Review and reputation automation sends review requests by text or email after a completed job or appointment, makes leaving a review a one-tap process, and monitors new reviews across platforms. AI can draft personalized responses for approval, and negative feedback triggers an alert so the owner can address problems quickly.",
+      "Review and reputation automation, an automated form of review management and online reputation management, sends review requests by text or email after a completed job or appointment, makes leaving a review a one-tap process, and monitors new reviews across platforms. AI can draft personalized responses for approval, and negative feedback triggers an alert so the owner can address problems quickly.",
     benefits: [
       {
         title: "A steady flow of reviews",
@@ -690,6 +698,10 @@ const BASE_SERVICES: Service[] = [
       "Monthly reputation summary",
     ],
     faqs: [
+      {
+        q: "Is review automation the same as reputation management?",
+        a: "It's the part of online reputation management that matters most for local businesses: consistently asking every customer for a review, responding to every review, and catching unhappy customers early. We don't buy, filter or remove reviews; we help you earn more genuine ones and reply professionally.",
+      },
       {
         q: "Is it allowed to ask customers for reviews?",
         a: "Yes, asking customers for honest reviews is generally fine. What platforms like Google prohibit includes offering incentives for reviews, posting fake reviews, and selectively soliciting positive reviews. We design request flows to follow platform policies.",

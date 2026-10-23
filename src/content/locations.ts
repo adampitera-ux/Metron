@@ -99,7 +99,7 @@ export const LOCATIONS: Location[] = [
     areas: ["Long Beach", "Pasadena", "Glendale", "Santa Monica", "the San Fernando Valley", "Orange County", "the Inland Empire"],
     metaTitle: "AI Automation for Los Angeles Businesses | Metron",
     metaDescription:
-      "AI automation for Los Angeles service businesses: bilingual call answering, smarter scheduling across a sprawling metro, instant lead follow-up and more reviews.",
+      "AI automation for Los Angeles and Orange County businesses: bilingual call answering, smart scheduling, instant lead follow-up and reviews. Plans from $500.",
     headline: "AI Automation for Los Angeles Service Businesses",
     answer:
       "AI helps Los Angeles service businesses handle a huge, spread-out market by answering every call and message 24/7, including in Spanish where needed, scheduling jobs with realistic drive times across the metro, following up on leads instantly, and building the reviews and search visibility that win in a very competitive local market.",

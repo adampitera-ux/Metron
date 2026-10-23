@@ -43,11 +43,12 @@ export function GET(req: Request) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "white",
-              fontSize: 30,
             }}
           >
-            ✦
+            {/* Same "M" mark as public/images/logo.svg (the ✦ glyph isn't in the default font) */}
+            <svg width="30" height="30" viewBox="0 0 28 28">
+              <path d="M7.5 19.5v-11l6.5 7 6.5-7v11" fill="none" stroke="white" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </div>
           <div style={{ fontSize: 34, color: "#e87811", fontWeight: 600 }}>{SITE.name}</div>
         </div>

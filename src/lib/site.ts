@@ -25,7 +25,7 @@ export const SITE = {
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "", // GA4, e.g. G-XXXXXXX
   // Ads IDs and labels are public (they ship in every page), so the live values are the defaults here.
   adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18496546895",
-  adsLeadLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL ?? "", // conversion label for form leads
+  adsLeadLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL || "PFG3CN7Qx6YdEM_Q6_NE", // "Metron lead form" // conversion label for form leads
   adsCallLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL ?? "", // conversion label for phone clicks
   adsPurchaseLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? "", // conversion label for Stripe purchases (/welcome)
   adsBookingLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_BOOKING_LABEL ?? "", // conversion label for booked sales calls (Cal.com)

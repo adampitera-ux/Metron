@@ -100,13 +100,14 @@ export default function Footer() {
                 Terms
               </Link>
               <span className="mx-2">·</span>
-              <Link href="/sitemap.xml" className="hover:text-orange">
+              {/* Plain <a>: these are files, not pages, so client-side prefetching 404s on them. */}
+              <a href="/sitemap.xml" className="hover:text-orange">
                 Sitemap
-              </Link>
+              </a>
               <span className="mx-2">·</span>
-              <Link href="/llms.txt" className="hover:text-orange">
+              <a href="/llms.txt" className="hover:text-orange">
                 llms.txt
-              </Link>
+              </a>
             </p>
           </div>
         </div>

@@ -23,7 +23,8 @@ export const SITE = {
   bookingUrl: "/contact",
   // Google Ads / analytics (set in .env.local — tracking is skipped when empty)
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "", // GA4, e.g. G-XXXXXXX
-  adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "", // e.g. AW-123456789
+  // Ads IDs and labels are public (they ship in every page), so the live values are the defaults here.
+  adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18496546895",
   adsLeadLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL ?? "", // conversion label for form leads
   adsCallLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL ?? "", // conversion label for phone clicks
   adsPurchaseLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? "", // conversion label for Stripe purchases (/welcome)
